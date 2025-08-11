@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrar Tarjeta</title>
+    <style>
+      :root {
+        --primary: #1e3a8a;
+        --primary-light: #3b82f6;
+        --success: #10b981;
+        --error: #ef4444;
+        --bg: #f3f4f6;
+        --secondary: #2563eb;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      h1 {
+        margin-bottom: 1rem;
+        color: var(--primary);
+        font-size: 1.5rem;
+      }
+
+      form {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 400px;
+      }
+
+      select,
+      input[type="file"],
+      button {
+        width: 100%;
+        padding: 0.75rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #ccc;
+      }
+
+      .file-hidden {
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+        width: 0;
+        height: 0;
+      }
+
+      button {
+        background: var(--primary);
+        color: white;
+        border: none;
+        font-weight: bold;
+        transition: background 0.3s;
+        cursor: pointer;
+      }
+
+      button:hover:not(:disabled) {
+        background: var(--primary-light);
+      }
+
+      button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+
+      #cameraBtn,
+      #galleryInput {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: auto;
+        max-width: 200px;
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-family: inherit;
+        background: var(--secondary);
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 1rem;
+      }
+
+      #cameraBtn:hover:not(:disabled),
+      #galleryInput:hover:not(:disabled) {
+        background: var(--primary-light);
+      }
+
+      #status {
+        margin-top: 1rem;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .status-success {
+        color: var(--success);
+      }
+
+      .status-error {
+        color: var(--error);
+      }
+      @media (max-width: 600px) {
+        body {
+          justify-content: flex-start;
+          padding-top: 0.5rem; /* 🔧 más pegado arriba */
+        }
+
+        body::before {
+          transform: translateY(30%); /* 🔧 sube más el logo solo en móvil */
+          margin-bottom: -0.75rem; /* 🔧 aún más cerca del h1 */
+        }
+      }
+
+      body::before {
+        content: "";
+        display: block;
+        width: clamp(280px, 30vw, 450px); /* más grande, pero sin exagerar */
+        aspect-ratio: 1 / 1;
+        background: url("logo_licor43.jpeg") no-repeat center center;
+        background-size: contain; /* ⬅️ IMPORTANTE: evita recortes */
+        margin-bottom: -0.5rem; /* ⬅️ junta más con el h1 */
+        transform: translateY(
+          15%
+        ); /* ⬅️ compensa el aire del PNG sin pasarse */
+      }
+
+      /* Título más pequeño y responsive */
+      h1 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        margin-top: 0; /* 🔧 Elimina espacio superior */
+        margin-bottom: 1rem; /* Conserva espacio con el formulario */
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        justify-content: center; /* ✅ mantener centrado en escritorio */
+      }
+
+      @media (max-width: 600px) {
+        body {
+          justify-content: flex-start; /* ✅ anula el centrado vertical */
+          padding-top: 0; /* ✅ elimina espacio arriba */
+          min-height: auto; /* ✅ permite que el contenido defina la altura */
+        }
+
+        body::before {
+          transform: translateY(20%); /* sube más el logo si aún queda aire */
+          margin-bottom: -1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Agente IA Escáner de Tarjetas</h1>
+    <form id="upload-form">
+      <select id="sourceSelect" required>
+        <option value="">¿Cómo quieres subir la tarjeta?</option>
+        <option value="camera">Tomar foto con la cámara</option>
+        <option value="gallery">Subir desde la galería</option>
+      </select>
+
+      <input
+        id="cameraInput"
+        class="file-hidden"
+        type="file"
+        accept="image/*"
+        capture="environment"
+        name="data"
+      />
+
+      <button type="button" id="cameraBtn" class="hidden">Abrir cámara</button>
+
+      <input
+        id="galleryInput"
+        class="hidden"
+        type="file"
+        accept="image/*"
+        name="data"
+      />
+
+      <!-- ALMACENES -->
+
+      <select id="almacenSelect" required>
+        <option value="">Selecciona almacén</option>
+        <option value="Almacén Experiencia 43">Almacén Experiencia 43</option>
+        <!-- agrega los tuyos -->
+      </select>
+
+      <input id="fechaPago" type="date" />
+
+      <!-- Botón de envío deshabilitado hasta que haya imagen -->
+      <button type="submit" id="submitBtn" disabled>📤 Enviar</button>
+      <div id="status"></div>
+    </form>
+
+    <script>
+      const form = document.getElementById("upload-form");
+      const sourceSelect = document.getElementById("sourceSelect");
+      const cameraInput = document.getElementById("cameraInput");
+      const galleryInput = document.getElementById("galleryInput");
+      const cameraBtn = document.getElementById("cameraBtn");
+      const submitBtn = document.getElementById("submitBtn");
+      const status = document.getElementById("status");
+
+      // Iniciar con botón de envío deshabilitado
+      submitBtn.disabled = true;
+
+      // Función para habilitar/deshabilitar el botón Enviar
+      function checkImageSelected() {
+        const hasFile =
+          (cameraInput.files && cameraInput.files.length > 0) ||
+          (galleryInput.files && galleryInput.files.length > 0);
+        submitBtn.disabled = !hasFile;
+      }
+
+      // Mostrar solo la opción elegida y resetear selección
+      sourceSelect.addEventListener("change", () => {
+        // ocultar ambas opciones de carga y el botón de cámara
+        cameraBtn.classList.add("hidden");
+        cameraInput.classList.add("hidden");
+        galleryInput.classList.add("hidden");
+        cameraInput.removeAttribute("required");
+        galleryInput.removeAttribute("required");
+
+        // resetear cualquier archivo previo
+        cameraInput.value = "";
+        galleryInput.value = "";
+        checkImageSelected();
+
+        if (sourceSelect.value === "camera") {
+          cameraBtn.classList.remove("hidden");
+          cameraInput.setAttribute("required", "required");
+        } else if (sourceSelect.value === "gallery") {
+          galleryInput.classList.remove("hidden");
+          galleryInput.setAttribute("required", "required");
+        }
+      });
+
+      cameraBtn.addEventListener("click", () => {
+        cameraInput.click();
+      });
+
+      // Al seleccionar archivo en cualquiera de los inputs
+      cameraInput.addEventListener("change", checkImageSelected);
+      galleryInput.addEventListener("change", checkImageSelected);
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        status.textContent = "Enviando...";
+        status.className = "";
+
+        const input =
+          sourceSelect.value === "camera" ? cameraInput : galleryInput;
+
+        if (!input.files || input.files.length === 0) {
+          status.textContent = "❌ Por favor selecciona una imagen.";
+          status.className = "status-error";
+          return;
+        }
+
+        let file = input.files[0];
+
+        // 1) Normalizar imagen
+        try {
+          file = await normalizeImage(file);
+        } catch (err) {
+          console.error(err);
+          status.textContent = "❌ Error al procesar la imagen.";
+          status.className = "status-error";
+          return;
+        }
+
+        // 2) Enviar a n8n (nuevo try/catch emparejado correctamente)
+        try {
+          const formData = new FormData();
+          formData.append("data", file);
+          formData.append(
+            "almacen",
+            document.getElementById("almacenSelect").value || ""
+          );
+          formData.append(
+            "fecha_pago",
+            document.getElementById("fechaPago").value || ""
+          );
+
+          const res = await fetch(
+            "https://growtur.app.n8n.cloud/webhook/vision-ocr-albaran",
+            {
+              method: "POST",
+              body: formData,
+            }
+          );
+
+          const result = await res.json();
+
+          if (res.ok) {
+            status.className = "status-success";
+            status.innerHTML = `✅ Albarán ${
+              result.num_albaran || ""
+            } registrado. <br/>Líneas insertadas: ${
+              result.lineas_insertadas ?? "—"
+            }`;
+          } else {
+            status.className = "status-error";
+            status.textContent =
+              "❌ Error: " + (result.message || JSON.stringify(result));
+          }
+        } catch (err) {
+          console.error(err);
+          status.className = "status-error";
+          status.textContent = "❌ Error al conectar con el servidor.";
+        }
+      });
+      // Función de normalización
+      async function normalizeImage(file) {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          const reader = new FileReader();
+          reader.onload = () => {
+            img.onload = () => {
+              const maxDim = 1200;
+              let { width: w, height: h } = img;
+              if (w > maxDim || h > maxDim) {
+                if (w > h) {
+                  h = (h * maxDim) / w;
+                  w = maxDim;
+                } else {
+                  w = (w * maxDim) / h;
+                  h = maxDim;
+                }
+              }
+              const canvas = document.createElement("canvas");
+              canvas.width = w;
+              canvas.height = h;
+              const ctx = canvas.getContext("2d");
+              ctx.drawImage(img, 0, 0, w, h);
+              canvas.toBlob(
+                (blob) => {
+                  if (blob) {
+                    resolve(
+                      new File([blob], "resized.jpg", { type: "image/jpeg" })
+                    );
+                  } else {
+                    reject(new Error("Canvas toBlob falló"));
+                  }
+                },
+                "image/jpeg",
+                0.8
+              );
+            };
+            img.onerror = () =>
+              reject(new Error("No se pudo cargar la imagen en memoria"));
+            img.src = reader.result;
+          };
+          reader.onerror = () => reject(new Error("FileReader falló"));
+          reader.readAsDataURL(file);
+        });
+      }
+    </script>
+  </body>
+</html>
