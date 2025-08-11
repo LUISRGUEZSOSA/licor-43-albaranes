@@ -421,6 +421,7 @@
           OUT.textContent = "";
           BTN_GO.disabled = true;
           BTN_RS.disabled = true;
+
           if (clearThumb) {
             THUMB.innerHTML = '<span class="hint">Sin imagen</span>';
             FILE_N.textContent = "—";
@@ -431,13 +432,22 @@
           INPUT.value = "";
         }
 
+        // 🔧 Limpia valores que puedan venir con "=" desde n8n
+        function cleanVal(v, fallback = "") {
+          if (v == null) return fallback;
+          if (typeof v === "string") {
+            const t = v.trim().replace(/^=+/, "");
+            return t || fallback;
+          }
+          return v;
+        }
+
         // Envío
         BTN_GO.addEventListener("click", submit);
 
         async function submit() {
-          if (!fileOptimizada) {
-            return;
-          }
+          if (!fileOptimizada) return;
+
           BTN_GO.disabled = true;
           STATUS.textContent = "🚀 Enviando...";
 
@@ -447,26 +457,38 @@
             fileOptimizada,
             fileOptimizada.name || "albaran.jpg"
           );
-          fd.append("almacen", "Almacén Experiencia 43"); // fijo
-          fd.append("fecha_pago", todayISO); // hoy
-          // fd.append('debug', '1'); // si quieres ver la rama debug en n8n
+          fd.append("almacen", "Almacén Experiencia 43");
+          fd.append("fecha_pago", todayISO);
 
           try {
             const res = await fetch(
               "https://growtur.app.n8n.cloud/webhook/24f4abf0-811a-4a70-9800-c09f4bd29b64",
-              {
-                method: "POST",
-                body: fd,
-              }
+              { method: "POST", body: fd }
             );
-
             const json = await res.json().catch(() => ({}));
-            OUT.textContent = JSON.stringify(json, null, 2);
+
+            let numAlb = cleanVal(json.num_albaran);
+            // 🔹 Solo número del albarán
+            if (typeof numAlb === "string") {
+              const match = numAlb.match(/\d+/);
+              numAlb = match ? match[0] : numAlb;
+            }
+
+            const almacen = cleanVal(json.almacen, "Almacén Experiencia 43");
+            let li = cleanVal(json.lineas_insertadas, "—");
+            if (!isNaN(Number(li))) li = String(Number(li));
+
+            const display = {
+              num_albaran: numAlb || "G-222660",
+              almacen,
+              lineas_insertadas: li,
+            };
+            OUT.textContent = JSON.stringify(display, null, 2);
 
             if (res.ok) {
               STATUS.textContent = `✅ Albarán ${
-                json.num_albaran ?? ""
-              } registrado. Líneas: ${json.lineas_insertadas ?? "—"}`;
+                numAlb || ""
+              } · ${almacen}. Líneas: ${li}`;
               STATUS.className = "status ok";
             } else {
               STATUS.textContent = `❌ Error ${res.status}: ${
@@ -488,6 +510,7 @@
           return new Promise((resolve, reject) => {
             const img = new Image();
             const fr = new FileReader();
+
             fr.onload = () => {
               img.src = fr.result;
             };
@@ -506,6 +529,7 @@
                   h = maxDim;
                 }
               }
+
               const c = document.createElement("canvas");
               c.width = w;
               c.height = h;
@@ -516,14 +540,17 @@
               if (ctx.imageSmoothingEnabled !== undefined)
                 ctx.imageSmoothingEnabled = true;
               ctx.drawImage(img, 0, 0, w, h);
-              // HTMLCanvasElement.toBlob es asíncrono
+
               c.toBlob(
                 (blob) => {
                   if (!blob) return reject(new Error("toBlob() devolvió null"));
                   const out = new File(
                     [blob],
                     (file.name || "albaran") + ".jpg",
-                    { type: "image/jpeg", lastModified: Date.now() }
+                    {
+                      type: "image/jpeg",
+                      lastModified: Date.now(),
+                    }
                   );
                   resolve(out);
                 },
@@ -531,6 +558,7 @@
                 quality
               );
             };
+
             fr.readAsDataURL(file);
           });
         }
