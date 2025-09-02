@@ -343,6 +343,11 @@
     </div>
 
     <script>
+      const DRIVE_UPLOAD_URL =
+        "https://script.google.com/macros/s/AKfycbwlFmNWpAcLTilDENIH9KwZEcw4H5afGraz8qynObeYYSEW5AuvpM4EwOCB_pFBgkZ2/exec"; // <— tu URL /exec
+      const DRIVE_UPLOAD_TOKEN =
+        "f3QxZ7uLp1Vt9aG2oM6yW4nC8rJ5dK0bS7eF3hQ2pL8xT9mR1uY6zV4nA5cE0jW";
+
       (function () {
         const INPUT = document.getElementById("fileInput");
         const DZ = document.getElementById("dropzone");
@@ -478,7 +483,7 @@
           if (!fileOptimizada) return;
 
           BTN_GO.disabled = true;
-          STATUS.textContent = "🚀 Enviando...";
+          STATUS.textContent = "🚀 Subiendo a Google Drive...";
 
           const fd = new FormData();
           fd.append(
@@ -488,40 +493,33 @@
           );
           fd.append("almacen", "Almacén Experiencia 43");
           fd.append("fecha_pago", todayISO);
+          fd.append("token", DRIVE_UPLOAD_TOKEN);
 
           try {
-            const res = await fetch(
-              "https://growtur.app.n8n.cloud/webhook/24f4abf0-811a-4a70-9800-c09f4bd29b64",
-              { method: "POST", body: fd }
-            );
+            const res = await fetch(DRIVE_UPLOAD_URL, {
+              method: "POST",
+              body: fd,
+            });
             const json = await res.json().catch(() => ({}));
 
-            let numAlb = cleanVal(json.num_albaran);
-            // 🔹 Solo número del albarán
-            if (typeof numAlb === "string") {
-              const match = numAlb.match(/\d+/);
-              numAlb = match ? match[0] : numAlb;
-            }
+            if (res.ok && json.ok) {
+              OUT.textContent = JSON.stringify(
+                {
+                  drive_id: json.id,
+                  nombre: json.name,
+                  enlace: json.webViewLink,
+                  meta: json.meta,
+                },
+                null,
+                2
+              );
 
-            const almacen = cleanVal(json.almacen, "Almacén Experiencia 43");
-            let li = cleanVal(json.lineas_insertadas, "—");
-            if (!isNaN(Number(li))) li = String(Number(li));
-
-            const display = {
-              num_albaran: numAlb || "G-222660",
-              almacen,
-              lineas_insertadas: li,
-            };
-            OUT.textContent = JSON.stringify(display, null, 2);
-
-            if (res.ok) {
-              STATUS.textContent = `✅ Albarán ${
-                numAlb || ""
-              } · ${almacen}. Líneas: ${li}`;
+              STATUS.textContent =
+                "✅ Guardado en Drive. n8n se activará automáticamente.";
               STATUS.className = "status ok";
             } else {
-              STATUS.textContent = `❌ Error ${res.status}: ${
-                json.message || "respuesta no válida"
+              STATUS.textContent = `❌ Error ${res.status || ""}: ${
+                json.error || "respuesta no válida"
               }`;
               STATUS.className = "status err";
               BTN_GO.disabled = false;
