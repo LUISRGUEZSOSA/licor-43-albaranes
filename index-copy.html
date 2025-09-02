@@ -224,6 +224,7 @@
         }
       }
       /* Footer de marca fuera de la card derecha */
+      /* Footer de marca fuera de la card derecha */
       .brand-footer {
         grid-column: 1 / -1;
         display: flex;
@@ -234,11 +235,11 @@
       }
 
       .brand-footer img {
-        height: clamp(56px, 8vw, 88px);
+        height: clamp(56px, 8vw, 88px); /* más pequeño */
         width: auto;
-        border: none;
-        box-shadow: none;
-        border-radius: 0;
+        border: none; /* sin marco */
+        box-shadow: none; /* sin sombra ni borde interior */
+        border-radius: 0; /* sin esquinas redondeadas */
         background: transparent;
       }
     </style>
@@ -262,17 +263,20 @@
         </div>
         <div class="pill" id="pillFecha">💳 Fecha de pago: <b></b></div>
 
-        <!-- Zona de arrastre/soltar + inputs separados -->
+        <!-- Zona de arrastre/soltar + input file -->
         <label
           class="dz"
           id="dropzone"
           tabindex="0"
           aria-label="Sube o arrastra una imagen del albarán"
         >
-          <!-- Inputs separados para máxima compatibilidad móvil -->
-          <input id="fileCamera" type="file" accept="image/*" capture="environment" style="display:none" />
-          <input id="filePicker" type="file" accept="image/*" style="display:none" />
-
+          <input
+            id="fileInput"
+            type="file"
+            name="data"
+            accept="image/*"
+            capture="environment"
+          />
           <div>
             <div style="font-weight: 800; font-size: 1.05rem">
               Suelta una imagen aquí
@@ -281,10 +285,10 @@
           </div>
           <div class="cta">
             <button type="button" class="btn" id="btnCam">
-              📷 Hacer foto
+              📷 Abrir cámara
             </button>
             <button type="button" class="btn sec" id="btnExplorar">
-              🖼️ Subir imagen
+              🖼️ Elegir imagen
             </button>
           </div>
         </label>
@@ -341,8 +345,7 @@
         "https://growtur.app.n8n.cloud/webhook/upload-image"; // tu URL prod
 
       (function () {
-        const INPUT_CAM = document.getElementById("fileCamera");
-        const INPUT_PICK = document.getElementById("filePicker");
+        const INPUT = document.getElementById("fileInput");
         const DZ = document.getElementById("dropzone");
         const BTN_CAM = document.getElementById("btnCam");
         const BTN_EX = document.getElementById("btnExplorar");
@@ -363,21 +366,15 @@
         let fileOriginal = null;
         let fileOptimizada = null;
 
-        // Botones → cada uno abre su input correspondiente
-        BTN_CAM.addEventListener("click", () => INPUT_CAM.click());
-        BTN_EX.addEventListener("click", () => INPUT_PICK.click());
-
-        // Lectura de archivos
-        INPUT_CAM.addEventListener("change", () => {
-          const f = INPUT_CAM.files?.[0];
-          if (f) handleFile(f);
-          INPUT_CAM.value = "";
-        });
-        INPUT_PICK.addEventListener("change", () => {
-          const f = INPUT_PICK.files?.[0];
-          if (f) handleFile(f);
-          INPUT_PICK.value = "";
-        });
+        // Acciones UI
+        BTN_CAM.addEventListener(
+          "click",
+          () => INPUT.setAttribute("capture", "environment") || INPUT.click()
+        );
+        BTN_EX.addEventListener(
+          "click",
+          () => INPUT.removeAttribute("capture") || INPUT.click()
+        );
 
         // Drag & Drop
         ["dragenter", "dragover"].forEach((ev) =>
@@ -402,6 +399,12 @@
         );
         DZ.addEventListener("drop", (e) => {
           const f = e.dataTransfer?.files?.[0];
+          if (f) handleFile(f);
+        });
+
+        // Input file
+        INPUT.addEventListener("change", () => {
+          const f = INPUT.files?.[0];
           if (f) handleFile(f);
         });
 
@@ -456,9 +459,7 @@
           }
           fileOriginal = null;
           fileOptimizada = null;
-          // Limpiamos ambos inputs por si acaso
-          if (INPUT_CAM) INPUT_CAM.value = "";
-          if (INPUT_PICK) INPUT_PICK.value = "";
+          INPUT.value = "";
         }
 
         // 🔧 Limpia valores que puedan venir con "=" desde n8n
