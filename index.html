@@ -343,10 +343,8 @@
     </div>
 
     <script>
-      const DRIVE_UPLOAD_URL =
-        "https://script.google.com/macros/s/AKfycbwlFmNWpAcLTilDENIH9KwZEcw4H5afGraz8qynObeYYSEW5AuvpM4EwOCB_pFBgkZ2/exec"; // <— tu URL /exec
-      const DRIVE_UPLOAD_TOKEN =
-        "f3QxZ7uLp1Vt9aG2oM6yW4nC8rJ5dK0bS7eF3hQ2pL8xT9mR1uY6zV4nA5cE0jW";
+      const N8N_UPLOAD_URL =
+        "https://growtur.app.n8n.cloud/webhook/upload-image"; // tu URL prod
 
       (function () {
         const INPUT = document.getElementById("fileInput");
@@ -483,23 +481,35 @@
           if (!fileOptimizada) return;
 
           BTN_GO.disabled = true;
-          STATUS.textContent = "🚀 Subiendo a Google Drive...";
+          STATUS.textContent = "🚀 Subiendo imagen...";
 
-          const fd = new FormData();
-          fd.append(
-            "data",
-            fileOptimizada,
-            fileOptimizada.name || "albaran.jpg"
+          // Sugerencia: nombre limpio + timestamp
+          const ts = new Date()
+            .toISOString()
+            .replace(/[-:T.Z]/g, "")
+            .slice(0, 14); // yyyyMMddHHmmss
+          const safeName = (fileOptimizada.name || "albaran.jpg").replace(
+            /\s+/g,
+            "_"
           );
+          const finalName = `${ts}_${safeName}`;
+
+          // Importante: el Webhook espera el binario en el campo "data"
+          const fd = new FormData();
+          fd.append("data", fileOptimizada, finalName);
+
+          // Puedes seguir enviando metadatos; si los quieres usar en n8n, añade un "Set" antes de subir
           fd.append("almacen", "Almacén Experiencia 43");
           fd.append("fecha_pago", todayISO);
-          fd.append("token", DRIVE_UPLOAD_TOKEN);
+          fd.append("filename", finalName); // así lo mapeas fácil en n8n si quieres
 
           try {
-            const res = await fetch(DRIVE_UPLOAD_URL, {
+            const res = await fetch(N8N_UPLOAD_URL, {
               method: "POST",
               body: fd,
             });
+
+            // Tu workflow responde con JSON { ok, id, name, webViewLink }
             const json = await res.json().catch(() => ({}));
 
             if (res.ok && json.ok) {
@@ -508,15 +518,15 @@
                   drive_id: json.id,
                   nombre: json.name,
                   enlace: json.webViewLink,
-                  meta: json.meta,
                 },
                 null,
                 2
               );
 
               STATUS.textContent =
-                "✅ Guardado en Drive. n8n se activará automáticamente.";
+                "✅ Subida correcta. El trigger de Drive ya podrá procesarla.";
               STATUS.className = "status ok";
+              BTN_RS.disabled = false;
             } else {
               STATUS.textContent = `❌ Error ${res.status || ""}: ${
                 json.error || "respuesta no válida"
