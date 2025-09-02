@@ -303,9 +303,7 @@
             >
             <div class="status" id="status"></div>
             <div class="cta">
-              <button class="btn" id="btnEnviar" disabled>
-                📤 Enviar a n8n
-              </button>
+              <button class="btn" id="btnEnviar" disabled>📤 Enviar</button>
               <button class="btn sec" id="btnReset" disabled>♺ Limpiar</button>
             </div>
           </div>
@@ -523,8 +521,7 @@
                 2
               );
 
-              STATUS.textContent =
-                "✅ Subida correcta. El trigger de Drive ya podrá procesarla.";
+              STATUS.textContent = "✅ Subida correcta";
               STATUS.className = "status ok";
               BTN_RS.disabled = false;
             } else {
