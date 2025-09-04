@@ -231,6 +231,8 @@
         align-items: center;
         margin-top: 12px;
         opacity: 0.95;
+        /*padding: 60px 0;*/
+        padding-block: clamp(20px, 8vw, 60px);
       }
 
       .brand-footer img {
@@ -241,13 +243,128 @@
         border-radius: 0;
         background: transparent;
       }
+
+      /*PATCH PARA ASEGURAR RESPONSIVIDAD*/
+      /* 1) Padding global responsive */
+      body {
+        /* antes: padding: 24px; */
+        padding: clamp(16px, 4vw, 24px);
+      }
+
+      /* 2) Vista previa más flexible */
+      .preview {
+        /* en móviles muy estrechos, apilar */
+        grid-template-columns: 1fr;
+      }
+      @media (min-width: 380px) {
+        .preview {
+          /* miniatura más adaptable que un fijo a 110px */
+          grid-template-columns: minmax(80px, 110px) 1fr;
+        }
+      }
+
+      /* 3) Miniatura adaptable */
+      .ph {
+        /* antes: width: 110px; */
+        width: clamp(80px, 28vw, 110px);
+      }
+
+      /* 4) Elipsis para nombres de archivo largos */
+      #fileName {
+        max-width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      /* 5) Dropzone con padding responsive */
+      .dz {
+        /* antes: padding: 22px; */
+        padding: clamp(14px, 4.5vw, 24px);
+      }
+
+      /* 6) Footer general con tipografía levemente responsive */
+      footer {
+        font-size: clamp(0.82rem, 1.8vw, 0.9rem);
+      }
+
+      /* 7) Botones: sin hover “saltón” en pantallas táctiles */
+      @media (hover: none) {
+        .btn:hover {
+          transform: none;
+          filter: none;
+        }
+      }
+
+      /* 8) Respetar usuarios con reduce motion */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          transition: none !important;
+          animation: none !important;
+          scroll-behavior: auto !important;
+        }
+      }
+
+      /* 9) Ajustes de layout en pantallas muy anchas (opcional, más aire) */
+      @media (min-width: 1200px) {
+        .wrap {
+          gap: clamp(20px, 2vw, 32px);
+        }
+      }
+
+      /*AIRE LATERAL A LOS BLOQUES */
+      /* === PATCH: más aire lateral en bloques (excepto logo del footer),
+   reducir ancho de la columna izquierda (card grid) y separar más entre columnas === */
+
+      /* 1) Márgenes laterales a todos los bloques dentro de .wrap excepto el logo del footer */
+      .wrap > :not(.brand-footer) {
+        margin-inline: clamp(12px, 5vw, 40px);
+      }
+
+      /* 2) Un poco más de aire vertical entre bloques apilados en móvil */
+      .wrap {
+        row-gap: clamp(18px, 4vw, 28px);
+      }
+
+      /* 3) Desktop: reducir ancho de la columna izquierda (card grid) y aumentar la separación entre columnas */
+      @media (min-width: 860px) {
+        .wrap {
+          /* antes: 420px 1fr */
+          grid-template-columns: 360px 1fr;
+          column-gap: clamp(24px, 4.5vw, 48px);
+          row-gap: clamp(18px, 3vw, 28px);
+        }
+        /* pequeño acolchado entre la columna derecha y el borde interno */
+        .right {
+          padding-left: clamp(6px, 1vw, 12px);
+        }
+      }
+
+      /* 4) Asegurar que el logo del footer siga a ancho completo sin márgenes laterales añadidos */
+      .brand-footer {
+        margin-inline: 0;
+      }
+      /* Caja de versión bajo el footer */
+.version-box {
+  grid-column: 1 / -1;
+  text-align: center;
+  background: #0b1223; /* azul marino consistente con la paleta */
+  color: var(--text);
+  font-size: clamp(0.8rem, 1.8vw, 0.9rem);
+  font-weight: 500;
+  border-radius: 12px;
+  padding: clamp(10px, 3vw, 14px) clamp(12px, 4vw, 20px);
+  margin-top: 8px;
+  opacity: 0.85;
+}
+
     </style>
   </head>
   <body>
     <div class="wrap">
       <header class="card">
         <div class="logo" aria-hidden="true"></div>
-        <div>
+        <div class="agente">
           <h1>Agente IA · Escáner de Albaranes</h1>
           <div class="hint">
             Sube una foto nítida del documento o usa la cámara del móvil.
@@ -260,7 +377,7 @@
         <div class="pill" title="Almacén usado en el envío">
           🏬 <span>Almacén:</span> <b>Almacén Experiencia 43</b>
         </div>
-        <div class="pill" id="pillFecha">💳 Fecha de pago: <b></b></div>
+        <div class="pill" id="pillFecha">💳 Fecha de entrega: <b></b></div>
 
         <!-- Zona de arrastre/soltar + inputs separados -->
         <label
@@ -270,8 +387,19 @@
           aria-label="Sube o arrastra una imagen del albarán"
         >
           <!-- Inputs separados para máxima compatibilidad móvil -->
-          <input id="fileCamera" type="file" accept="image/*" capture="environment" style="display:none" />
-          <input id="filePicker" type="file" accept="image/*" style="display:none" />
+          <input
+            id="fileCamera"
+            type="file"
+            accept="image/*"
+            capture="environment"
+            style="display: none"
+          />
+          <input
+            id="filePicker"
+            type="file"
+            accept="image/*"
+            style="display: none"
+          />
 
           <div>
             <div style="font-weight: 800; font-size: 1.05rem">
@@ -280,9 +408,7 @@
             <div class="hint">o usa los botones de abajo</div>
           </div>
           <div class="cta">
-            <button type="button" class="btn" id="btnCam">
-              📷 Hacer foto
-            </button>
+            <button type="button" class="btn" id="btnCam">📷 Hacer foto</button>
             <button type="button" class="btn sec" id="btnExplorar">
               🖼️ Subir imagen
             </button>
@@ -326,13 +452,16 @@
         ></pre>
         <footer style="margin-top: 10px">
           <div>
-            Consejo: fotografía el albarán perpendicular, bien iluminado y
-            ocupando toda la imagen.
+            Consejo: fotografía nítida, buena iluminación y albarán ocupando
+            toda la imagen.
           </div>
         </footer>
       </section>
       <div class="brand-footer">
         <img src="bygrowtur.png" alt="Licor 43" loading="lazy" />
+      </div>
+      <div class="version-box">
+        Agente IA · Escáner de Albaranes versión&nbsp;1.0
       </div>
     </div>
 
