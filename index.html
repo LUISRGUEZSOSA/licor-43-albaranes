@@ -358,6 +358,31 @@
   opacity: 0.85;
 }
 
+
+/* --- Patch: logo más pequeño y texto más cercano --- */
+
+/* 1) Logo del footer ligeramente más pequeño en móviles/tablets */
+.brand-footer img {
+  /* antes: clamp(40px, 12vw, 72px) */
+  height: clamp(36px, 10vw, 64px);
+}
+
+/* 2) Footer: menos padding debajo del logo para acercar el box */
+.brand-footer {
+  /* mantenemos aire arriba y compactamos abajo */
+  padding-block-start: clamp(16px, 6vw, 48px);
+  padding-block-end: clamp(6px, 2.5vw, 12px);
+}
+
+/* 3) Caja de versión: aún más cerca y compacta */
+.version-box {
+  margin-top: 1px; /* antes: 4px */
+  padding-block: clamp(4px, 1.6vw, 8px);
+  padding-inline: clamp(10px, 3vw, 16px);
+}
+.brand-footer {
+  padding-block-end: 0; /* antes tenía más aire */
+}
     </style>
   </head>
   <body>
