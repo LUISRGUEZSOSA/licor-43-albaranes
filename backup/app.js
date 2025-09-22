@@ -1,7 +1,4 @@
-const N8N_UPLOAD_URL =
-  "https://growtur.app.n8n.cloud/webhook-test/upload-image"; // tu URL prod o Test
-const N8N_CONFIRM_DATA =
-  "https://growtur.app.n8n.cloud/webhook-test/confirm-mapping";
+const N8N_UPLOAD_URL = "https://growtur.app.n8n.cloud/webhook/upload-image"; // tu URL prod
 
 //helpers pdf
 function isImageFile(f) {
@@ -212,9 +209,7 @@ function isPdfFile(f) {
       const json = await res.json().catch(() => ({}));
 
       if (res.ok) {
-        OUT.textContent =
-          "Tu albarán ha sido procesado correctamente\n\n" +
-          JSON.stringify(json, null, 2);
+        OUT.textContent = "Tu albarán ha sido procesado correctamente";
         STATUS.textContent = "✅ Subida correctamente";
         STATUS.className = "status ok";
         BTN_RS.disabled = false;
