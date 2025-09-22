@@ -271,6 +271,51 @@ function isPdfFile(f) {
     }
   }
   BTN_CONFIRM_JSON.addEventListener("click", confirmarJson);
+  // Quita líneas duplicadas de un texto (por si n8n responde 1 línea por item)
+  function collapseDuplicateLines(text) {
+    const lines = String(text || "")
+      .split(/\r?\n/)
+      .map((l) => l.trim())
+      .filter(Boolean);
+
+    const seen = new Set();
+    const uniq = [];
+    for (const l of lines) {
+      if (!seen.has(l)) {
+        seen.add(l);
+        uniq.push(l);
+      }
+    }
+    return uniq.join("\n");
+  }
+
+  // Muestra la respuesta del webhook en la zona de productos y recarga
+  function showResponseInReviewAndReload(text, delayMs = 2500) {
+    let pretty = text || "";
+    // Si viniera JSON, prettify (no suele ser tu caso, es text/plain)
+    try {
+      const obj = JSON.parse(pretty);
+      pretty = JSON.stringify(obj, null, 2);
+    } catch (_) {}
+
+    OCR_REVIEW.hidden = false;
+    OCR_LIST.innerHTML = `
+    <pre style="
+      white-space: pre-wrap;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px;
+      padding: 12px;
+      margin: 0;
+      overflow:auto;
+      max-height: 50vh;
+    ">${pretty}</pre>
+  `;
+    OCR_STATUS.textContent = "🔄 Refrescando...";
+    OCR_REVIEW.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    setTimeout(() => location.reload(), delayMs);
+  }
 
   async function confirmarJson() {
     if (!lastServerJson) return;
@@ -294,6 +339,12 @@ function isPdfFile(f) {
       if (res.ok) {
         STATUS.textContent = "✅ Confirmación enviada";
         STATUS.className = "status ok";
+
+        // n8n pudo responder texto repetido (1 por item) -> deduplicamos
+        const clean = collapseDuplicateLines(confirmText || "");
+
+        // Mostrar en la sección de productos y refrescar
+        showResponseInReviewAndReload(clean, 2500);
       } else {
         STATUS.textContent = `❌ Error al confirmar ${res.status || ""}`;
         STATUS.className = "status err";
@@ -371,6 +422,36 @@ function isPdfFile(f) {
       } catch (_) {}
     }
 
+    // Muestra la respuesta del webhook en la zona de productos y recarga
+    function showResponseInReviewAndReload(text, delayMs = 2500) {
+      // Intentamos pretty-print si por casualidad viniera JSON
+      let pretty = text || "";
+      try {
+        const obj = JSON.parse(text);
+        pretty = JSON.stringify(obj, null, 2);
+      } catch (_) {
+        // no era JSON -> dejamos tal cual
+      }
+
+      OCR_REVIEW.hidden = false;
+      OCR_LIST.innerHTML = `
+    <pre style="
+      white-space: pre-wrap;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px;
+      padding: 12px;
+      margin: 0;
+      overflow:auto;
+      max-height: 50vh;
+    ">${pretty}</pre>
+  `;
+      OCR_STATUS.textContent = "🔄 Refrescando...";
+      OCR_REVIEW.scrollIntoView({ behavior: "smooth", block: "start" });
+
+      setTimeout(() => location.reload(), delayMs);
+    }
+
     // Caso con "Array:" -> intentamos recortar desde el primer "[" hasta el último "]"
     const first = text.indexOf("[");
     const last = text.lastIndexOf("]");
@@ -379,6 +460,36 @@ function isPdfFile(f) {
       try {
         return JSON.parse(inner);
       } catch (_) {}
+    }
+
+    // Muestra la respuesta del webhook en la zona de productos y recarga
+    function showResponseInReviewAndReload(text, delayMs = 2500) {
+      // Intenta pretty-print si viene JSON
+      let pretty = text;
+      try {
+        const obj = JSON.parse(text);
+        pretty = JSON.stringify(obj, null, 2);
+      } catch (_) {
+        // no era JSON -> dejamos tal cual
+      }
+
+      OCR_REVIEW.hidden = false;
+      OCR_LIST.innerHTML = `
+    <pre style="
+      white-space: pre-wrap;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px;
+      padding: 12px;
+      margin: 0;
+      overflow:auto;
+      max-height: 50vh;
+    ">${pretty}</pre>
+  `;
+      OCR_STATUS.textContent = "🔄 Refrescando...";
+      OCR_REVIEW.scrollIntoView({ behavior: "smooth", block: "start" });
+
+      setTimeout(() => location.reload(), delayMs);
     }
 
     // Último intento: quitar "Array:" y volver a probar
@@ -525,8 +636,6 @@ function isPdfFile(f) {
     });
 
     refreshConfirmEnable();
-
-
   }
 
   function setSeleccionForLine(lineIdx, value) {
@@ -565,5 +674,4 @@ function isPdfFile(f) {
       : "Selecciona una opción para cada línea.";
     OCR_STATUS.className = ready ? "status ok" : "status";
   }
-
 })();
