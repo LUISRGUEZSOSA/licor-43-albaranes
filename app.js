@@ -1,7 +1,6 @@
-const N8N_UPLOAD_URL =
-  "https://growtur.app.n8n.cloud/webhook-test/upload-image"; // tu URL prod o Test
+const N8N_UPLOAD_URL = "https://growtur.app.n8n.cloud/webhook/upload-image";
 const N8N_CONFIRM_DATA =
-  "https://growtur.app.n8n.cloud/webhook-test/confirm-mapping";
+  "https://growtur.app.n8n.cloud/webhook/confirm-mapping";
 
 //helpers pdf
 function isImageFile(f) {
@@ -33,7 +32,6 @@ function isPdfFile(f) {
   // Revisión de conceptos (nueva UI)
   const OCR_REVIEW = document.getElementById("ocrReview");
   const OCR_LIST = document.getElementById("ocrList");
-  const BTN_CONFIRMAR_MAP = document.getElementById("btnConfirmar");
   const OCR_STATUS = document.getElementById("ocrStatus");
 
   // Fecha de pago = hoy (ISO yyyy-mm-dd)
@@ -178,7 +176,8 @@ function isPdfFile(f) {
     OCR_LIST.innerHTML = "";
     OCR_STATUS.textContent = "";
     OCR_REVIEW.hidden = true;
-    BTN_CONFIRMAR_MAP.disabled = true;
+
+    BTN_CONFIRM_JSON.classList.remove("sec"); // vuelve a amarillo
   }
 
   // 🔧 Limpia valores que puedan venir con "=" desde n8n
@@ -277,6 +276,8 @@ function isPdfFile(f) {
     if (!lastServerJson) return;
 
     BTN_CONFIRM_JSON.disabled = true;
+    BTN_CONFIRM_JSON.classList.add("sec"); // cambia a oscuro al enviar
+
     STATUS.textContent = "🔁 Enviando confirmación...";
 
     try {
@@ -525,13 +526,7 @@ function isPdfFile(f) {
 
     refreshConfirmEnable();
 
-    // Confirmar selección → habilita el envío final
-    BTN_CONFIRMAR_MAP.onclick = () => {
-      OCR_STATUS.textContent =
-        "✅ Selección registrada. Puedes confirmar el envío.";
-      OCR_STATUS.className = "status ok";
-      BTN_CONFIRM_JSON.disabled = false;
-    };
+
   }
 
   function setSeleccionForLine(lineIdx, value) {
@@ -564,10 +559,11 @@ function isPdfFile(f) {
 
   function refreshConfirmEnable() {
     const ready = allLinesSelected();
-    BTN_CONFIRMAR_MAP.disabled = !ready;
+    BTN_CONFIRM_JSON.disabled = !ready;
     OCR_STATUS.textContent = ready
-      ? "Listo para confirmar."
+      ? "Listo para enviar."
       : "Selecciona una opción para cada línea.";
     OCR_STATUS.className = ready ? "status ok" : "status";
   }
+
 })();

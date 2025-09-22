@@ -363,3 +363,13 @@ footer {
   outline: 2px solid #6ee7b7; /* verde sutil */
   outline-offset: 2px;
 }
+
+/* Que la sección de productos ocupe todo el ancho en la grid de .wrap */
+#ocrReview { grid-column: 1 / -1; }
+
+/* En móvil, colocar el select debajo de la descripción y estirar */
+@media (max-width: 679px) {
+  .row { grid-template-columns: 1fr; }
+  .cell.map { justify-content: stretch; }
+  .map-select { max-width: 100%; }
+}
