@@ -83,68 +83,24 @@
         </div>
       </section>
       <!-- Revisión de conceptos extraídos por OCR -->
-      <section id="ocrReview" class="card" hidden>
-        <h3 style="margin: 0 0 8px 0">Revisa y elige el concepto</h3>
-        <p class="hint" style="margin-top: 0">
-          Verifica cada línea y elige el <b>nombre</b> correcto.
-        </p>
+<section id="ocrReview" class="card" hidden>
+  <h3 style="margin: 0 0 8px 0">Revisa y elige el concepto</h3>
+  <p class="hint" style="margin-top: 0">
+    Verifica cada línea y elige el <b>nombre</b> correcto.
+  </p>
 
-        <div class="table-like" id="ocrList">
-          <!-- Filas generadas por JS -->
-          <!--
-      Estructura de cada fila:
-      <div class="row">
-        <div class="cell desc">METRO Chef huevo liquido botella 1 L</div>
-        <div class="cell map">
-          <select class="map-select">
-            <option value="">— Selecciona —</option>
-            <option value="HUEVO">HUEVO</option>
-            ...
-          </select>
-        </div>
-      </div>
-    -->
-        </div>
+  <div class="table-like" id="ocrList"></div>
 
-        <div class="cta" style="margin-top: 12px">
-          <button class="btn" id="btnConfirmar" disabled>
-            ✅ Confirmar selección
-          </button>
-        </div>
+    <div class="cta" style="margin-top: 12px; gap: 8px; display: flex; flex-wrap: wrap">
+    <button class="btn" id="btnConfirmarJson" disabled>
+      ✅ Confirmar envío
+    </button>
+  </div>
 
-        <div id="ocrStatus" class="status" style="margin-top: 8px"></div>
-      </section>
 
-      <!-- Detalles del envío / respuesta -->
-      <section class="card right">
-        <div class="hint" style="margin-bottom: 8px">
-          Respuesta del servidor
-        </div>
-        <pre
-          id="out"
-          style="
-            margin: 0;
-            max-height: 280px;
-            overflow: auto;
-            background: #030712;
-            border: 1px solid #ffffff1a;
-            border-radius: 12px;
-            padding: 14px;
-            color: #d1d5db;
-          "
-        ></pre>
-        <div class="cta" style="margin-top: 10px">
-          <button class="btn" id="btnConfirmarJson" disabled>
-            ✅ Confirmar envío
-          </button>
-        </div>
-        <footer style="margin-top: 10px">
-          <div>
-            Consejo: fotografía nítida, buena iluminación y albarán ocupando
-            toda la imagen.
-          </div>
-        </footer>
-      </section>
+  <div id="ocrStatus" class="status" style="margin-top: 8px"></div>
+</section>
+
 
       <div class="brand-footer">
         <img src="bygrowtur.png" alt="Licor 43" loading="lazy" />

@@ -39,7 +39,6 @@ function isPdfFile(f) {
   PILL_F.textContent = todayISO;
 
   // Estado local
-  let fileOriginal = null;
   let fileOptimizada = null;
   let lastServerJson = null;
   let reviewDocIndex = 0; // índice del documento si backend devuelve array
@@ -90,7 +89,6 @@ function isPdfFile(f) {
 
   async function handleFile(f) {
     resetUI(false);
-    fileOriginal = f;
     FILE_N.textContent = f.name || "imagen";
     FILE_I.textContent = `${(f.size / 1024 / 1024).toFixed(2)} MB · ${
       f.type || "image/*"
@@ -104,7 +102,6 @@ function isPdfFile(f) {
       img.src = url;
       THUMB.appendChild(img);
     } else if (isPdfFile(f)) {
-      // Previsualización simple para PDF (píldora). Si quieres, podrías usar <embed>, pero mantiene esto ligero.
       const pill = document.createElement("div");
       pill.textContent = "📄 PDF listo";
       pill.style.display = "grid";
@@ -134,7 +131,6 @@ function isPdfFile(f) {
           1024
         ).toFixed(2)} MB)`;
       } else if (isPdfFile(f)) {
-        // Para PDF no hay optimización: se sube tal cual.
         fileOptimizada = f;
         STATUS.textContent = "✅ PDF listo";
       } else {
@@ -164,8 +160,8 @@ function isPdfFile(f) {
       FILE_N.textContent = "—";
       FILE_I.textContent = "Max 10MB · Se optimiza antes de enviar";
     }
-    fileOriginal = null;
     fileOptimizada = null;
+
     // Limpiamos ambos inputs por si acaso
     if (INPUT_CAM) INPUT_CAM.value = "";
     if (INPUT_PICK) INPUT_PICK.value = "";
@@ -214,10 +210,10 @@ function isPdfFile(f) {
     const fd = new FormData();
     fd.append("data", fileOptimizada, finalName);
 
-    // Puedes seguir enviando metadatos; si los quieres usar en n8n, añade un "Set" antes de subir
+    // Metadatos opcionales
     fd.append("almacen", "Almacén Experiencia 43");
     fd.append("fecha_pago", todayISO);
-    fd.append("filename", finalName); // así lo mapeas fácil en n8n si quieres
+    fd.append("filename", finalName);
 
     try {
       const res = await fetch(N8N_UPLOAD_URL, { method: "POST", body: fd });
@@ -252,9 +248,7 @@ function isPdfFile(f) {
         STATUS.textContent = "✅ Subida correctamente";
         STATUS.className = "status ok";
         BTN_RS.disabled = false;
-        // no habilites BTN_CONFIRM_JSON aquí: lo hace la confirmación de selección
       } else {
-        const text = await res.text().catch(() => ""); // ← sólo en error
         STATUS.textContent = `❌ Error ${res.status || ""}`;
         STATUS.className = "status err";
         BTN_GO.disabled = false;
@@ -265,12 +259,14 @@ function isPdfFile(f) {
       console.error(err);
       STATUS.textContent = "❌ Error de red. Intenta de nuevo.";
       STATUS.className = "status err";
-      BTN_GO.disabled = true ? false : false; // no tocar, lo dejas como lo tenías
+      BTN_GO.disabled = false;
       BTN_CONFIRM_JSON.disabled = true;
       lastServerJson = null;
     }
   }
+
   BTN_CONFIRM_JSON.addEventListener("click", confirmarJson);
+
   // Quita líneas duplicadas de un texto (por si n8n responde 1 línea por item)
   function collapseDuplicateLines(text) {
     const lines = String(text || "")
@@ -410,6 +406,7 @@ function isPdfFile(f) {
       fr.readAsDataURL(file);
     });
   }
+
   // Intenta extraer un JSON válido de una cadena que puede venir con "Array:" u otro ruido
   function safeParsePossiblyWrappedArray(text) {
     if (!text || typeof text !== "string") return null;
@@ -422,36 +419,6 @@ function isPdfFile(f) {
       } catch (_) {}
     }
 
-    // Muestra la respuesta del webhook en la zona de productos y recarga
-    function showResponseInReviewAndReload(text, delayMs = 2500) {
-      // Intentamos pretty-print si por casualidad viniera JSON
-      let pretty = text || "";
-      try {
-        const obj = JSON.parse(text);
-        pretty = JSON.stringify(obj, null, 2);
-      } catch (_) {
-        // no era JSON -> dejamos tal cual
-      }
-
-      OCR_REVIEW.hidden = false;
-      OCR_LIST.innerHTML = `
-    <pre style="
-      white-space: pre-wrap;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 10px;
-      padding: 12px;
-      margin: 0;
-      overflow:auto;
-      max-height: 50vh;
-    ">${pretty}</pre>
-  `;
-      OCR_STATUS.textContent = "🔄 Refrescando...";
-      OCR_REVIEW.scrollIntoView({ behavior: "smooth", block: "start" });
-
-      setTimeout(() => location.reload(), delayMs);
-    }
-
     // Caso con "Array:" -> intentamos recortar desde el primer "[" hasta el último "]"
     const first = text.indexOf("[");
     const last = text.lastIndexOf("]");
@@ -460,36 +427,6 @@ function isPdfFile(f) {
       try {
         return JSON.parse(inner);
       } catch (_) {}
-    }
-
-    // Muestra la respuesta del webhook en la zona de productos y recarga
-    function showResponseInReviewAndReload(text, delayMs = 2500) {
-      // Intenta pretty-print si viene JSON
-      let pretty = text;
-      try {
-        const obj = JSON.parse(text);
-        pretty = JSON.stringify(obj, null, 2);
-      } catch (_) {
-        // no era JSON -> dejamos tal cual
-      }
-
-      OCR_REVIEW.hidden = false;
-      OCR_LIST.innerHTML = `
-    <pre style="
-      white-space: pre-wrap;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 10px;
-      padding: 12px;
-      margin: 0;
-      overflow:auto;
-      max-height: 50vh;
-    ">${pretty}</pre>
-  `;
-      OCR_STATUS.textContent = "🔄 Refrescando...";
-      OCR_REVIEW.scrollIntoView({ behavior: "smooth", block: "start" });
-
-      setTimeout(() => location.reload(), delayMs);
     }
 
     // Último intento: quitar "Array:" y volver a probar
@@ -538,7 +475,6 @@ function isPdfFile(f) {
   function tryInitOcrReview(data) {
     const probe = looksLikeMappingPayload(data);
     if (!probe.ok) {
-      // No es un payload de mapeo → permitimos envío directo
       BTN_CONFIRM_JSON.disabled = false;
       return;
     }
