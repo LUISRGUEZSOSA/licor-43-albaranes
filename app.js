@@ -23,13 +23,18 @@ function isPdfFile(f) {
   const BTN_GO = document.getElementById("btnEnviar");
   const BTN_RS = document.getElementById("btnReset");
   const STATUS = document.getElementById("status");
-  const OUT = document.getElementById("out");
   const BTN_CONFIRM_JSON = document.getElementById("btnConfirmarJson");
 
   const THUMB = document.getElementById("thumb");
   const FILE_N = document.getElementById("fileName");
   const FILE_I = document.getElementById("fileInfo");
   const PILL_F = document.getElementById("pillFecha").querySelector("b");
+
+  // Revisión de conceptos (nueva UI)
+  const OCR_REVIEW = document.getElementById("ocrReview");
+  const OCR_LIST = document.getElementById("ocrList");
+  const BTN_CONFIRMAR_MAP = document.getElementById("btnConfirmar");
+  const OCR_STATUS = document.getElementById("ocrStatus");
 
   // Fecha de pago = hoy (ISO yyyy-mm-dd)
   const todayISO = new Date().toISOString().slice(0, 10);
@@ -39,6 +44,7 @@ function isPdfFile(f) {
   let fileOriginal = null;
   let fileOptimizada = null;
   let lastServerJson = null;
+  let reviewDocIndex = 0; // índice del documento si backend devuelve array
 
   // Botones → cada uno abre su input correspondiente
   BTN_CAM.addEventListener("click", () => INPUT_CAM.click());
@@ -148,9 +154,10 @@ function isPdfFile(f) {
   }
 
   function resetUI(clearThumb = true) {
+    reviewDocIndex = 0;
+
     STATUS.textContent = "";
     STATUS.className = "status";
-    OUT.textContent = "";
     BTN_GO.disabled = true;
     BTN_RS.disabled = true;
 
@@ -165,8 +172,13 @@ function isPdfFile(f) {
     if (INPUT_CAM) INPUT_CAM.value = "";
     if (INPUT_PICK) INPUT_PICK.value = "";
 
-    BTN_CONFIRM_JSON.disabled = true; // ⬅️ NUEVO: al reset deshabilitamos el botón
-    lastServerJson = null; // ⬅️ NUEVO
+    BTN_CONFIRM_JSON.disabled = true;
+    lastServerJson = null;
+    // limpiar UI de revisión
+    OCR_LIST.innerHTML = "";
+    OCR_STATUS.textContent = "";
+    OCR_REVIEW.hidden = true;
+    BTN_CONFIRMAR_MAP.disabled = true;
   }
 
   // 🔧 Limpia valores que puedan venir con "=" desde n8n
@@ -209,29 +221,43 @@ function isPdfFile(f) {
     fd.append("filename", finalName); // así lo mapeas fácil en n8n si quieres
 
     try {
-      const res = await fetch(N8N_UPLOAD_URL, {
-        method: "POST",
-        body: fd,
-      });
-
-      // Tu workflow responde con JSON { ok, id, name, webViewLink }
-      const json = await res.json().catch(() => ({}));
+      const res = await fetch(N8N_UPLOAD_URL, { method: "POST", body: fd });
 
       if (res.ok) {
-        lastServerJson = json;
-        OUT.textContent =
-          "Tu albarán ha sido procesado correctamente\n\n" +
-          JSON.stringify(json, null, 2);
+        // 👇 Parseo robusto: JSON si es application/json; si no, intento desde texto
+        const contentType = (
+          res.headers.get("content-type") || ""
+        ).toLowerCase();
+        let payload = null;
+
+        if (contentType.includes("application/json")) {
+          payload = await res.json().catch(() => null);
+        } else {
+          const text = await res.text().catch(() => "");
+          payload = safeParsePossiblyWrappedArray(text);
+        }
+
+        // Si sigue sin parsear, no podemos renderizar
+        if (!payload) {
+          console.warn("No se pudo parsear la respuesta del webhook");
+          STATUS.textContent =
+            "⚠️ Respuesta no reconocida. No se pudo generar la revisión.";
+          STATUS.className = "status err";
+          BTN_RS.disabled = false;
+          return;
+        }
+
+        lastServerJson = payload;
+        tryInitOcrReview(payload); // si es payload de mapeo, muestra dropdowns
+
         STATUS.textContent = "✅ Subida correctamente";
         STATUS.className = "status ok";
         BTN_RS.disabled = false;
-        BTN_CONFIRM_JSON.disabled = false;
+        // no habilites BTN_CONFIRM_JSON aquí: lo hace la confirmación de selección
       } else {
-        // En error, mostramos información mínima para depurar
-        const text = await res.text().catch(() => "");
+        const text = await res.text().catch(() => ""); // ← sólo en error
         STATUS.textContent = `❌ Error ${res.status || ""}`;
         STATUS.className = "status err";
-        OUT.textContent = text || "Se produjo un error al procesar el albarán.";
         BTN_GO.disabled = false;
         BTN_CONFIRM_JSON.disabled = true;
         lastServerJson = null;
@@ -240,8 +266,7 @@ function isPdfFile(f) {
       console.error(err);
       STATUS.textContent = "❌ Error de red. Intenta de nuevo.";
       STATUS.className = "status err";
-      OUT.textContent = "No se pudo conectar con el servidor.";
-      BTN_GO.disabled = false;
+      BTN_GO.disabled = true ? false : false; // no tocar, lo dejas como lo tenías
       BTN_CONFIRM_JSON.disabled = true;
       lastServerJson = null;
     }
@@ -266,23 +291,17 @@ function isPdfFile(f) {
       const confirmText = await res.text();
 
       if (res.ok) {
-        OUT.textContent = confirmText; // ← muestra exactamente lo que devuelve el webhook
-
         STATUS.textContent = "✅ Confirmación enviada";
         STATUS.className = "status ok";
       } else {
-        const text = confirmText || (await res.text().catch(() => ""));
-
         STATUS.textContent = `❌ Error al confirmar ${res.status || ""}`;
         STATUS.className = "status err";
-        OUT.textContent = text || "No se pudo confirmar el mapeo.";
         BTN_CONFIRM_JSON.disabled = false;
       }
     } catch (err) {
       console.error(err);
       STATUS.textContent = "❌ Error de red al confirmar.";
       STATUS.className = "status err";
-      OUT.textContent = "No se pudo conectar con el servidor de confirmación.";
       BTN_CONFIRM_JSON.disabled = false;
     }
   }
@@ -338,5 +357,217 @@ function isPdfFile(f) {
 
       fr.readAsDataURL(file);
     });
+  }
+  // Intenta extraer un JSON válido de una cadena que puede venir con "Array:" u otro ruido
+  function safeParsePossiblyWrappedArray(text) {
+    if (!text || typeof text !== "string") return null;
+
+    // Caso simple: empieza por "[" o "{"
+    const trimmed = text.trim();
+    if (trimmed.startsWith("[") || trimmed.startsWith("{")) {
+      try {
+        return JSON.parse(trimmed);
+      } catch (_) {}
+    }
+
+    // Caso con "Array:" -> intentamos recortar desde el primer "[" hasta el último "]"
+    const first = text.indexOf("[");
+    const last = text.lastIndexOf("]");
+    if (first !== -1 && last !== -1 && last > first) {
+      const inner = text.slice(first, last + 1).trim();
+      try {
+        return JSON.parse(inner);
+      } catch (_) {}
+    }
+
+    // Último intento: quitar "Array:" y volver a probar
+    const cleaned = text.replace(/Array\s*:/g, "").trim();
+    if (cleaned.startsWith("[") || cleaned.startsWith("{")) {
+      try {
+        return JSON.parse(cleaned);
+      } catch (_) {}
+    }
+
+    return null;
+  }
+
+  function looksLikeMappingPayload(data) {
+    // Forma A: [{ lines: [...] }]
+    if (
+      Array.isArray(data) &&
+      data.length > 0 &&
+      data[0] &&
+      Array.isArray(data[0].lines)
+    ) {
+      return { ok: true, shape: "wrapped" };
+    }
+    // Forma B: [[ {...}, {...} ]]
+    if (
+      Array.isArray(data) &&
+      data.length > 0 &&
+      Array.isArray(data[0]) &&
+      data[0].length > 0 &&
+      typeof data[0][0] === "object"
+    ) {
+      return { ok: true, shape: "array0" };
+    }
+    // Forma C: [{...}, {...}]  (array plano de líneas)
+    if (
+      Array.isArray(data) &&
+      data.length > 0 &&
+      typeof data[0] === "object" &&
+      !Array.isArray(data[0])
+    ) {
+      return { ok: true, shape: "flat" };
+    }
+    return { ok: false, shape: null };
+  }
+
+  function tryInitOcrReview(data) {
+    const probe = looksLikeMappingPayload(data);
+    if (!probe.ok) {
+      // No es un payload de mapeo → permitimos envío directo
+      BTN_CONFIRM_JSON.disabled = false;
+      return;
+    }
+    reviewDocIndex = 0;
+    const lines = getLinesFromPayload(data);
+    renderOcrUI({ lines });
+  }
+
+  function getLinesFromPayload(data) {
+    const probe = looksLikeMappingPayload(data);
+    if (!probe.ok) return [];
+
+    if (probe.shape === "wrapped") {
+      return data[reviewDocIndex] && Array.isArray(data[reviewDocIndex].lines)
+        ? data[reviewDocIndex].lines
+        : [];
+    }
+    if (probe.shape === "array0") {
+      return Array.isArray(data[0]) ? data[0] : [];
+    }
+    if (probe.shape === "flat") {
+      return Array.isArray(data) ? data : [];
+    }
+    return [];
+  }
+
+  function renderOcrUI(doc) {
+    OCR_REVIEW.hidden = false;
+    OCR_LIST.innerHTML = "";
+    OCR_STATUS.textContent = "";
+
+    const lines = Array.isArray(doc.lines) ? doc.lines : [];
+    lines.forEach((ln, idx) => {
+      const row = document.createElement("div");
+      row.className = "row";
+
+      // descripción
+      const cDesc = document.createElement("div");
+      cDesc.className = "cell desc";
+      cDesc.textContent = cleanVal(ln.descripcion, "— sin descripción —");
+
+      // dropdown
+      const cMap = document.createElement("div");
+      cMap.className = "cell map";
+      const sel = document.createElement("select");
+      sel.className = "map-select";
+
+      // opciones desde nombre_map (preferente), fallback a opciones[].label
+      const fromNombreMap = Array.isArray(ln.nombre_map) ? ln.nombre_map : [];
+      let options = fromNombreMap.filter(
+        (v) => v != null && String(v).trim() !== ""
+      );
+      if (options.length === 0 && Array.isArray(ln.opciones)) {
+        options = ln.opciones
+          .map((o) => o?.label)
+          .filter((lab) => lab != null && String(lab).trim() !== "");
+      }
+
+      const currentSel = cleanVal(ln.seleccionado, "");
+      const hasMany = options.length > 1;
+
+      if (hasMany && !currentSel) {
+        const optPH = document.createElement("option");
+        optPH.value = "";
+        optPH.textContent = "— Selecciona —";
+        sel.appendChild(optPH);
+      }
+
+      options.forEach((label) => {
+        const opt = document.createElement("option");
+        opt.value = String(label);
+        opt.textContent = String(label);
+        sel.appendChild(opt);
+      });
+
+      // selección por defecto
+      if (currentSel && options.includes(currentSel)) {
+        sel.value = currentSel;
+      } else if (options.length === 1) {
+        sel.value = options[0] || "";
+        setSeleccionForLine(idx, sel.value);
+      } else {
+        sel.value = ""; // placeholder si existe o quedará vacío
+      }
+
+      sel.addEventListener("change", () => {
+        setSeleccionForLine(idx, sel.value);
+        refreshConfirmEnable();
+      });
+
+      cMap.appendChild(sel);
+      row.appendChild(cDesc);
+      row.appendChild(cMap);
+      OCR_LIST.appendChild(row);
+    });
+
+    refreshConfirmEnable();
+
+    // Confirmar selección → habilita el envío final
+    BTN_CONFIRMAR_MAP.onclick = () => {
+      OCR_STATUS.textContent =
+        "✅ Selección registrada. Puedes confirmar el envío.";
+      OCR_STATUS.className = "status ok";
+      BTN_CONFIRM_JSON.disabled = false;
+    };
+  }
+
+  function setSeleccionForLine(lineIdx, value) {
+    const probe = looksLikeMappingPayload(lastServerJson);
+    if (!probe.ok) return;
+
+    if (probe.shape === "wrapped") {
+      const doc = lastServerJson[reviewDocIndex];
+      if (!doc || !Array.isArray(doc.lines) || !doc.lines[lineIdx]) return;
+      doc.lines[lineIdx].seleccionado = value || "";
+    } else if (probe.shape === "array0") {
+      const arr = lastServerJson[0];
+      if (!Array.isArray(arr) || !arr[lineIdx]) return;
+      arr[lineIdx].seleccionado = value || "";
+    } else if (probe.shape === "flat") {
+      const arr = lastServerJson;
+      if (!Array.isArray(arr) || !arr[lineIdx]) return;
+      arr[lineIdx].seleccionado = value || "";
+    }
+  }
+
+  function allLinesSelected() {
+    const lines = getLinesFromPayload(lastServerJson);
+    if (!lines.length) return false; // si no hay líneas, no habilitamos
+    return lines.every((ln) => {
+      const v = cleanVal(ln?.seleccionado, "");
+      return v.length > 0;
+    });
+  }
+
+  function refreshConfirmEnable() {
+    const ready = allLinesSelected();
+    BTN_CONFIRMAR_MAP.disabled = !ready;
+    OCR_STATUS.textContent = ready
+      ? "Listo para confirmar."
+      : "Selecciona una opción para cada línea.";
+    OCR_STATUS.className = ready ? "status ok" : "status";
   }
 })();
