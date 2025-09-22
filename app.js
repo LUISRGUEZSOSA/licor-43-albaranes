@@ -24,6 +24,8 @@ function isPdfFile(f) {
   const BTN_RS = document.getElementById("btnReset");
   const STATUS = document.getElementById("status");
   const OUT = document.getElementById("out");
+  const BTN_CONFIRM_JSON = document.getElementById("btnConfirmarJson");
+
   const THUMB = document.getElementById("thumb");
   const FILE_N = document.getElementById("fileName");
   const FILE_I = document.getElementById("fileInfo");
@@ -36,6 +38,7 @@ function isPdfFile(f) {
   // Estado local
   let fileOriginal = null;
   let fileOptimizada = null;
+  let lastServerJson = null;
 
   // Botones → cada uno abre su input correspondiente
   BTN_CAM.addEventListener("click", () => INPUT_CAM.click());
@@ -161,6 +164,9 @@ function isPdfFile(f) {
     // Limpiamos ambos inputs por si acaso
     if (INPUT_CAM) INPUT_CAM.value = "";
     if (INPUT_PICK) INPUT_PICK.value = "";
+
+    BTN_CONFIRM_JSON.disabled = true; // ⬅️ NUEVO: al reset deshabilitamos el botón
+    lastServerJson = null; // ⬅️ NUEVO
   }
 
   // 🔧 Limpia valores que puedan venir con "=" desde n8n
@@ -212,12 +218,14 @@ function isPdfFile(f) {
       const json = await res.json().catch(() => ({}));
 
       if (res.ok) {
+        lastServerJson = json;
         OUT.textContent =
           "Tu albarán ha sido procesado correctamente\n\n" +
           JSON.stringify(json, null, 2);
         STATUS.textContent = "✅ Subida correctamente";
         STATUS.className = "status ok";
         BTN_RS.disabled = false;
+        BTN_CONFIRM_JSON.disabled = false;
       } else {
         // En error, mostramos información mínima para depurar
         const text = await res.text().catch(() => "");
@@ -225,6 +233,8 @@ function isPdfFile(f) {
         STATUS.className = "status err";
         OUT.textContent = text || "Se produjo un error al procesar el albarán.";
         BTN_GO.disabled = false;
+        BTN_CONFIRM_JSON.disabled = true;
+        lastServerJson = null;
       }
     } catch (err) {
       console.error(err);
@@ -232,6 +242,48 @@ function isPdfFile(f) {
       STATUS.className = "status err";
       OUT.textContent = "No se pudo conectar con el servidor.";
       BTN_GO.disabled = false;
+      BTN_CONFIRM_JSON.disabled = true;
+      lastServerJson = null;
+    }
+  }
+  BTN_CONFIRM_JSON.addEventListener("click", confirmarJson);
+
+  async function confirmarJson() {
+    if (!lastServerJson) return;
+
+    BTN_CONFIRM_JSON.disabled = true;
+    STATUS.textContent = "🔁 Enviando confirmación...";
+
+    try {
+      const res = await fetch(N8N_CONFIRM_DATA, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(lastServerJson),
+      });
+
+      const confirmText = await res.text();
+
+      if (res.ok) {
+        OUT.textContent = confirmText; // ← muestra exactamente lo que devuelve el webhook
+
+        STATUS.textContent = "✅ Confirmación enviada";
+        STATUS.className = "status ok";
+      } else {
+        const text = confirmText || (await res.text().catch(() => ""));
+
+        STATUS.textContent = `❌ Error al confirmar ${res.status || ""}`;
+        STATUS.className = "status err";
+        OUT.textContent = text || "No se pudo confirmar el mapeo.";
+        BTN_CONFIRM_JSON.disabled = false;
+      }
+    } catch (err) {
+      console.error(err);
+      STATUS.textContent = "❌ Error de red al confirmar.";
+      STATUS.className = "status err";
+      OUT.textContent = "No se pudo conectar con el servidor de confirmación.";
+      BTN_CONFIRM_JSON.disabled = false;
     }
   }
 
