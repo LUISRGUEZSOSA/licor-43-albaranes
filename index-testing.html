@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Escáner de Albaranes · Licor 43</title>
+    <meta name="color-scheme" content="light dark" />
+    <!-- Favicon -->
+    <link rel="icon" href="NEGATIVO.jpg" type="image/jpeg" sizes="32x32" />
+    <link rel="apple-touch-icon" href="NEGATIVO.jpg" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="card">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="agente">
+          <h1>Agente IA · Escáner de Albaranes</h1>
+          <div class="hint">
+            Sube una foto nítida del documento o usa la cámara del móvil.
+          </div>
+        </div>
+      </header>
+
+      <!-- Panel de carga -->
+      <section class="card grid">
+        <div class="pill" title="Almacén usado en el envío">
+          🏬 <span>Almacén:</span> <b>Almacén Experiencia 43</b>
+        </div>
+        <div class="pill" id="pillFecha">💳 Fecha de entrega: <b></b></div>
+
+        <!-- Zona de arrastre/soltar + inputs separados -->
+        <label
+          class="dz"
+          id="dropzone"
+          tabindex="0"
+          aria-label="Sube o arrastra una imagen o PDF del albarán"
+        >
+          <!-- Inputs separados para máxima compatibilidad móvil -->
+          <input
+            id="fileCamera"
+            type="file"
+            accept="image/*"
+            capture="environment"
+            style="display: none"
+          />
+          <input
+            id="filePicker"
+            type="file"
+            accept="image/*,.pdf,application/pdf"
+            style="display: none"
+          />
+
+          <div>
+            <div style="font-weight: 800; font-size: 1.05rem">
+              Suelta una imagen o PDF aquí
+            </div>
+            <div class="hint">o usa los botones de abajo</div>
+          </div>
+          <div class="cta">
+            <button type="button" class="btn" id="btnCam">📷 Hacer foto</button>
+            <button type="button" class="btn sec" id="btnExplorar">
+              🖼️ Subir archivo
+            </button>
+          </div>
+        </label>
+
+        <!-- Vista previa -->
+        <div class="preview">
+          <div class="ph" id="thumb"><span class="hint">Sin imagen</span></div>
+          <div class="meta">
+            <div id="fileName" class="hint">—</div>
+            <small id="fileInfo" class="hint"
+              >Max 10MB · Se optimiza antes de enviar</small
+            >
+            <div class="status" id="status"></div>
+            <div class="cta">
+              <button class="btn" id="btnEnviar" disabled>📤 Enviar</button>
+              <button class="btn sec" id="btnReset" disabled>♺ Limpiar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Revisión de conceptos extraídos por OCR -->
+      <section id="ocrReview" class="card" hidden>
+        <h3 style="margin: 0 0 8px 0">Revisa y elige el concepto</h3>
+        <p class="hint" style="margin-top: 0">
+          Verifica cada línea y elige el <b>nombre</b> correcto.
+        </p>
+
+        <div class="table-like" id="ocrList"></div>
+
+        <div
+          class="cta"
+          style="margin-top: 12px; gap: 8px; display: flex; flex-wrap: wrap"
+        >
+          <button class="btn" id="btnConfirmarJson" disabled>
+            ✅ Confirmar envío
+          </button>
+        </div>
+
+        <div id="ocrStatus" class="status" style="margin-top: 8px"></div>
+      </section>
+
+      <div class="brand-footer">
+        <img src="bygrowtur.png" alt="Licor 43" loading="lazy" />
+      </div>
+      <div class="version-box">
+        Agente IA · Escáner de Albaranes versión&nbsp;1.0
+      </div>
+    </div>
+    <script src="app-testing.js"></script>
+  </body>
+</html>

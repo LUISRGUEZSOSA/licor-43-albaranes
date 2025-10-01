@@ -373,3 +373,8 @@ footer {
   .cell.map { justify-content: stretch; }
   .map-select { max-width: 100%; }
 }
+
+.map-select option {
+  background: #fff;   /* fondo blanco */
+  color: #000;        /* texto negro */
+}
