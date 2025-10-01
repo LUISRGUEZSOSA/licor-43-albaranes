@@ -506,19 +506,42 @@ function isPdfFile(f) {
     OCR_LIST.innerHTML = "";
     OCR_STATUS.textContent = "";
 
+    // --- 1) Fila de cabecera (solo desktop; en móvil se oculta por CSS) ---
+    const head = document.createElement("div");
+    head.className = "row head";
+    const h1 = document.createElement("div");
+    h1.className = "cell desc";
+    h1.textContent = "Concepto OCR";
+    const h2 = document.createElement("div");
+    h2.className = "cell map";
+    h2.style.justifyContent = "flex-end";
+    h2.textContent = "Nombre correcto";
+    const h3 = document.createElement("div");
+    h3.className = "cell extra";
+    h3.style.display = "flex";
+    h3.style.justifyContent = "flex-end";
+    h3.textContent = "Extra";
+    head.appendChild(h1);
+    head.appendChild(h2);
+    head.appendChild(h3);
+    OCR_LIST.appendChild(head);
+
+    // --- 2) Filas de datos ---
     const lines = Array.isArray(doc.lines) ? doc.lines : [];
     lines.forEach((ln, idx) => {
       const row = document.createElement("div");
       row.className = "row";
 
-      // descripción
+      // Columna 1: descripción
       const cDesc = document.createElement("div");
       cDesc.className = "cell desc";
+      cDesc.setAttribute("data-label", "Concepto OCR");
       cDesc.textContent = cleanVal(ln.descripcion, "— sin descripción —");
 
-      // dropdown
+      // Columna 2: dropdown "Nombre correcto" (la que ya tienes)
       const cMap = document.createElement("div");
       cMap.className = "cell map";
+      cMap.setAttribute("data-label", "Nombre correcto");
       const sel = document.createElement("select");
       sel.className = "map-select";
 
@@ -550,14 +573,13 @@ function isPdfFile(f) {
         sel.appendChild(opt);
       });
 
-      // selección por defecto
       if (currentSel && options.includes(currentSel)) {
         sel.value = currentSel;
       } else if (options.length === 1) {
         sel.value = options[0] || "";
         setSeleccionForLine(idx, sel.value);
       } else {
-        sel.value = ""; // placeholder si existe o quedará vacío
+        sel.value = "";
       }
 
       sel.addEventListener("change", () => {
@@ -566,8 +588,25 @@ function isPdfFile(f) {
       });
 
       cMap.appendChild(sel);
+
+      // Columna 3: dropdown extra (de momento vacío)
+      const cExtra = document.createElement("div");
+      cExtra.className = "cell extra";
+      cExtra.setAttribute("data-label", "Extra");
+      const selExtra = document.createElement("select");
+      selExtra.className = "map-select";
+      // De momento vacío → dejamos un placeholder deshabilitado
+      const ph = document.createElement("option");
+      ph.value = "";
+      ph.textContent = "— Próximamente —";
+      selExtra.appendChild(ph);
+      selExtra.disabled = true; // lo habilitaremos cuando haya opciones
+      cExtra.appendChild(selExtra);
+
+      // Ensamblado de la fila
       row.appendChild(cDesc);
       row.appendChild(cMap);
+      row.appendChild(cExtra);
       OCR_LIST.appendChild(row);
     });
 
