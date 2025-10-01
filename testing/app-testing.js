@@ -29,7 +29,7 @@ function isPdfFile(f) {
   const FILE_I = document.getElementById("fileInfo");
   const PILL_F = document.getElementById("pillFecha").querySelector("b");
 
-  // Revisión de conceptos (nueva UI)
+  // Revisión de Descripciones (nueva UI)
   const OCR_REVIEW = document.getElementById("ocrReview");
   const OCR_LIST = document.getElementById("ocrList");
   const OCR_STATUS = document.getElementById("ocrStatus");
@@ -511,16 +511,16 @@ function isPdfFile(f) {
     head.className = "row head";
     const h1 = document.createElement("div");
     h1.className = "cell desc";
-    h1.textContent = "Concepto OCR";
+    h1.textContent = "Desc. Proveedor";
     const h2 = document.createElement("div");
     h2.className = "cell map";
     h2.style.justifyContent = "flex-end";
-    h2.textContent = "Nombre correcto";
+    h2.textContent = "Producto";
     const h3 = document.createElement("div");
     h3.className = "cell extra";
     h3.style.display = "flex";
     h3.style.justifyContent = "flex-end";
-    h3.textContent = "Extra";
+    h3.textContent = "Buscador de productos";
     head.appendChild(h1);
     head.appendChild(h2);
     head.appendChild(h3);
@@ -535,13 +535,13 @@ function isPdfFile(f) {
       // Columna 1: descripción
       const cDesc = document.createElement("div");
       cDesc.className = "cell desc";
-      cDesc.setAttribute("data-label", "Concepto OCR");
+      cDesc.setAttribute("data-label", "Desc. Proveedor");
       cDesc.textContent = cleanVal(ln.descripcion, "— sin descripción —");
 
-      // Columna 2: dropdown "Nombre correcto" (la que ya tienes)
+      // Columna 2: dropdown "Producto" (la que ya tienes)
       const cMap = document.createElement("div");
       cMap.className = "cell map";
-      cMap.setAttribute("data-label", "Nombre correcto");
+      cMap.setAttribute("data-label", "Producto");
       const sel = document.createElement("select");
       sel.className = "map-select";
 
@@ -589,7 +589,7 @@ function isPdfFile(f) {
 
       cMap.appendChild(sel);
 
-      // Columna 3: dropdown extra (de momento vacío)
+      // Columna 3: dropdown "Buscador de productos" (de momento vacío)
       const cExtra = document.createElement("div");
       cExtra.className = "cell extra";
       cExtra.setAttribute("data-label", "Extra");
