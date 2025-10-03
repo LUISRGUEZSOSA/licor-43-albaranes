@@ -2,6 +2,10 @@ const N8N_UPLOAD_URL = "https://growtur.app.n8n.cloud/webhook/upload-image";
 const N8N_CONFIRM_DATA =
   "https://growtur.app.n8n.cloud/webhook/confirm-mapping";
 
+// --- TESTING: catálogo simulado para evitar coste ---
+const TESTING_PRODUCTS = true; // pon a false en producción
+const TEST_PRODUCTS = ["Licor 43 baristo 0.7", "Berezko 1", "QUESO PARMESANO"];
+
 //helpers pdf
 function isImageFile(f) {
   return (
@@ -48,6 +52,11 @@ function isPdfFile(f) {
   loadProducts();
 
   async function loadProducts() {
+    // Testing: usa 3 productos locales y evita peticiones/red a productos.json
+    if (TESTING_PRODUCTS) {
+      PRODUCTS = [...TEST_PRODUCTS];
+      return;
+    }
     try {
       const res = await fetch("productos.json", { cache: "no-store" });
       if (!res.ok) throw new Error("No se pudo cargar productos.json");
@@ -57,7 +66,7 @@ function isPdfFile(f) {
         .filter(Boolean);
     } catch (e) {
       console.warn("productos.json no disponible o mal formado:", e);
-      PRODUCTS = [];
+      PRODUCTS = [...TEST_PRODUCTS]; // fallback seguro incluso si falla el fetch
     }
   }
 

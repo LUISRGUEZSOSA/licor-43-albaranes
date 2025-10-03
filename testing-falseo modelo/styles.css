@@ -438,7 +438,7 @@ footer {
   }
 }
 
-/* Ajuste visual para el nuevo select de la 3ª columna */
+/* Ajuste visual para el nuevo select de la 2ª columna */
 .cell.extra .map-select {
   max-width: 280px;
 }
@@ -592,5 +592,18 @@ footer {
   opacity: 0.45;
 }
 .icon-btn.search-toggle:hover,
-.icon-btn.search-toggle:focus-visible { opacity: 0.8; }
-.icon-btn.search-toggle:active { transform: translateY(-50%) scale(0.96); }
+.icon-btn.search-toggle:focus-visible {
+  opacity: 0.8;
+}
+.icon-btn.search-toggle:active {
+  transform: translateY(-50%) scale(0.96);
+}
+
+/* Repartir equitativamente las columnas */
+@media (min-width: 680px) {
+  /* o 860px si quieres solo en desktop */
+  .table-like .row {
+    grid-template-columns: 1fr 1fr; /* mitad para cada columna */
+    column-gap: clamp(20px, 5vw, 60px); /* separación adaptable */
+  }
+}
