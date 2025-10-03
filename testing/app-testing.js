@@ -558,7 +558,6 @@ function isPdfFile(f) {
       const cExtra = document.createElement("div");
       cExtra.className = "cell extra";
       cExtra.setAttribute("data-label", "Extra");
-     
 
       // Ensamblado de la fila
       row.appendChild(cDesc);
@@ -648,7 +647,18 @@ function isPdfFile(f) {
         if (!locked) openListWith(PRODUCTS);
       });
       input.addEventListener("click", () => {
-        if (!locked && list.hidden) openListWith(PRODUCTS);
+        if (locked) {
+          locked = false;
+          input.readOnly = false;
+          // coloca el cursor al final: sensación de "está listo para editar"
+          try {
+            input.setSelectionRange(input.value.length, input.value.length);
+          } catch {}
+          openListWith(PRODUCTS);
+          updateSearchToggleVisibility();
+          return;
+        }
+        if (list.hidden) openListWith(PRODUCTS);
       });
 
       input.addEventListener("input", () => {

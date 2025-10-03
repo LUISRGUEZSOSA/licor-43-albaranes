@@ -502,7 +502,7 @@ footer {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 8px;
-  padding: 8px 10px;
+  padding: 8px 36px 8px 10px; /* espacio derecho extra para la lupa */
   color: inherit;
   font: inherit;
 }
@@ -542,4 +542,40 @@ footer {
 .combo-empty {
   padding: 8px 10px;
   color: var(--muted);
+}
+
+/* Botón de icono tenue para cambiar producto */
+.icon-btn {
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+  cursor: pointer;
+  opacity: 0.45; /* aspecto tenue */
+  transition: opacity 120ms ease, transform 80ms ease;
+}
+
+.icon-btn:hover,
+.icon-btn:focus-visible {
+  opacity: 0.8;
+}
+
+.icon-btn:active {
+  transform: scale(0.96);
+}
+
+.icon-btn svg {
+  display: block;
+  pointer-events: none;
+  fill: currentColor;
+  color: inherit; /* hereda color del texto */
+}
+
+/* por si quieres un toque más suave en inputs bloqueados */
+.combo-input[readonly] {
+  opacity: 0.85;
 }

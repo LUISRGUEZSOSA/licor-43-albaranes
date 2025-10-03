@@ -331,7 +331,7 @@ footer {
 .row {
   display: grid;
   grid-template-columns: 1fr minmax(220px, 320px);
-  gap: 10px;
+  gap: 20px;
   align-items: center;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -579,3 +579,18 @@ footer {
 .combo-input[readonly] {
   opacity: 0.85;
 }
+
+/* Lupa dentro del input (placeholder a la derecha) */
+.icon-btn.search-toggle {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  margin-left: 0; /* anula el margen del estilo genérico */
+  opacity: 0.45;
+}
+.icon-btn.search-toggle:hover,
+.icon-btn.search-toggle:focus-visible { opacity: 0.8; }
+.icon-btn.search-toggle:active { transform: translateY(-50%) scale(0.96); }
