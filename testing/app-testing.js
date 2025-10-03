@@ -558,15 +558,7 @@ function isPdfFile(f) {
       const cExtra = document.createElement("div");
       cExtra.className = "cell extra";
       cExtra.setAttribute("data-label", "Extra");
-      const selExtra = document.createElement("select");
-      selExtra.className = "map-select";
-      // De momento vacío → dejamos un placeholder deshabilitado
-      const ph = document.createElement("option");
-      ph.value = "";
-      ph.textContent = "— Próximamente —";
-      selExtra.appendChild(ph);
-      selExtra.disabled = true; // lo habilitaremos cuando haya opciones
-      cExtra.appendChild(selExtra);
+     
 
       // Ensamblado de la fila
       row.appendChild(cDesc);
@@ -583,19 +575,24 @@ function isPdfFile(f) {
       input.className = "combo-input";
       input.placeholder = "Busca producto…";
 
-      const btnCambiar = document.createElement("button");
-      btnCambiar.type = "button";
-      btnCambiar.textContent = "Cambiar";
-      btnCambiar.className = "btn sec";
-      btnCambiar.style.marginLeft = "8px";
-      btnCambiar.addEventListener("click", () => {
+      // Botón de lupa para reabrir búsqueda cuando hay selección
+      const btnLupa = document.createElement("button");
+      btnLupa.type = "button";
+      btnLupa.className = "icon-btn search-toggle";
+      btnLupa.title = "Cambiar producto";
+      btnLupa.setAttribute("aria-label", "Cambiar producto");
+      btnLupa.innerHTML = `
+    <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M10 4a6 6 0 1 1 0 12A6 6 0 0 1 10 4zm0-2a8 8 0 1 0 4.9 14.3l4.4 4.4a1 1 0 0 0 1.4-1.4l-4.4-4.4A8 8 0 0 0 10 2z"/>
+    </svg>`;
+      btnLupa.addEventListener("click", () => {
+        if (!locked) return;
         locked = false;
         input.readOnly = false;
         input.focus();
         openListWith(PRODUCTS);
-        // No borramos 'seleccionado' hasta que elija otro explícitamente
+        updateSearchToggleVisibility();
       });
-      combo.appendChild(btnCambiar);
 
       const list = document.createElement("div");
       list.className = "combo-list";
@@ -603,6 +600,10 @@ function isPdfFile(f) {
 
       // Estado: una vez seleccionado, bloqueamos el buscador
       let locked = false;
+      function updateSearchToggleVisibility() {
+        btnLupa.style.display = locked ? "inline-flex" : "none";
+      }
+
       function renderList(items) {
         list.innerHTML = "";
         const toShow = items.slice(0, 100); // límite defensivo
@@ -626,6 +627,7 @@ function isPdfFile(f) {
             list.hidden = true;
             setSeleccionForLine(idx, name);
             refreshConfirmEnable();
+            updateSearchToggleVisibility();
           });
           list.appendChild(btn);
         });
@@ -664,7 +666,10 @@ function isPdfFile(f) {
       });
 
       combo.appendChild(input);
+      combo.appendChild(btnLupa); // lupa al lado del input
       combo.appendChild(list);
+      updateSearchToggleVisibility();
+
       cExtra.appendChild(combo);
 
       // insertar en la fila antes de montar en el DOM
