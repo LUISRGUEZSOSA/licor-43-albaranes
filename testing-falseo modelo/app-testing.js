@@ -2,12 +2,13 @@ const N8N_UPLOAD_URL = "https://growtur.app.n8n.cloud/webhook/upload-image";
 const N8N_CONFIRM_DATA =
   "https://growtur.app.n8n.cloud/webhook/confirm-mapping";
 
+// servidor local: python3 -m http.server 5173
 // --- TESTING: catálogo simulado para evitar coste ---
-const TESTING_PRODUCTS = true; // pon a false en producción
+const TESTING_PRODUCTS = false; // pon a false en producción
 const TEST_PRODUCTS = ["Licor 43 baristo 0.7", "Berezko 1", "QUESO PARMESANO"];
 
 // --- TESTING: evitar llamadas a webhooks (upload/confirm) y simular respuesta ---
-const TESTING_WEBHOOKS = true; // pon a false en producción
+const TESTING_WEBHOOKS = false; // pon a false en producción
 
 function makeFakeMappingPayload() {
   // Forma "wrapped" que ya reconoce looksLikeMappingPayload()
