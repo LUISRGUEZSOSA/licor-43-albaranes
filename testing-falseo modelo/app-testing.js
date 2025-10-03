@@ -6,6 +6,25 @@ const N8N_CONFIRM_DATA =
 const TESTING_PRODUCTS = true; // pon a false en producción
 const TEST_PRODUCTS = ["Licor 43 baristo 0.7", "Berezko 1", "QUESO PARMESANO"];
 
+// --- TESTING: evitar llamadas a webhooks (upload/confirm) y simular respuesta ---
+const TESTING_WEBHOOKS = true; // pon a false en producción
+
+function makeFakeMappingPayload() {
+  // Forma "wrapped" que ya reconoce looksLikeMappingPayload()
+  return [
+    {
+      lines: [
+        { descripcion: "Licor 43 baristo 0.7", seleccionado: "" },
+        { descripcion: "Berezko 1", seleccionado: "" },
+        { descripcion: "QUESO PARMESANO", seleccionado: "" },
+      ],
+    },
+  ];
+}
+
+function delay(ms) {
+  return new Promise((res) => setTimeout(res, ms));
+}
 //helpers pdf
 function isImageFile(f) {
   return (
@@ -243,6 +262,18 @@ function isPdfFile(f) {
     fd.append("filename", finalName);
 
     try {
+      // 🧪 TESTING: no llamar al webhook; simular OCR/mapeo
+      if (TESTING_WEBHOOKS) {
+        STATUS.textContent = "🧪 Modo testing: simulando OCR…";
+        await delay(600);
+        const payload = makeFakeMappingPayload();
+        lastServerJson = payload;
+        tryInitOcrReview(payload);
+        STATUS.textContent = "✅ Subida simulada";
+        STATUS.className = "status ok";
+        BTN_RS.disabled = false;
+        return; // <— evitamos la llamada real
+      }
       const res = await fetch(N8N_UPLOAD_URL, { method: "POST", body: fd });
 
       if (res.ok) {
@@ -349,6 +380,18 @@ function isPdfFile(f) {
     STATUS.textContent = "🔁 Enviando confirmación...";
 
     try {
+      // 🧪 TESTING: simular confirmación sin llamar a n8n
+      if (TESTING_WEBHOOKS) {
+        await delay(400);
+        STATUS.textContent = "✅ Confirmación simulada";
+        STATUS.className = "status ok";
+        const resumen =
+          "OK (testing)\n" +
+          "Items confirmados: " +
+          (getLinesFromPayload(lastServerJson)?.length || 0);
+        showResponseInReviewAndReload(resumen, 1200);
+        return; // <— no llamamos a n8n
+      }
       const res = await fetch(N8N_CONFIRM_DATA, {
         method: "POST",
         headers: {
@@ -544,7 +587,7 @@ function isPdfFile(f) {
     const h3 = document.createElement("div");
     h3.className = "cell extra";
     h3.style.display = "flex";
-    h3.style.justifyContent = "flex-end";
+    h3.style.justifyContent = "flex-start";
     h3.textContent = "Buscador de productos";
 
     head.appendChild(h1);

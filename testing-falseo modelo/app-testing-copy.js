@@ -2,6 +2,29 @@ const N8N_UPLOAD_URL = "https://growtur.app.n8n.cloud/webhook/upload-image";
 const N8N_CONFIRM_DATA =
   "https://growtur.app.n8n.cloud/webhook/confirm-mapping";
 
+// --- TESTING: catálogo simulado para evitar coste ---
+const TESTING_PRODUCTS = true; // pon a false en producción
+const TEST_PRODUCTS = ["Licor 43 baristo 0.7", "Berezko 1", "QUESO PARMESANO"];
+
+// --- TESTING: evitar llamadas a webhooks (upload/confirm) y simular respuesta ---
+const TESTING_WEBHOOKS = true; // pon a false en producción
+
+function makeFakeMappingPayload() {
+  // Forma "wrapped" que ya reconoce looksLikeMappingPayload()
+  return [
+    {
+      lines: [
+        { descripcion: "Licor 43 baristo 0.7", seleccionado: "" },
+        { descripcion: "Berezko 1", seleccionado: "" },
+        { descripcion: "QUESO PARMESANO", seleccionado: "" },
+      ],
+    },
+  ];
+}
+
+function delay(ms) {
+  return new Promise((res) => setTimeout(res, ms));
+}
 //helpers pdf
 function isImageFile(f) {
   return (
@@ -48,6 +71,11 @@ function isPdfFile(f) {
   loadProducts();
 
   async function loadProducts() {
+    // Testing: usa 3 productos locales y evita peticiones/red a productos.json
+    if (TESTING_PRODUCTS) {
+      PRODUCTS = [...TEST_PRODUCTS];
+      return;
+    }
     try {
       const res = await fetch("productos.json", { cache: "no-store" });
       if (!res.ok) throw new Error("No se pudo cargar productos.json");
@@ -57,7 +85,7 @@ function isPdfFile(f) {
         .filter(Boolean);
     } catch (e) {
       console.warn("productos.json no disponible o mal formado:", e);
-      PRODUCTS = [];
+      PRODUCTS = [...TEST_PRODUCTS]; // fallback seguro incluso si falla el fetch
     }
   }
 
@@ -234,6 +262,18 @@ function isPdfFile(f) {
     fd.append("filename", finalName);
 
     try {
+      // 🧪 TESTING: no llamar al webhook; simular OCR/mapeo
+      if (TESTING_WEBHOOKS) {
+        STATUS.textContent = "🧪 Modo testing: simulando OCR…";
+        await delay(600);
+        const payload = makeFakeMappingPayload();
+        lastServerJson = payload;
+        tryInitOcrReview(payload);
+        STATUS.textContent = "✅ Subida simulada";
+        STATUS.className = "status ok";
+        BTN_RS.disabled = false;
+        return; // <— evitamos la llamada real
+      }
       const res = await fetch(N8N_UPLOAD_URL, { method: "POST", body: fd });
 
       if (res.ok) {
@@ -340,6 +380,18 @@ function isPdfFile(f) {
     STATUS.textContent = "🔁 Enviando confirmación...";
 
     try {
+      // 🧪 TESTING: simular confirmación sin llamar a n8n
+      if (TESTING_WEBHOOKS) {
+        await delay(400);
+        STATUS.textContent = "✅ Confirmación simulada";
+        STATUS.className = "status ok";
+        const resumen =
+          "OK (testing)\n" +
+          "Items confirmados: " +
+          (getLinesFromPayload(lastServerJson)?.length || 0);
+        showResponseInReviewAndReload(resumen, 1200);
+        return; // <— no llamamos a n8n
+      }
       const res = await fetch(N8N_CONFIRM_DATA, {
         method: "POST",
         headers: {
@@ -647,7 +699,18 @@ function isPdfFile(f) {
         if (!locked) openListWith(PRODUCTS);
       });
       input.addEventListener("click", () => {
-        if (!locked && list.hidden) openListWith(PRODUCTS);
+        if (locked) {
+          locked = false;
+          input.readOnly = false;
+          // coloca el cursor al final: sensación de "está listo para editar"
+          try {
+            input.setSelectionRange(input.value.length, input.value.length);
+          } catch {}
+          openListWith(PRODUCTS);
+          updateSearchToggleVisibility();
+          return;
+        }
+        if (list.hidden) openListWith(PRODUCTS);
       });
 
       input.addEventListener("input", () => {
