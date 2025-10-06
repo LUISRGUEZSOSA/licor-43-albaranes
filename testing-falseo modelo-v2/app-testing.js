@@ -5,7 +5,7 @@ const N8N_CONFIRM_DATA =
 // servidor local: python3 -m http.server 5173
 // --- TESTING: catálogo simulado para evitar coste ---
 const TESTING_PRODUCTS = true; // pon a false en producción
-const TEST_PRODUCTS = ["Licor 43 baristo 0.7", "Berezko 1", "QUESO PARMESANO"];
+let TEST_PRODUCTS = ["Licor 43 baristo 0.7", "Berezko 1", "QUESO PARMESANO"]; // <— se llenará dinámicamente con el .json
 
 // --- TESTING: evitar llamadas a webhooks (upload/confirm) y simular respuesta ---
 const TESTING_WEBHOOKS = true; // pon a false en producción
@@ -74,13 +74,32 @@ function isPdfFile(f) {
   async function loadProducts() {
     // Testing: usa 3 productos locales y evita peticiones/red a productos.json
     if (TESTING_PRODUCTS) {
-      PRODUCTS = [...TEST_PRODUCTS];
+      try {
+        const res = await fetch("productos_mas_formato.json", {
+          cache: "no-store",
+        });
+        if (!res.ok) throw new Error("No se pudo cargar productos.json");
+        const data = await res.json();
+        const names = (Array.isArray(data) ? data : [])
+          .map((p) => String(p?.nombre || "").trim())
+          .filter(Boolean);
+
+        // sincroniza AMBAS fuentes para que el UI use datos
+        TEST_PRODUCTS = names.length ? names : TEST_PRODUCTS;
+        PRODUCTS = [...TEST_PRODUCTS]; // <— ¡clave! el UI usa PRODUCTS
+
+        console.log("Productos (testing):", PRODUCTS.slice(0, 5));
+      } catch (e) {
+        console.warn("productos.json no disponible o mal formado:", e);
+        // fallback (igual que antes)
+        PRODUCTS = [...TEST_PRODUCTS];
+      }
       return;
     }
+
+    // Producción (igual que antes)
     try {
-      const res = await fetch("productos.json", {
-        cache: "no-store",
-      });
+      const res = await fetch("productos.json", { cache: "no-store" });
       if (!res.ok) throw new Error("No se pudo cargar productos.json");
       const data = await res.json();
       PRODUCTS = (Array.isArray(data) ? data : [])
@@ -88,7 +107,8 @@ function isPdfFile(f) {
         .filter(Boolean);
     } catch (e) {
       console.warn("productos.json no disponible o mal formado:", e);
-      PRODUCTS = [...TEST_PRODUCTS]; // fallback seguro incluso si falla el fetch
+      // fallback seguro
+      PRODUCTS = [...TEST_PRODUCTS];
     }
   }
 
