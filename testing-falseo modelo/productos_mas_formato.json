@@ -1,0 +1,8272 @@
+[
+  {
+    "nombre": "Licor 43 0.05",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "60"
+  },
+  {
+    "nombre": "Licor 43 baristo 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Licor 43 1",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Licor 43 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Licor 43 0.35",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "Licor 43 1.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Licor 43 + copa 0.7",
+    "tipo_unidad": "PACK",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Villa massa limon  0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Villa massa limon 0.05",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "48"
+  },
+  {
+    "nombre": "Martin millers 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Martin miller s 0.05",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "120"
+  },
+  {
+    "nombre": "Martin millers westbourne 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Matusalen anejo 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao reserva 15",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "R.bilbao crianza 15",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Gressy 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "Thunder bitch 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Zoco 1",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Berezko 0.05",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Berezko 1",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "108"
+  },
+  {
+    "nombre": "R.bilbao reserva 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao reserva 1.5",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao reserva  5",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao rosado 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "R.bilbao rosado 1.5",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao rva original 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao crianza 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao crianza 1.5",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "R.bilbao crianza 3",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "R.bilbao crianza 5",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "R.bilbao ed.ltda crianza 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "R.bilbao ed.ltda crianza 1.5",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao v.altura 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao g.reserva 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao mirto luj 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Mar de frades godello 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "4"
+  },
+  {
+    "nombre": "Mar de frades albari?o 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Mar de frades albari?o 1.5",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Finca valiñas albariño 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Mar de frades espumoso 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Mar de frades licor original 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Mar de frades orujo blanco 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Mar de frades licor hierbas 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Lolea n?1 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Lolea n?2  0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Lolea n?3 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Lolea n?4 organica 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Lolea n?5 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "El afilador tradicional 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "El afilador licor de hierbas 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "El afilador licor de cafe 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "El afilador crema de licor 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Finca los hoyales 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Cruz de alba organic 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "3"
+  },
+  {
+    "nombre": "Cruz de alba 3",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Cruz de alba crianza 1.5",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "R.bilbao rueda verdejo 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao rueda verdejo 1.5",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao verdejo sobre lías 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao rueda sauvignon blanc 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Yellow rose premium american 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Yellow rose outlaw bourbon 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Yellow rose rye 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Pommery cuvee louise millesime co 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Pommery brut royal rose 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Pommery brut royal 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Pommery apanage blanc de blanc 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Pommery brut apanage 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Pommery brut apanage 1.5",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Licor 43 horchata 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "3"
+  },
+  {
+    "nombre": "Martin miller s 9 moons  0.35",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao lalomba finca lalinde 1.5",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "4"
+  },
+  {
+    "nombre": "R.bilbao lalomba finca lalinde 3",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "R.bilbao lalomba finca lalinde 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "R.bilbao lalomba finca valhonta 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao limite norte mad 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao limite sur mad 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "3"
+  },
+  {
+    "nombre": "Villa massa  amaretto 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "3"
+  },
+  {
+    "nombre": "Martin millers 1.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Martin millers winterful 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "3"
+  },
+  {
+    "nombre": "R.bilbao lalomba finca ladero 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Martin miller s summerful 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Licor 43 horchata 0.05",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Zoco 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "60"
+  },
+  {
+    "nombre": "R.bilbao organic tinto 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Rtd licor 43 fresco lemon 0.25",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Rtd licor 43 fresco lemon (es) 0.25",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "Rtd licor 43 fresco berry bv (es 0.25",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "Yellow rose harris county 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R.bilbao verdejo organic 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Lolea n?1 lata 0.25",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Licor 43 + shaker cup 0.7",
+    "tipo_unidad": "PACK",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Licor 43 chocolate 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Tequila buen amigo silver 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Tequila buen amigo gold 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Villa massa  dry 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Villa massa  rosso tradizionale 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Pommery pop blue 0.2",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Pommery pop pink 0.2",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Cruz alba fuentelun  organic 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "RTD COCKTAIL 43 MILK  0.25",
+    "tipo_unidad": "LATA",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Villa massa mediterraneo rosso 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Finca monteveiga albari?o 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Cruz de alba roble 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "LICOR 43 ENFRIADOR",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Licor 43 set cocteleria",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Licor 43 cuaderno moleskine",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Licor 43 taza",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L.43 bolsa tela troquelada",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "36"
+  },
+  {
+    "nombre": "L43 bolsa carton lujo",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 polo xl",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "225"
+  },
+  {
+    "nombre": "L43 polo l",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 dummy bottle",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Estuche asiatico 6 copas",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 MINIBEER GLASS 5CL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Licor 43 cucharilla asiatico",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "L43 minibeer glass 3cl",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 carajillo 43 set",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Gorra experiencia 43",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TASTING GLASS 2CL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "144"
+  },
+  {
+    "nombre": "L43 polo xl (19)",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "2700"
+  },
+  {
+    "nombre": "L43 polo l (19)",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 polo m (19)",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 polo s (19)",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 balon cup",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 BALON GLASS ORIGINAL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "Vm frosted glass",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "R. bilbao armario climat. 18 bot",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "L43 twisted stirrer bio",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 MINIBEER GLASS 3CL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Licor 43 sangria jug 1,3 l.",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "L43 sangria jug",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 tray",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 bar runner",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "14"
+  },
+  {
+    "nombre": "L43 ice-tongs",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "30"
+  },
+  {
+    "nombre": "L43 strainer",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 citrus squeezer",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 coaster",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 bar caddy",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "50"
+  },
+  {
+    "nombre": "L43 balon ice-bucket - black",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 cream dispenser",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 golden ballon",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 tin shaker",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "100"
+  },
+  {
+    "nombre": "L43 BALON GLASS SMALL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 LED 43 LOGO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "L43 CIRCLE BOTTLE GLORIFIER",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 NAPKIN",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 barman shirt female m (19)",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "6000"
+  },
+  {
+    "nombre": "L43 barman shirt female l (19)",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 barman shirt female xl (19)",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 barman shirt male m (19)",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 barman shirt male l (19)",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 barman shirt male xl (19)",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 STRAW BIO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 SUNSHADE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "10000"
+  },
+  {
+    "nombre": "L43 large flag",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 boston shaker",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 BALON GLASS LARGE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 & coffee mug",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "L43 MINIBEER GLASS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Licor 43 organic cotton bag",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "LICOR 43 AEROPRESS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "57"
+  },
+  {
+    "nombre": "LICOR 43 COFFEE TEMPLATES",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Villa massa amaretto glass",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Licor 43 face masks",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "LICOR 43 SUNSHADE BASE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Vm premium ice-bucket",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Vm t?nica glass",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "L43 horchata balon ice bucket",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "L43 BARISTO GLASS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Licor 43 apron premium",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Pommery blue sky",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "Rtd licor 43 carajillo",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Licor 43",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "32"
+  },
+  {
+    "nombre": "MP GINGER ALE 1",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "Cocktail jarra licor 43",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PULCO 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "LIMA KG",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HIELO KG",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "CAFE KG evento",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "R.bilbao ed. limitada garnacha 0.70",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MP PATATAS FRITAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Coca-cola",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Coca-cola zero",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Coca cola 0.0",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Fanta naranja",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Fanta limon",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Agua 0.75 con gas",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Zumo piña",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Zumo naranja",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Zumo manzana",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ginger ale royal bliss 0.2",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Tonica royal bliss 0.2",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PASTELITO CARNE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MINI MUFFIN",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "REGAÑA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "EDULCORANTE LA CARIBEÑA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "250"
+  },
+  {
+    "nombre": "LECHE CONDENSADA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AGUA BOTELLIN 0,5",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITE DE OLIVA 0,4",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITE DE OLIVA VIRGEN",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "ACEITE DE SESAMO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITE DE GIRASOL",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITUNA NEGRA SIN HUESO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITUNA VERDE SIN HUESO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITUNAS ENCURTIDAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITUNAS KALAMATA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITUNAS VERDES C/HUESO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "ACELGAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "AGUA MINERAL",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AGUACATE",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "4"
+  },
+  {
+    "nombre": "AJEDREA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AJI PACATA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AJI PANCA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AJO BLANCO PELADO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "AJI BLANCO SECO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "AJO MOLIDO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AJO NEGRO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "AJO TIERNO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AJOS ENCURTIDOS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALBAHACA FRESCA 125GR",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALBAHACA FRESCA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALBAHACA SECA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALCACHOFAS FRESCA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ALCACHOFAS TROCEADAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ALCAPARRAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALCAPARRONES",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALGA MIX 5 FRESCO EN SAL",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ALGA NORI",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "70"
+  },
+  {
+    "nombre": "ALMENDRAS CRUDAS C/PIEL",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ALMENDRAS CRUDAS REPELADAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ALMENDRAS REPELADAS FRITAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ANCHOAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ANCHOAS ORO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "APIO VERDE",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ARROZ BOMBA EXTRA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "ARROZ CARNAROLI",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "ARROZ REDONDO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "ARROZ ALBUFERA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ATUN DE LATA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AVELLANAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "AVELLANAS TOSTADAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AZAFRAN",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AZUCAR",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "BACON AHUMADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BERENJENA NEGRA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "BICARBONATO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BOQUERONES FRESCOS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "BROTES DE CILANTRO 50GR",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BROTES DE MOSTAZA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BROTES DE RUCULA 50GR",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CALABACIN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "CALAMAR 400-600",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CALAMAR CONGELADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CALAMAR FRESCO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CRANGEJO FRESCO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CARCASA DE POLLO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CARETA DE CERDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CARGAS DE GAS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CAYENA MOLIDA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CAYENAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CEBOLLA DE FIGUERAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CEBOLLA FRESCA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "25"
+  },
+  {
+    "nombre": "CEBOLLA TIERNA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "3"
+  },
+  {
+    "nombre": "CEBOLLINO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CEBOLLITAS VIANGRE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CERVEZA NEGRA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHALOTA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CHORIZO ASTURIANO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CHORIZO EXTRA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CHORIZO SARTA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CILANTRO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COMINO EN POLVO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CONTRA MUSLO DE POLLO (DESGUESADOS)",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "COPOS DE CHILI",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COSTILLA DE CERDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ESPAGUETIS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "ESPARRAGOS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ESPINA DORSAL DE ATUN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ESPINAS/CABEZAS LENGUADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ESPINAZO DE CERDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ESTRAGON FRESCO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FALDA DE TERNERA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "GALERAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "GALLINA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "GAMBA BLANCA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "GAN JANG",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GARBANZOS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "GARBANZOS COCIDOS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "GEL CREME FRIO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GNOCCHIS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GOUCHU JANG",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GUANCIALE",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "GUINDILLA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GUINDILLAS EN VINAGRE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HABAS SECAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HARINA DE GARBANZO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HARINA DE TRIGO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "25"
+  },
+  {
+    "nombre": "HARINA DE TRIGO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "HOJAS DE GELATINA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HUESOS DE JAMON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "HUESOS DE TERNERA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "HUEVO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HUEVO PASTEURIZADO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "JAMON COCIDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "JAMON IBERICO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "JENGIBRE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "JUGO DE TRUZA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LAUREL",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BEBIDA VEGETAL",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "LECHE DE OVEJA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "LECHE EN POLVO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "LECHE ENTERA DE VACA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LECHE SEMIDESNATADA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LENGUA DE ATUN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LENGUADO FRESCO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "LEVADURA ROYAL",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LIMON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "9"
+  },
+  {
+    "nombre": "LOMO DE ATUN SIN PIEL",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "MACARRONES",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "MANGO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "MANITAS DE CERDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "MANTECA DE CERDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MANTEQUILLA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MAYONESA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "MEJILLONES",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "MEZCLUM",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MIEL",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "MINI ALCAPARRAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MIRIM",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MORRALLA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "8"
+  },
+  {
+    "nombre": "MORRILLO DE ATUN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MOSTAZA ANTIGUA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MOSTAZA DIJON",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MOSTAZA JAPONESA EN POLVO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MOSTO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "MUSLOS DE POLLO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "NARANJA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "NATA LIGERA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "NATA MONTAR",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "NAVAJAS FRESCAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "NUEZ MOSCADA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ÑORA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "OPORTO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "OREGANO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PALADAR DE ATUN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PALETILLA IBERICA JAMON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PALO CORTADO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN BRIOCHE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN CARASATU",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN PERSONAL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN RALLADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "PANCETA FRESCA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PANKO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "10"
+  },
+  {
+    "nombre": "PARPATANA DE ATUN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PASA SULTANA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PATATA AGRIA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "25"
+  },
+  {
+    "nombre": "PATATA NUEVA PEQUEÑAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PATATA RATTE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PEREJIL FRESCO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PEREJIL SECO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIEL DE ATUN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIEL DE POLLO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIMENTON DULCE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIMENTON DULCE(DE LA VERA)",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PIMENTON PICANTE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PIMIENTA BLANCA MOLIDA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIMIENTA DE SECHUAN",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIMIENTA NEGRA EN GRANO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIMIENTA NEGRA MOLIDA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIMIENTO  ROJO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "PIMIENTO VERDE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "PIÑA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "PIÑONES",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIPARRAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "POLLO ENTERO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PRESA IBERICA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PUERRO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "PULPO COCIDO ENTERO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PULPO COCIDO PATA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PULPO FRESCO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "QUESO DE TALLANTE",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO PARMESANO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "QUESO PECORINO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "QUINOA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "RABO DE TERNERA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ROCOTO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RODILLAS DE TERNERA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ROMERO FRESCO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ROMERO HOJA SECO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RUCULA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SAL FINA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SAL ESCAMAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALSA DE SOJA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "SALSA DE SOJA KIKOMAN",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "SALSA DE SOJA SIN GLUTEN",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "SALSA PERRINS",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SAMBAL OELEK",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SARDINAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "SEPIA FRESCA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "SESAMO BLANCO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "SESAMO NEGRO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "SHIMEJI BLANCO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SHIMEJI MORADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SISHO MORADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SOLOMILLO DE POLLO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "SOLOMILLO DE VACA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "SWETT LEAVES",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TALLOS DE ALCAPARRA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TE VERDE MATCHA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "TIRABEQUES",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOCINO IBERICO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOMATE CANARIO PEQUEÑO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "TOMATE CHERRY CAJA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "TOMATE CHERRY DE COLORES",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "TOMATE ENTERO PELADO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOMATE FLOR DE BALADRE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOMATE FRITO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "TOMATE MUCHA MIEL",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOMATE PERA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "TOMATE RAMA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "TOMATE ROSA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "4"
+  },
+  {
+    "nombre": "TOMATE TRITURADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOMATE TRITURADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "TOMILLO FRESCO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOMILLO SECO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TRUFA CHINA NEGRA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "UVAS BLANCAS SIN PEPITA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "UVAS ROJAS SIN PEPITA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VAINILLA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VENTRESCA DE ATUN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "VINAGRE CABERNET FORUM",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VINAGRE CHARDONNAY FORUM",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VINAGRE DE ESTRAGON",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VINAGRE DE JEREZ",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VINAGRE DE MANZANA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VINAGRE DE VINO BLANCO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VINAGRE DE VINO BLANCO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "VINO BLANCO(MAR DE FRADES)",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VINO MANZANILLA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "WASABI PASTA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "XANTANA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "YEMA DE HUEVO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "YEMA PASTEURIZADA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "YONDU",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ZANAHORIA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ZUMO DE YUZU",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Zumo de melocoton",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AGUA PET 1.5",
+    "tipo_unidad": "",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "HELADO DE HORCHATA DE LICOR 43 2.5L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE DE COCO 1KG",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE DE LIMA 1KG",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FRAMBUESA ENTERA LIOFILIZADA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VAINAS VAINILLA BOURBON MADAGASCAR 2Uds",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LECHE HOSTELERIA",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PATATA MONALISA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "JUGO DE TRUFA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "Pollo al ajillo",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Farsa de pollo al ajillo.",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VINO BLANCO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Farsa de Jamon",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Grasa de Jamon",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Hueso de Jamon",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Harina especial",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Mayonesa de Yuzu",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SAKE",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LEVADURA FRESCA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VINO TINTO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CARILLERAS DE ATUN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "QUISQUILLA FRESCA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "COQUINAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "AJI AMARILLO PASTA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CAJA UNITARIA COPAS LARGE/MEDIU",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "NAVAJA CONGELADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Fevertree soda water 200",
+    "tipo_unidad": "",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "TONICA",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Fevertree elderflower 200",
+    "tipo_unidad": "",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Fevertree nat.light tonic 200",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Fevertree sicilian lemona",
+    "tipo_unidad": "",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Fevertree raspberry  200",
+    "tipo_unidad": "",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Fevertree mediter 200",
+    "tipo_unidad": "",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Fevertree ginger beer 200",
+    "tipo_unidad": "",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Fevertree pink grapefr",
+    "tipo_unidad": "",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "CAJA UNITARIA MINI GLASS",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 minibeer glass + box",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 balon glass small + box",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 MESA MOSTRADOR",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Bolsa tela exp43 1bot",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PESCADO FRESCO DEL DIA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CANGREJO FRESCO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Base de sepia y cebolla",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHAMPIÑON",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAPADA DE CERDO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AZUCARILLO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1000"
+  },
+  {
+    "nombre": "Baristo glass + box x2",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Pack baristo glass 12 unid",
+    "tipo_unidad": "",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "Ramon bilbao crianza  0,187",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Licor 43 creme brulee 0.7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Cocktail 43 milk - lata",
+    "tipo_unidad": "LATA",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "Cocktail 43 cocomilk - lata",
+    "tipo_unidad": "LATA",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "Agua botellin 0,5 (personal)",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ron abuelo añejo 0,70",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Ron abuelo 7 años 0,70",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Ron abuelo 12 años 0,70",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Ron abuelo two oaks 0,70",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ron abuelo three angels 0,70",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ron abuelo napoleón 0,70",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ron abuelo oloroso 0,70",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ron abuelo tawny 0,70",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ron abuelo centuria 0,70",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BONITO GRASO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TRISOL",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Harina especial( berenjenas)",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GAMBA BLANCA CONGELADA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MEJILLONE BOUCHOT",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALMEJAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LOMO DE ATUN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CARRILLERA DE ATUN",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MORRILLO DE ATUN",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "METACRILATOS PRECIOS TIENDA",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Fevertree ginger ale 0.20",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CENICERO AGUA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PESO COCINA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOALLA ROLL SLIMROLL C-6",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "GEL ESPUMA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "AQUARIUS SLIMROLL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "JABONERA AQUARIUS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "DISP. ID TOILET",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "SERV.2-20 PUNTA NEGRA QQ C/4500u - 02030361--",
+    "tipo_unidad": "CAJA",
+    "unidadesxformato": "30"
+  },
+  {
+    "nombre": "PORTABOBINAS MURAL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "BOBINA IND.CELEA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "YUMBO STRONG",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "ALFOMBRA ANTIMIC.SCRAPE KOIL 115x175",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ECOCONPACK VAJILLAS G/10L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "10"
+  },
+  {
+    "nombre": "TOCINO SALADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "DASHINOMOTO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ACEITE DE TRUFA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MANGAS PASTELERAS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "100"
+  },
+  {
+    "nombre": "PAPEL SULFURIZADO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "500"
+  },
+  {
+    "nombre": "KEY ULTRA LAVAV.MANUAL G/4L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "4"
+  },
+  {
+    "nombre": "ECOCONPACK ULTRA LAVAVAJILLAS CONC.G/ 10L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "10"
+  },
+  {
+    "nombre": "ECOCONPACK A30 DETERGENTE AM C/10L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "10"
+  },
+  {
+    "nombre": "ECOCONPACK ABRILLANTADOR C/10L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "10"
+  },
+  {
+    "nombre": "CLEAN PLAC DESENGRASANTE 1L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CONPACK DESINFECTANTE PLUS C/10L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "10"
+  },
+  {
+    "nombre": "ECOCONPACK MULTIUSOS G/10L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "10"
+  },
+  {
+    "nombre": "ECOCONPACK SUELOS G/10L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "10"
+  },
+  {
+    "nombre": "MAGIC ABRILLANTADOR ACERO INOX 750ml",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GALA FLORAL DETERG.SUELOS NEUTRO G/4L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "4"
+  },
+  {
+    "nombre": "MICROTUFF PLUS BAYETA AZUL P/5u",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "FREGONA TIRAS VILEDA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PALO CEPILLO/FREGONA VILEDA 138cm",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CEPILLO STANDARD VILEDA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CUBO FREGONA 10L C/ESCURRIDOR VILEDA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "S/BRITE ESTROPAJO 96 VE 158x120mm",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "FREGONA MICROF.TIRAS CELEA AZUL 00176",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CELEA SALVAUÑAS INDUST.EXTRA 7x14cm P-6",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "CELEA ESTROPAJO INOX. 40GR P-10u",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "10"
+  },
+  {
+    "nombre": "ALMOHADILLA ABRASIVA INOX P-6u",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "BAYETA SINT.PRECORT.AM ROLLO CISNE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ROLL DRAP 40x64 F/BLANCO C/AZUL R-10u",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "10"
+  },
+  {
+    "nombre": "ROLL DRAP 40x64 F/NEGRO C/BLANCA R-10u",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "10"
+  },
+  {
+    "nombre": "MANGO ALU-PRO 140cm DRM PROFESIONAL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PULEX LIMPIACRIST.COMPLETO INOX 45cm",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "GUANTE NITRILO S/P NEGRO EXTRA T/P 100u",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "100"
+  },
+  {
+    "nombre": "GUANTE NITRILO S/P NEGRO EXTRA T/M 100u",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "100"
+  },
+  {
+    "nombre": "GUANTE NITRILO S/P NEGRO EXTRA T/G 100u",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "100"
+  },
+  {
+    "nombre": "CONTENEDOR WEBER 240L GRIS *",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "BAYETA MICROF.MULTI-T LIGHT VE P-20u",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "20"
+  },
+  {
+    "nombre": "BOLSA PL.90X110 NE CELEA HDPE115 R-10u",
+    "tipo_unidad": "BOLSA",
+    "unidadesxformato": "10"
+  },
+  {
+    "nombre": "BOLSA PL.67x85 BL 120-BD R-20u",
+    "tipo_unidad": "BOLSA",
+    "unidadesxformato": "20"
+  },
+  {
+    "nombre": "BOLSA CTA 40x50 BL 200-AD 70%Rec.P-100u",
+    "tipo_unidad": "BOLSA",
+    "unidadesxformato": "100"
+  },
+  {
+    "nombre": "BANDEJA OPS C/TAPA 500T B-50u",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "50"
+  },
+  {
+    "nombre": "BANDEJA OPS C/TAPA 750T B-50u",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "50"
+  },
+  {
+    "nombre": "BANDEJA OPS C/TAPA 1500T B-25u",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "25"
+  },
+  {
+    "nombre": "BOBINA ALUMINIO 29-250 11 micras",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "DISPENSADOR FILM/ALU 450mm INOX *",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "WRAPMASTER 3000 FILM C-3u",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "3"
+  },
+  {
+    "nombre": "WRAPMASTER DISPENSADOR 3000",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "FILM PVC ROLLO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "4"
+  },
+  {
+    "nombre": "ALFOMBRA VYNAPLUSH TRANSEC 90x150 GRIS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "Jugo de conejo reducido",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Jugo de zanahoria al ajo cabañil",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Emulsión de Hierbas y champiñones.",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PALETILLAS DE CONEJO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CONEJO ENTERO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BRANDY",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "MINI ZANAHORIAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "20"
+  },
+  {
+    "nombre": "Pure de verduras a la brasa",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Puerro confitado",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Picada(Verduras asadas)",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CALABAZA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LECHE DE COCO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CURCUMA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GUINDILLA ROJA FRESCA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BONIATO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Emulsion de rabano picante",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALUBIAS BLANCAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "COLIFLOR",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "Judia verde redonda",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "Repollo rizado",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "NABO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CHIRIVIA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PASTA DE RABANO PICANTE",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GARROFO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "BONITO EN CONSERVA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "LOMO IBERICO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "BLANCO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "MORCON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "SOBRASADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "HUEVA DE MUJOL",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "HUEVA DE MARUCA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "MOJAMA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "HUEVA DE BACALAO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ESPINA DORSAL DE ATÚN",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CHULETA DE VACA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "LOMO BAJO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "Pieza Dulce",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Pieza Salada",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Caldo de Pollo, Cerdo y atun",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Mahonesa de cebolla asada",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ajos tiernos confitados",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Cebollitas francesas glaseadas",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Cebolla Asada",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CEBOLLITAS FRANCESAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Chuletas vaca brasa",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Mantequilla de adobo del campo de Cartagena",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Manteca de vaca vieja",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VINAGRE DE ARROZ",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "GRASA DE VACA VIEJA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "LONGANIZA FRESCA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "REGAÑA PAN FEO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALCHICHON IBERICO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "TABLA CORTE NEGRA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SET BOTES SPRAY",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PINZAS REPOSTERIA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ROLLO 15M REPOSA VASOS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MIX CITRICOS EN RODAJAS DESHIDRATADOS",
+    "tipo_unidad": "BOTE",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FRAMBUESA LIOFILIZADA EN POLVO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HIERBABUENA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AZUCAR GLASS 3KG",
+    "tipo_unidad": "BOLSA",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "VAINILLA 1 RAMA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "CACAO EN POLVO - VALOR",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BOLSA DE VACIO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "JAMON SERRANO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PICADILLO DE VARIANTES",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALSA WORCESTERSHIRE",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VINAGRE DE CABERNET SAUVG",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOALLA MAGIC TOWEL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "300"
+  },
+  {
+    "nombre": "MINI ECLAIR DE TÉ",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FARTON DE CHOCOLATE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "EXPLORADOR PAST.",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HIELO SECO - 5KG",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SISHO VERDE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Licor 43 chocolate + 1 balon cup",
+    "tipo_unidad": "",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Licor 43 original + 4 minibeer glasses",
+    "tipo_unidad": "",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Licor 43 + balón glasses",
+    "tipo_unidad": "",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "MORCON ROJO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PLATO DE JAMON",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PLATO QUESO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FRAMBU. LIOFILIZADA - N.Y.V",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "KIT MASTER CLASS LICOR 43",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "S.A.V. Art. 78 Ley 37/92.2",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "COSTE ELIMINACION RESIDUOS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RECOGEDOR",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LEJIA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BOTELLA PARA PULVERIZADOR",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PISTOLA PULVERIZADORA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CRESPILLO CUARENTAYTRES",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MOSTAZA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "LECHUGA  VIVA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "DESCUENTO POR VOLUMEN",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GALERA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ESCALONIA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "IVA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LOMO DE BONITO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CARETA DE ATUN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SAKU DE ATUN",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN SANDWICH",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALSA RABANO PICANTE",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PATA DE TERNERA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "KIT VISITA PREMIUM",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AJO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "BROCOLI",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "ALCAPARRA DE SALINA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COLA DE RAPE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PULPO CONGELADO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "PURE DE LIMON 1KG BOIRON",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "NARANJA MESA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CILANTRO SALMARSA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HIERBABUENA SALMARSA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PICOS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Horchata glass",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Est. licor 43 chocolate + 1 licor 43 0.05",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Est. licor 43 horchata + 1 horchata glass",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HUESOS DE CERDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "COSTILLA DE CERDO CARNOSA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "COCA-COLA ZERO 2L",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "FANTA NARANJA 2L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "LENTEJAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "SEPIA SUCIA CONGELADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TRASERO DE POLLO CONGELADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "10"
+  },
+  {
+    "nombre": "Tomate Frito Pera",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CEPILLO BUQUE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PALO ALUMINIO CEPILLO VILEDA 145CM",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BOLSA PLASTICO 85X105",
+    "tipo_unidad": "PACK",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BOLSA PLASTICO 90X115",
+    "tipo_unidad": "PACK",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GUANTES AMARILLO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GUANTE NITRILO AZUL M",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIEDRA POMEZ",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "DESATASCADOR FUELLE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "NATA YOSI PASTELERIA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "NATA UHT CASTILLO PASTELERIA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALMENDRA MOLIDA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALMENDRA CUBITOS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AZUCAR INVERTIDO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CACAO EN POLVO PASTELERIA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "JUEGO BOQUILLAS LISAS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COBERTURA YAGARA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COBERTURA CHOCOLATE CON LECHE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COLORANTE ALIMENTARIO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LEJIA ALIMENTARIA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "PIMIENTA VERDE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SIROPE DE GLUCOSAY MIEL",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "CANELA RAMA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COBERTURA GOTA BLANCA 30%",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "CERVEZA MEXICANA NEGRA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CARDAMOMO VERDE GRANO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO CREMA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "GALLETA LOTUS MOLIDA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "DESINCRUSTANTE",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "DESENGRASANTE SUELO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "5"
+  },
+  {
+    "nombre": "CARNE PICADA VACUNO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALGA NORI EN TEMPURA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOMATE CHERRY SEMISECO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "QUESO MASCARPONE 35%",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "Placas para lasaña",
+    "tipo_unidad": "PACK",
+    "unidadesxformato": "18"
+  },
+  {
+    "nombre": "CHULETA VACA EXTRA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITUNA KALAMATA DESHUESADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BLOC NOTAS CON BOLIGRAFO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "EDULCORANTE SOBRE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "250"
+  },
+  {
+    "nombre": "BOT. LECHE CONDENSADA",
+    "tipo_unidad": "BOTE",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CARBON VEGETAL ENCINA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "15"
+  },
+  {
+    "nombre": "CARBON VEGETAL QUEBRACHO BLANCO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "15"
+  },
+  {
+    "nombre": "LEÑA DE OLIVO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "20"
+  },
+  {
+    "nombre": "QUISQUILLA CONGELADA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Paraguas martin miller´s",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "Licor 43 cubitera luminosa",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "Lolea cubitera ovalada",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "Lolea cubitera conica 2bot.",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "BARQUILLO PASTELERIA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "2"
+  },
+  {
+    "nombre": "COBERTURA OCUMARE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "HOJA GUITARRA 60X40",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "320"
+  },
+  {
+    "nombre": "PLATO PLASTICO 23,50 CM",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "100"
+  },
+  {
+    "nombre": "LOMO BAJO ANGUS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Tomate Rayado",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Taza pile 43",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Taza de cartagena para el mundo",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Taza colores fabrica 43",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Jarra pile 43",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Jarra de cartagena para el mundo",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Cubitera mar de frades + soporte",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Cubitera esferica ron abuelo con soporte",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Cubitera mar de frades magnum",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Sacacorchos ramon bilbao",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Sacacorchos mar de frades",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Sacacorchos cruz de alba",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN MOLDE",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HOJAS DE SHISHO VERDE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "15"
+  },
+  {
+    "nombre": "CLAVO GRANO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "NESCAFE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HARINA DE MAIZ",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHULETON NOVILLA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHULETON VACA GALLEGA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHULETON VACA ASTURIANA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHULETON VACA VIEJA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO DE CABRA CREMA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ROQUEFORTI DE LECHE DE VACA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LECHE EXTRA CREME",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HARINA DE FUERZA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FRAMBUESA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ARANDANOS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MORAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOMATE VERDE",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PLANCHAS BIZCOCHO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LIMPIACRISTALES",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LAVAVAJILLAS MANUAL",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAPELERA PLASTICO 25L",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BOLSA PLASTICO 52X62",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITE DE ORTEGA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALCACHOFA NATURAL CONFITADA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "30"
+  },
+  {
+    "nombre": "PAN OTON",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO CABRA IZAN SUAVE",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO CABRA GRANORO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO AZUL DANES",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALVARO PALACIOS Petalos del bierzo",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALVARO PALACIOS Les terrasses 2020",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "La atalaya del camino",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ATTIS Sangarida la guiana",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ATTIS mar 2020",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ATTIS Sitta pereiras dulce",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Brancellao 2017",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BAIGORRI Garage",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Barco del corneta 2021",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Belondrade y lurton 2022",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BIZARRIA Ancestral incredible rosado 2021",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BIZARRIA Ancestral king rosado 2021",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BIZARRIA Malvasia 2022",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BLEDA Pino doncel 24 meses 2018",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BRUTO PROPIEDAD VITICOLA 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CA DI MAT Valautin 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CARCHELO Vina maris 2015",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CASA CASTILLO Valtosca 2021",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CASA CASTILLO cuvee vinas viejas 2019",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CASA CASTILLO pie franco 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Tokio gomez-rojo minami I",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CASTELL DENCUS Ekam 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CERRON La servil 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CERRON Rabia 2020",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CERRON La calera del escaramujo 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CESAR MARQUEZ El llano 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHÂTEAU DE BERU Athenaïs montserres 2022",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHÂTEAU PINDEFLEURS Saint-emilion grand cru - chateau pindefleurs",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Cortijo los aguilares Pinot Noir",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CORTIJO DE LOS AGUILARES Tadeo 2020",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CDA roble",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CDA organic",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CDA Fuentelum",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Finca los hoyales",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CDA crianza magnum",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Cruz de alba 3",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "DOMAINE ARNOUX PÈRE & FILS Savigny 1er cru les peuillets 2022",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "DOMINIO DE PINGUS Psi 2019",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "DOMINIO DE PINGUS Flor de pingus 2019",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "EL NIDO Clio 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "El nido 2021",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GIOVANNI ROSSO Barolo serralunga 2022",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Godeval 1986, 2018 ",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GONZALEZ BYAAS Tio pepe",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GONZALEZ BYAAS Vina ab crianza 8 anos",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Gewürztraminer Vinas del vero",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GONZALEZ BYAAS Nectar px crianza 9 anos",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GONZALEZ BYAAS Finca moncloa",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Hacienda monasterio reserva especial 2019",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HISPANO SUIZAS Tantum ergo rosado 2020 (pinot noir)",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HISPANO SUIZAS Bobos finca casa la borracha 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HYDRIA 4 cuerdas barrica",
+    "tipo_unidad": "BOTE",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HYDRIA 4 cuerdas velo flor",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "JORGE PIERNAS Antonio piernas 2020",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "JOSE PARIENTE cuvee especial 2018",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "JUAN GIL moscatel seco 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MOUNT RILEY Sauvignon Blanc",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "La del terreno 2019",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LA DEL TERRENO Ninja de las uvas Tintas 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LABORATORIO RUPESTRE Chiquillo 2016",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LABORATORIO RUPESTRE Ruina 2017",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LABORATORIO RUPESTRE Bujes 2021",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LABORATORIO RUPESTRE Carreres 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LAVIA Origen 2017",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Licinia",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LOUIS ROEDER brut vintage rose 2016",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LOUIS ROEDER cristal",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Luzon dulce",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LUZON Mina de oro 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MDF espumoso",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Mar de frades",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MDF Godello",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Finca valinas",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Finca monteveiga",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MDF magnum",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Dalmau 2019",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MARQUES DE MURRIETA Castillo ygay gran reserva 2011",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MAS D EN GIL Bellmunt vi de villa 2022",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MEDRANO IRAZU Amador medrano finca valdegamarra",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MESTRES Coquet 2018 (xarel.lo, macabeo y parellada)",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PEPE MENDOZA Velo tinajas de padilla",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PEPE MENDOZA El veneno 2020",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PEPE MENDOZA Giro abargues 2020",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Pommery brut royal",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Pommery brut apanage",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Pommery brut royal rose",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Pommery apanage blanc de blanc",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Pommery cuvee louise millesime co",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUINTA DE LA QUIETUD La mula 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB rosado",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Lalomba finca lalinde",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB rosado magnum",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Lalomba finca lalinde magnum",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB verdejo",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB verdejo organico",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB sauvignon blanc",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB sobre lias verdejo",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB limite norte",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB verdejo magnum",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB crianza",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB reserva",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB ed.ltda crianza",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB v.altura",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB organic tinto",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB limite sur",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB rva original",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB g.reserva",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB mirto",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Lalomba finca valhonta",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Lalomba finca ladero",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB crianza magnum",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB reserva magnum",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB ed.ltda crianza magnum",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB crianza doble magnum",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB crianza 5l",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB reserva 5l",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Vina arana gran reserva 2016",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "904 gran reserva 2015",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "890 gran reserva 2010",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RODRIGUEZ DE VERA Dominio de casalta",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SUERTE DEL MARQUES Trenzado 2022",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "T.L Lara o 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TESALIA Arx 2019",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TESO LA MONJA Almirez 2021",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TORRES Milmanda 2019",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VEGA SICILIA Alion 2019",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "El yesar 2021",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "La lasca 2019",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Tate 2021",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VOLVER Triga blanco 2021",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VOLVER Triga 2018",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Zeppelin label mulheimer sonnenlay 2022",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO CABRA FRESCO CUADRADO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CASHEL BLUE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "IDIAZABAL",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COMTE AOP ESTIVE 20-28 M",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Agua",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Infusiones",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Suplemento ali-oli",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Coca-cola zero",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Coca-cola",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Coca-cola zero zero",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Estrella 1/3",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Volldamm 1/3",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Tercio celiacos",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Punta este caña",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Sprite",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Fanta naranja",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Fanta limon",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Z.tomate",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Z. manzana",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Z. piña",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Z. melocoton",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Z. naranja",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Nestea",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Aq. naranja",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Aq  limon",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Bitter",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Te Rooibos",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "45"
+  },
+  {
+    "nombre": "R.BILBAO ENFRIADOR 4 BOT.",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CAVA MAGNUM SOBREMESA RB",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Whisky ballantines",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN BAGUETTE SIN GLUTEN",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "WHISKY J&B  0.70",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Whisky j&b",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GIN BOMBAY 0.70",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GIN BOMBAY SAPHIRE 0.70",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GIN BROCKMANS 0.70",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GIN BULLDOG 0.70",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GIN CITADELLE 0.70",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RETIRADA SUBPRODUCTOS CARNICOS",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MENTA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FRESAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHILE TAJIN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "POLVO DE TOMATE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE MARACUYA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE FRESA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE PIÑA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE LIMON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RAPE NACIONAL",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "DENTON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LUBINA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITE VIRGEN EXTRA ARBEQUINA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VINAGRE BALSAMICO DE MODENA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "NUTELLA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LECHE EVAPORADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GALLETA LOTUS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO RALLADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GINEBRA BASICA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HIGIENICO BULK PACK KLEENEX",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ECOTECH GREEN CARE GEL DERMO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VITASAN ECO GEL CORPORAL",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PASTA VAINILLA BOURBON",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GOCHUJANG BIMBAB SEMPIO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CARRILLERA VACUNO CONFITADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BOQUERON CONGELADO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE DE MANGO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE DE FRUTAS DEL BOSQUE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "JALAPEÑO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CACHAZA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LICOR PISCO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COINTREAU",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CAVA BRUT",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CAVA BRUT ROSADO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GOLD CUP",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CANELA EN POLVO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BAYETA MICROFIBRA 40X40",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BAYETA MICROFIBRAS MULTIUSOS EXTRA",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ENVASE ALUMINIO FLANERA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Lolea Nº1",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ATTIS Sangarida la yegua",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Cubitera Alaska RB",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GIN G-VINE L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GIN HENDRICKS 0.70 L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GIN MARE 70 CL.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GIN MONKEY 47 50 CL.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GIN TANQUERAY TEN 70 CL.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GIN THE LONDON Nº1 0.70 L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GINEBRA BEFFEATER 0.70 L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GINEBRA NORDES 0.70 L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L.APEROL L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L.CAMPARI L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TEQUILA 1800 REPOSADO 0.70 L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VODKA ABSOLUT 0.70 L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VODKA BELVEDERE 0.70 L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VODKA CIROC 0.70 L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VODKA GREY GOOSE L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "WHISKY BALLANTINES 0.70 L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "WHISKY CHIVAS LITRO",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "WHISKY DEWAR´S 12 0.70 L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "WHISKY GLENFIDDICH 12 0.70 L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "WHISKY J. WALKER ET.NEGRA 0.70 L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "WHISKY JOHNNIE WALKER MALTA BLUE 0.70",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "WHISKY LAGAVULIN 16 MALTA  0.70 .",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "WHISKY MACALLAN DOUBLE CASK 0.70 L.",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HIELO CRISTAL 10 KG",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HIELO CRISTAL 5 KG",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HIELO COCTEL 10 KG",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HIELO CUBALITRO 5 KG",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HIELO PICADO PARA CHAMPANERA",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Botella Thermo Negra",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Botella Thermo Dorada",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Vela L43 & Cartagena",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Cuarentaytres Coffee Cup",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Balsamo Labial L43 & Cartagena Rosa",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Balsamo Labial L43 & Cartagena Dorado",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Balsamo Labial L43 & Cartagena Plata",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Marino Vuelta al Mundo - T.M",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Marino Vuelta al Mundo - T.L",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Marino Vuelta al Mundo - T.XL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Blanca Pile 43 - T.M",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Blanca Pile 43 - T.L",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Blanca Pile 43 - T.XXL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Crema Cartagena para el Mundo - T.M",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Crema Cartagena para el Mundo - T. L",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Crema Cartagena para el Mundo - T.XL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Crema Cartagena para el Mundo - T.XXL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Frutos secos",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Tostada Sin 1/3",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "24"
+  },
+  {
+    "nombre": "Aportación imagen cuarentaytrés",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LA DEL TERRENO Ninja de las uvas Blanco",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Olivares 0.50",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PUNTO VERDE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CAJA + BOTELLAS VR",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PUNTA ESTE BARRIL 30L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "EST LEVANTE SIN. BARRIL 20L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "VASO MEZCLADOR REFORZADO 800ML",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "E.LEVANTE BARRIL 50L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "BOTELLA CARBONICO 8KG",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "MICRO BROTE ALBAHACA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TRANSPORTE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BACALAO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CAFE BLEND ESPECIAL 1KG",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CAFE DESC. GRANO 1 KG",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GOMINOLAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SAL DESCALCIFICADORA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RB ed.ltda Garnacha",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PUNTA ESTE BARRIL 20L",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Brandy Terry 1L",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MEZCAL EL RECUERDO",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TE NEGRO PAKISTAN",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "45"
+  },
+  {
+    "nombre": "TE VERDE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "45"
+  },
+  {
+    "nombre": "TE ROJO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "45"
+  },
+  {
+    "nombre": "TILA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "45"
+  },
+  {
+    "nombre": "MANZANILLA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "45"
+  },
+  {
+    "nombre": "TE POLEO-MENTA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "45"
+  },
+  {
+    "nombre": "QUESO CABRA RULO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALCHICHA FRANKFURT",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIMIENTO PIQUILLO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TABASCO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PORTES",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COBERTURA BLANCA NEPAL",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CABELLO DE ANGEL",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE DE COCO BOIRON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ANIS RICARDS 1L",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITE OLIVA ARBEQUINA PREMIUM",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "Chuletitas de Cabrito",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO FRESCO CABRA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BERBERECHOS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "EXPLORADORES",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PULGUITA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BOLLERIA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Estuch.Regalo Vino RB 2/3 bot.",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ANIS SALAS SECO 1L",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BRANDY CARLOS III 0,70",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COSTILLA CABRITO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHULETA VACA RUBIA GALLEGA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MERLUZA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SCOTSMAN SACO 10 KG EXP",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GALLETA MARIA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "DELANTAL PVC",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Tokio Gomez-Rojo minami II",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GALLETA TOSTADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE MELON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ZUMO TOMATE",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO COMTE",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Bruma paraje las encebras",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BANDERILLAS EN VINAGRE",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITUNAS CAMPO REAL SOSA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BARBACOA EXTRA PICANTE",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO VACA AZUL",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MERMELADA FRESA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MERMELADA FRAMBUESA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MERMELADA MELOCOTON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN HAMBURGUESA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO LONCHAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "KETCHUP",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOMATE DANIELA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FIDEO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PATATAS FRITAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LECHE SIN LACTOSA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FRUTA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "1000 Acordes (Monastrell |Bulas)",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LABORATORIO RUPESTRE Escombro",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BAIGORRI Quintanilla",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TERRITORIO LUTHIER Clarete De Guarda",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Remordimiento",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Chorey-Les-Beaune",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Pezas De Portela",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Gewürztraminer",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "El Cerrico",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MARQUES DE MURRIETA Capellania",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Argent Rosado Gran Reserva",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GYOZA CERDO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "NATA AGRIA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALMON AHUMADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ENELDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PALILLO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Fruta de temporada",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BATATA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PANIPURI",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PEPINILLO AGRIDULCE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PEPINILLO VINAGRE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PANCHITO FRITO",
+    "tipo_unidad": "BOLSA",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PATATAS GRUESAS RUBIO",
+    "tipo_unidad": "BOLSA",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALMENDRA FRITA",
+    "tipo_unidad": "BOLSA",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITUNAS SABORES",
+    "tipo_unidad": "BOTE",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TANQUE CERVEZA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "1"
+  },
+  {
+    "nombre": "*********ENVASE PARA LLEVAR",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AZUCAR MORENO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BOLSA PAPEL PARA LLEVAR",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALBONDIGAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SECRETO DE CERDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ajuste pv compra RTD",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SAL GRUESA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BOLETUS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN CRISTAL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN LAMINA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SETA DESHIDRATADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHAMPIÑON PORTO BELLO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Laurent - Perrier Champagne",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GASTOS DE ENVIO",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GOFRE DE PATATA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L.PISCO DEMONIO ANDES 0.70",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FOIE GRAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HUESO DE RAPE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO OVEJA CON TRUFA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BABILLA DE TERNERA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PLATANO MACHO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "POSAVASOS Cuarentaytres",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITUNAS AL AJILLO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TORTILLA WRAPS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHIPOTLE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN BAO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "POLLO CANTONES",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALSA VALENTINA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BISCOTES SIN GLUTEN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CROCANTI DE ALMENDRA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PALET PLASTICO DAMM",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AVECREM",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ROSQUILLAS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CLARA DE HUEVO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TRIGO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "POLVOREADOR TAPA CON MALLA FINA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PINZA PRECISION",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MORTERO PLASTICO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MINI PINZAS DECORACION",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "100"
+  },
+  {
+    "nombre": "PICKS LAZO BAMBU",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "100"
+  },
+  {
+    "nombre": "COCTELERA BOSTON 20 OZ.",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BAR CADDY NEGRO LA TIENDA DEL BARMAN",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COCTELERA BOSTON 28 OZ.",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LATA GEL COMBUSTIBLE",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TE FRUTOS ROJOS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CEBOLLETAS AL CARAMELO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ESPINACAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "YOGUR",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VASO CAFE LLEVAR",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TAPA CAFE LLEVAR",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PLATO DESECHABLE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Crema de queso de cabra",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MORCILLA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HOJALDRE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIERNA DE CABRITO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "REMOLACHA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GUISANTE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CUELLO DE CORDERO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PECHO DE CORDERO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "REMOLACHA LIOFILIZADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO GORGONZOLA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PULPA DE ÑORA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COCOCHA DE MERLUZA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOPINAMBUR",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CULTIVO SETAS VARIADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "DORADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LIMPIADOR FOSAS SEPTICAS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ramon Bilbao Seleccion de la Familia 0,7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "DELI CARAMELO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "4 Cuerdas (Macabeo |Bullas)",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Numen Agua 1/2",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "20"
+  },
+  {
+    "nombre": "ENVASE NUMEN",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Estrella Levante 1/5",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Copa vino Old Hands",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Copa vino Castaño dulce",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Pure Frambuesa",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GOMINOLAS",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ZUMO NARANJA BOTELLA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 Circular Glorifier",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 Coffee Cup Golden&Black",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 Golden Jigger",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 Kit Coctelero",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 black ballon",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 Napkin holder premium",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PASTA AROMA CAFE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 bag blak&gold",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HELADO CHOCOLATE CON TRUFA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HELADO VAINILLA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TANQUE CERVEZA SUP.",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MAIZ COCIDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALMONETE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Medidor de aceite",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Mantequilla monodosis",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Mermelada monodosis",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "KIWI",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MOLLEJA DE CORDERO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Sangria Lolea Spritz blanco 0,7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Sangria Lolea Spritz rose 0,7",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ramon Bilbao Early Harvest Verdejo 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ramon Bilbao Early Harvest Rosado 0.75",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "6"
+  },
+  {
+    "nombre": "FLOREX",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CREMY",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MIROIR GLASSAGE NEUTRE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GLUTAMATO MONOSODICO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACIDO ASCORBICO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FILETE SARDINA AHUMADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TERNERA LAQUEADA TERIYAKI",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHILE ROJO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALLIOLI",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CALABACIN MINI",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOMATE CONCENTRADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HARINA TEMPURA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BROCHETA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GAMBA ROJA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALSA TERIYAKI",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BOGAVANTE",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COSTELETA CEBON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHURRASCO WAGYU",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PANECILLO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MISO ROJO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HINOJO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ron Havana Club",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHIQUILLO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "KATSUOBUSHI",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE DE BERGAMOTA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PASTA CURRY VERDE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE DE MELOCOTON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PASTA DE NUEZ",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BROTES RABANO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FLOR DE LAVANDA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CELEA DETERLEJIA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CELEA ANTICAL BAYOS",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ROLLO PAPEL 80*80",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ROLLO PAPEL 57*35",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Salsa Ras al hanout",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VINAGRE DE MIEL",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Caja del cafe Asiatico",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ABRILLANTADOR WINTER",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "DETERGENTE LAVAVAJILLA WINTER",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PASTILLAS DETERGENTE",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Walkys",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ESCAROLA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Sirope de vainilla",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Fevertree SODA",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHAYOTE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ARROZ JAPONICA PLUS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MANZANA GRANY SMITH",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BERENJENAS DE ALMAGRO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Tarjeta visita",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Pizarra con marcador",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MICRO BROTE PERIFOLLO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MICRO BROTES CILANTRO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RETENCION IRPF 2%",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HOJAS DE LIMA KAFFIR",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PISTACHO VERDE REPELADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FECULA DE TAPIOCA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "POLLO CAMPERO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PERDIZ DESHUESADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GRANADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Estrella Levante 1/3 sin",
+    "tipo_unidad": "BOT",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CANONIGOS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "REMOLACHA COCIDA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RABANO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CEBOLLETA CHINA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HUEVAS DE TRUCHA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VIEIRA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LANGOSTINO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ENDIBIA ROJA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COL LOMBARDA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Flyers brillo 2 caras",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Copia A4",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Vaso Asiatico",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PEDRO XIMENEZ",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN PITA MINI",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "JUGO DE TERNERA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CORDERO DESMIGADO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camisa 43",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MEJILLONES EN ESCABECHE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE DE CASTAÑAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PERLAS DE YUZU",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PEPINO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CEBOLLA ROJA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOSTADA MELBA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALSA KIMCHI",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CUBO 95L",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CUBO 95L CON PEDAL",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Estuche Asiático 2 copas",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Plumero rafia",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Jabon",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Materiales de mantenimiento",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Lavado",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ABRILLANTADOR LAVAVAJILLAS",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HALONET DETERGENTE DESINFECTANTE CON CLORO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FRESAS CONGELADAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AMBIENTADOR ESPRAY",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Blanca Pile 43 - T.S",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Crema Cartagena para el Mundo - T.S",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Marino Vuelta al Mundo - T.S",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALBARICOQUE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALMEJA CONGELADA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GAS SOPLETE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MELOCOTON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Whisky Jack Daniels 0,7",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Gin Tanqueray 0,7",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ron Brugal añejo 0,7",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Blanca Pile 43 - T.XL",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAPEL MARRON EVENTOS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "NUEZ PACANA CANTONESA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LECHUGA BABI",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ANACARDO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Helado Vainilla",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Helado Coco",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Helado Regaliz",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Helado Menta",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Helado Nata",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Helado Mascarpone",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Helado Chocolate",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Helado Limon",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Helado Pictacho",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Chocolate liquido (Crujiente)",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Granolla de amaretto",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Amarena",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Nutella de pistacho",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Coca-cola zero lata",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SORBETE DE FRUTOS ROJOS",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Marino Vuelta al Mundo - T.XXL",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PLATOS",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CUBERTERIA",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BACALAO MIGAS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GAMBA GRIEGA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PRODUCTOS PAPELERIA",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MICRO BROTES SHISO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FANTA LIMON 2L",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PINCHOS MORUNOS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHULETA DE LOMO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALAS DE POLLO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Notebook negro",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AFILADO DE CUCHILLO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COUS-COUS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIEL DE LIMON PICADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COPOS DE AVENA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Vajillas HD",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN MINI HAMBURGUESA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TINTA SEPIA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Vodka Smirnoff",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MICUIT",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FRESA LIOFILIZADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Licor 43 ed. limitada",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GOFRE MINI",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Estrella Levante Reserva",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Empanada gallega de xuobas",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Galleta rotonda",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Cono para helado",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "OSTRA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CIGALA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO SAN SIMON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIMIENTO PADRON",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Patata bolsas individ",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO ARZUA ULLOA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO CEBREIRO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LACON",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ENTRECOT VACA RUBIA GALLEGA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO TETILLA GALLEGA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ajuste Redondeo",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Empanada",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PICOS ARTESANOS",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Zoco Anis",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SOSA GELIFICANTE ESPESIDOR",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALGAS AGAR-AGAR",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ropa para personal",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Mano de obra",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALSA ALIOLI CUBO",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Menaje cocina",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MEJILLON COCIDO EN SU JUGO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "4"
+  },
+  {
+    "nombre": "Electricity",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Manteles",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ROUX OSCURO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LINGOTE DE MAR",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AZUCAR GLASS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FIAMBRE MAGRO DE CERDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO DE BARRA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CARNE HAMBURGUESA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SATIN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "JAMON IBERICO CEBO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "JAMON IBERICO BELLOTA 100%",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CALLOS Y MORRO TERNERA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHORIZO GUISO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALGA ESPIRULINA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALGA LECHUGA DE MAR",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALGA CODIUM",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MANTEQUILLA FRANCESA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PISTO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GYOZA PRESA IBERICA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO OVEJA ROMERO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO OVEJA CURADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO OVEJA TIERNO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LONGANIZA CURADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO BRIE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ANGUILA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LENGUA DE VACA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "NISCALO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "REBOZUELO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ANGULA DE MONTE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ACEITE DE OLIVA CON TRUFA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALSA TARTUFATA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "AGOSTURA BITTERS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SUCRO EMUL",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HOJA DE ROBLE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MALTODEXTRINA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GALLETA SOJA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SAZONADOR LIQUIDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MOKA PASTA BASE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FOIE GRAS PREMIUM",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN MOLLETE",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PETIT FOUR NEGRO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SCOTSMAN SACO 10 KG",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SIROPE DE ARCE",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COLA CAO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALSA PONZU",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RABO DE TORO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TENDON DE VACA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALMENDRA GARRAPIÑADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PALOMITAS CARAMELO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LICOR RICARD",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "frutas cocteles",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN DE ESPECIAS",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Mantequilla Cafe de Paris",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PASTA DE TAMARINDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOSTADAS CACAO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOSTADA FRUTOS ROJOS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COCOCHA DE BACALAO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PALETILLA DE CORDERO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CONSERVADORES DE COLOR LIQUIDO",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GROSELLA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PASTA AVELLANA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HUEVO CAMPERO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MICRO BROTES ACEDERA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BRIOCHE PASTELERIA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BERROS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GYOZA DE BUEY",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CROQUETA JAMON CONGELADA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BROTE SAKURA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BUÑUELO BACALAO CONGELADO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "NUEZ",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CURRY TANDORI MASSALA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ENSALADILLA DE MARISCO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VASOS",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BOQUERON  EN VINAGRE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HUEVA PEZ VOLADOR TOBIKO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FLOR DECORATIVA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TARTALETA CENTENO CHILI",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BASE REMOLACHA + CHALOTA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PATATA CHIP RECTANGULAR",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO MOZZARELLA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MAIZ FRITO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOFU",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE DE PATATA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MINITORTILLA PATATA CON TRUFA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MILHOJAS DE PATATA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CHORIZO DE LOMO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "LOMO EMBUCHADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TURRON CHOCOLATE Y ALMENDRA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MOZZARELLA FRESCA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CACAHUETE FRITO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "WAGYU LOMO BAJO JAPONES",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BARRIL VACIO",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MANTEQUILLA DE TRUFA BLANCA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SIROPE DE MENTA",
+    "tipo_unidad": "LITRO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Aportación Rappel Food",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COLORANTE LIQUIDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GLUCOSA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CAVIAR CITRICO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COCHINITA PIBIL",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "12"
+  },
+  {
+    "nombre": "CARRILLERA DE CERDO CONFITADA EVENTOS",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "14"
+  },
+  {
+    "nombre": "BACALAO BARQUERO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Estuche Asiático 1 copa",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "VASOS PLASTICO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Hacienda Salzillo premium",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "El Guertana Sauvignon blanco",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Anayón tinto",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Anayón Chardonnay blanco",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "RODABALLO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CINTA DE LOMO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO VACA REBLOCHON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE DE YUZU",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Estacion de atun",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAPAYA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CODILLO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SURIMI",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COCA COLA ORIG. 2L",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "FANTA NARANJA 2L",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Niño de las Uvas Tinto",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Vodka TITO 0,7L.",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Regularizacion 2024",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Royal bliss Lemon",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Royal bliss Ginger beer",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Brandy Gran Duque de Alba 0,7",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ESFERIFICACION DE ACEITUNA NEGRA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Colores fábrica - T. L",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Colores fábrica - T. S",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Colores fábrica - T. M",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Colores fábrica - T. XL",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camiseta Colores fábrica - T. XXL",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HUEVA DE ERIZO DE MAR",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MAGRET DE PATO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALGA WAKAME",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HUEVA DE SALMON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CABALLA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALMON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PATO CONFITADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SETA SHIITAKE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Royal Bliss Rosa",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MINI MAIZ",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "QUESO BURRATA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GAMBA CRISTAL",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "STEAK TARTAR CONGELADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "DULCE DE MEMBRILLO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TOMATE RAF",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAK CHOI",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GLICERINA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Zanahoria de Hierbas",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SOLOMILLO VACA NORTEÑO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ENTRECOT VACA RUBIA GALLEGA NORTEÑO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "HELADO DE DULCE DE LECHE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Camelot Dulce Monastrell",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BASE PINSA 20X30",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIMIENTO ASADO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "OREJA DE CERDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "APIO  NABO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MICRO BROTES WASABI",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PIEL DE BACALAO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SALVIA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "REQUESON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PACK CHOI",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "KUZU",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALMIFRIO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CAMARON ROJO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN MOLDE BRIOCHE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PAN PITA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Tequila Don Ramon Plata 0,7",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Tequila Don Ramon Reposado 0,7",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CARRILLERA DE CERDO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "GOMA GELLAN",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MAGRA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CONGUITO",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "CAVIAR",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Niño de las Uvas Bullas",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BREVA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Media Patatas Revolconas",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Media tataki de atún",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Media Morrillo de atún",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Media Ensalada de la Huerta",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Gin Seagrams 0,7",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Whisky FOUR ROSES 0,7",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PURE DE TUPINAMBO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "ALBACORA",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Bolígrafo 43",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Royal bliss Pomelo 0,2",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Fuze tea limon 1,5l",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Aquarius 1,5L",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Vodka Wyborowa 0,7",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Sprite 2 LITROS",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ron Bacardi 1L",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Carta Minta",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ateo",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Carajillo Cuarenthaitres",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Batido chocolate",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Batido Vainilla",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Batido Coco",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Batido Pistacho",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Nuestros Zumos Naturales",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TARTA QUESO OTON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Licor 43 Caramel Cookie 0,7",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Royal Bliss Ginger Ale",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "L43 shaker parisienne golden",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Coca-cola lata",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Coca-cola zero lata",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Fanta Limón lata",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Fanta Naranja lata",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Fuze Tea lata",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Aquarius lata",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Agua botellin",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Tonica Royal Bliss lata",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Monster Energy lata",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Belmonte",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Aq. Melocotón",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Cerveza lata",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MELON",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "SANDIA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PINCHO LONGANIZA",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "PINCHO POLLO",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Royal bliss tonica",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Caja cucharillas asiatico",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Aqua Bona con Gas",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "COL CHINA",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ron Barcelo",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "Ron Santa Teresa Venezolano",
+    "tipo_unidad": "",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BOLLERIA DULCE",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "BOLLERIA SALADA",
+    "tipo_unidad": "KG",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "MANGO DESHIDRATADO",
+    "tipo_unidad": "KILO",
+    "unidadesxformato": "0"
+  },
+  {
+    "nombre": "TEQUEÑOS",
+    "tipo_unidad": "UD",
+    "unidadesxformato": "0"
+  }
+]
