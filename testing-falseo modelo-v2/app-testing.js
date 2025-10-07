@@ -71,44 +71,97 @@ function isPdfFile(f) {
   let PRODUCTS = [];
   loadProducts();
 
+  const norm = (s) =>
+    String(s || "")
+      .normalize("NFD")
+      .replace(/\p{Diacritic}/gu, "")
+      .toLowerCase();
+
   async function loadProducts() {
-    // Testing: usa 3 productos locales y evita peticiones/red a productos.json
+    // función auxiliar para crear objetos desde el JSON
+    // dentro de loadProducts()
+    const toObjs = (arr) =>
+      (Array.isArray(arr) ? arr : [])
+        .map((p) => {
+          // Acepta variantes de clave para 'codigo' y 'nombre'
+          const rawCodigo =
+            p?.codigo ??
+            p?.cod ??
+            p?.code ??
+            p?.id ??
+            p?.Codigo ??
+            p?.ID ??
+            p?.CODIGO ??
+            p?.["código"] ??
+            "";
+          const rawNombre =
+            p?.nombre ??
+            p?.Nombre ??
+            p?.name ??
+            p?.descripcion ??
+            p?.Descripción ??
+            "";
+
+          const codigo = String(rawCodigo ?? "").trim();
+          const nombre = String(rawNombre ?? "").trim();
+          return { codigo, nombre };
+        })
+        .filter((p) => p.nombre) // como mínimo, nombre
+        .map((p, i) => ({
+          ...p,
+          // etiqueta del dropdown: "codigo · nombre" (o solo nombre si no hay código)
+          label: p.codigo ? `${p.codigo} · ${p.nombre}` : p.nombre,
+        }));
+
     if (TESTING_PRODUCTS) {
       try {
         const res = await fetch("productos_mas_formato.json", {
           cache: "no-store",
         });
-        if (!res.ok) throw new Error("No se pudo cargar productos.json");
+        if (!res.ok)
+          throw new Error("No se pudo cargar productos_mas_formato.json");
         const data = await res.json();
-        const names = (Array.isArray(data) ? data : [])
-          .map((p) => String(p?.nombre || "").trim())
-          .filter(Boolean);
 
-        // sincroniza AMBAS fuentes para que el UI use datos
-        TEST_PRODUCTS = names.length ? names : TEST_PRODUCTS;
-        PRODUCTS = [...TEST_PRODUCTS]; // <— ¡clave! el UI usa PRODUCTS
+        const objs = toObjs(data);
+        // si no hay JSON válido, caemos al fallback de nombres
+        PRODUCTS = objs.length
+          ? objs
+          : TEST_PRODUCTS.map((n, i) => ({
+              codigo: String(i + 1),
+              nombre: n,
+              label: `${i + 1} · ${n}`,
+            }));
 
         console.log("Productos (testing):", PRODUCTS.slice(0, 5));
       } catch (e) {
-        console.warn("productos.json no disponible o mal formado:", e);
-        // fallback (igual que antes)
-        PRODUCTS = [...TEST_PRODUCTS];
+        console.warn(
+          "productos_mas_formato.json no disponible o mal formado:",
+          e
+        );
+        // fallback (igual que antes), generando objetos
+        PRODUCTS = TEST_PRODUCTS.map((n, i) => ({
+          codigo: String(i + 1),
+          nombre: n,
+          label: `${i + 1} · ${n}`,
+        }));
       }
       return;
     }
 
-    // Producción (igual que antes)
+    // Producción
     try {
       const res = await fetch("productos.json", { cache: "no-store" });
       if (!res.ok) throw new Error("No se pudo cargar productos.json");
       const data = await res.json();
-      PRODUCTS = (Array.isArray(data) ? data : [])
-        .map((p) => String(p?.nombre || "").trim())
-        .filter(Boolean);
+      PRODUCTS = toObjs(data);
     } catch (e) {
       console.warn("productos.json no disponible o mal formado:", e);
-      // fallback seguro
-      PRODUCTS = [...TEST_PRODUCTS];
+      // fallback seguro con objetos
+      PRODUCTS = TEST_PRODUCTS.map((n, i) => ({
+        codigo: String(i + 1),
+        nombre: n,
+        label: `${i + 1} · ${n}`,
+      }));
     }
   }
 
@@ -688,18 +741,19 @@ function isPdfFile(f) {
           list.appendChild(empty);
           return;
         }
-        toShow.forEach((name) => {
+        toShow.forEach((it) => {
           const btn = document.createElement("button");
           btn.type = "button";
           btn.className = "combo-item";
-          btn.textContent = name;
+          btn.textContent = it.codigo
+            ? `${it.codigo} · ${it.nombre}`
+            : it.nombre; // <-- etiqueta "codigo · nombre"
           btn.addEventListener("click", () => {
-            // 1) fijar selección en la línea
-            input.value = name;
+            input.value = it.label; // <-- mantenemos el nombre en input
             input.readOnly = true;
             locked = true;
             list.hidden = true;
-            setSeleccionForLine(idx, name);
+            setSeleccionForLine(idx, it.nombre); // <-- guardamos el nombre (compat)
             refreshConfirmEnable();
             updateSearchToggleVisibility();
           });
@@ -712,12 +766,38 @@ function isPdfFile(f) {
         list.hidden = false;
       }
 
+      input.addEventListener("focus", () => {
+        if (!locked) openListWith(PRODUCTS);
+      });
+
+      input.addEventListener("input", () => {
+        if (locked) return;
+        const q = input.value.trim();
+        if (!q) {
+          openListWith(PRODUCTS);
+          return;
+        }
+
+        const qn = norm(q);
+        const filtered = PRODUCTS.filter(
+          (it) =>
+           
+            String(it.codigo).toLowerCase().includes(qn) // <-- búsqueda por código
+        );
+        openListWith(filtered);
+      });
+
+      function openListWith(items) {
+        renderList(items);
+        list.hidden = false;
+      }
+      /*
       const currentSel = cleanVal(ln.seleccionado, "");
       if (currentSel) {
         input.value = currentSel;
         input.readOnly = true;
         locked = true;
-      }
+      } */
       input.addEventListener("focus", () => {
         if (!locked) openListWith(PRODUCTS);
       });
@@ -734,15 +814,6 @@ function isPdfFile(f) {
           return;
         }
         if (list.hidden) openListWith(PRODUCTS);
-      });
-
-      input.addEventListener("input", () => {
-        if (locked) return;
-        const q = input.value.trim().toLowerCase();
-        const filtered = !q
-          ? PRODUCTS
-          : PRODUCTS.filter((n) => n.toLowerCase().includes(q));
-        openListWith(filtered);
       });
 
       // cerrar al clicar fuera (scoped al combo de esta fila)

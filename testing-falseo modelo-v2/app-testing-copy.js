@@ -4,11 +4,11 @@ const N8N_CONFIRM_DATA =
 
 // servidor local: python3 -m http.server 5173
 // --- TESTING: catálogo simulado para evitar coste ---
-const TESTING_PRODUCTS = true; // pon a false en producción
-const TEST_PRODUCTS = ["Licor 43 baristo 0.7", "Berezko 1", "QUESO PARMESANO"];
+const TESTING_PRODUCTS = false; // pon a false en producción
+let TEST_PRODUCTS = ["Licor 43 baristo 0.7", "Berezko 1", "QUESO PARMESANO"]; // <— se llenará dinámicamente con el .json
 
 // --- TESTING: evitar llamadas a webhooks (upload/confirm) y simular respuesta ---
-const TESTING_WEBHOOKS = true; // pon a false en producción
+const TESTING_WEBHOOKS = false; // pon a false en producción
 
 function makeFakeMappingPayload() {
   // Forma "wrapped" que ya reconoce looksLikeMappingPayload()
@@ -71,22 +71,75 @@ function isPdfFile(f) {
   let PRODUCTS = [];
   loadProducts();
 
+  const norm = (s) =>
+    String(s || "")
+      .normalize("NFD")
+      .replace(/\p{Diacritic}/gu, "")
+      .toLowerCase();
+
   async function loadProducts() {
-    // Testing: usa 3 productos locales y evita peticiones/red a productos.json
+    // función auxiliar para crear objetos desde el JSON
+    const toObjs = (arr) =>
+      (Array.isArray(arr) ? arr : [])
+        .map((p) => ({
+          codigo: String(p?.codigo ?? "").trim(),
+          nombre: String(p?.nombre ?? "").trim(),
+        }))
+        .filter((p) => p.nombre) // al menos nombre
+        .map((p) => ({
+          ...p,
+          label: p.codigo ? `${p.codigo} · ${p.nombre}` : p.nombre,
+        }));
+
     if (TESTING_PRODUCTS) {
-      PRODUCTS = [...TEST_PRODUCTS];
+      try {
+        const res = await fetch("productos_mas_formato.json", {
+          cache: "no-store",
+        });
+        if (!res.ok)
+          throw new Error("No se pudo cargar productos_mas_formato.json");
+        const data = await res.json();
+
+        const objs = toObjs(data);
+        // si no hay JSON válido, caemos al fallback de nombres
+        PRODUCTS = objs.length
+          ? objs
+          : TEST_PRODUCTS.map((n, i) => ({
+              codigo: String(i + 1),
+              nombre: n,
+              label: `${i + 1} · ${n}`,
+            }));
+
+        console.log("Productos (testing):", PRODUCTS.slice(0, 5));
+      } catch (e) {
+        console.warn(
+          "productos_mas_formato.json no disponible o mal formado:",
+          e
+        );
+        // fallback (igual que antes), generando objetos
+        PRODUCTS = TEST_PRODUCTS.map((n, i) => ({
+          codigo: String(i + 1),
+          nombre: n,
+          label: `${i + 1} · ${n}`,
+        }));
+      }
       return;
     }
+
+    // Producción
     try {
       const res = await fetch("productos.json", { cache: "no-store" });
       if (!res.ok) throw new Error("No se pudo cargar productos.json");
       const data = await res.json();
-      PRODUCTS = (Array.isArray(data) ? data : [])
-        .map((p) => String(p?.nombre || "").trim())
-        .filter(Boolean);
+      PRODUCTS = toObjs(data);
     } catch (e) {
       console.warn("productos.json no disponible o mal formado:", e);
-      PRODUCTS = [...TEST_PRODUCTS]; // fallback seguro incluso si falla el fetch
+      // fallback seguro con objetos
+      PRODUCTS = TEST_PRODUCTS.map((n, i) => ({
+        codigo: String(i + 1),
+        nombre: n,
+        label: `${i + 1} · ${n}`,
+      }));
     }
   }
 
@@ -666,24 +719,49 @@ function isPdfFile(f) {
           list.appendChild(empty);
           return;
         }
-        toShow.forEach((name) => {
+        toShow.forEach((it) => {
           const btn = document.createElement("button");
           btn.type = "button";
           btn.className = "combo-item";
-          btn.textContent = name;
+          btn.textContent = it.label; // <-- etiqueta "codigo · nombre"
           btn.addEventListener("click", () => {
-            // 1) fijar selección en la línea
-            input.value = name;
+            input.value = it.nombre; // <-- mantenemos el nombre en input
             input.readOnly = true;
             locked = true;
             list.hidden = true;
-            setSeleccionForLine(idx, name);
+            setSeleccionForLine(idx, it.nombre); // <-- guardamos el nombre (compat)
             refreshConfirmEnable();
             updateSearchToggleVisibility();
           });
           list.appendChild(btn);
         });
       }
+
+      function openListWith(items) {
+        renderList(items);
+        list.hidden = false;
+      }
+
+      input.addEventListener("focus", () => {
+        if (!locked) openListWith(PRODUCTS);
+      });
+
+      input.addEventListener("input", () => {
+        if (locked) return;
+        const q = input.value.trim();
+        if (!q) {
+          openListWith(PRODUCTS);
+          return;
+        }
+
+        const qn = norm(q);
+        const filtered = PRODUCTS.filter(
+          (it) =>
+            norm(it.nombre).includes(qn) ||
+            String(it.codigo).toLowerCase().includes(qn) // <-- búsqueda por código
+        );
+        openListWith(filtered);
+      });
 
       function openListWith(items) {
         renderList(items);
