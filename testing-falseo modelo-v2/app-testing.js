@@ -67,7 +67,7 @@ function isPdfFile(f) {
   let lastServerJson = null;
   let reviewDocIndex = 0; // índice del documento si backend devuelve array
 
-  // Catálogo de productos (desde productos.json) → para autocompletar
+  // Catálogo de productos (desde productos_mas_formato.json) → para autocompletar
   let PRODUCTS = [];
   loadProducts();
 
@@ -150,12 +150,18 @@ function isPdfFile(f) {
 
     // Producción
     try {
-      const res = await fetch("productos.json", { cache: "no-store" });
-      if (!res.ok) throw new Error("No se pudo cargar productos.json");
+      const res = await fetch("productos_mas_formato.json", {
+        cache: "no-store",
+      });
+      if (!res.ok)
+        throw new Error("No se pudo cargar productos_mas_formato.json");
       const data = await res.json();
       PRODUCTS = toObjs(data);
     } catch (e) {
-      console.warn("productos.json no disponible o mal formado:", e);
+      console.warn(
+        "productos_mas_formato.json no disponible o mal formado:",
+        e
+      );
       // fallback seguro con objetos
       PRODUCTS = TEST_PRODUCTS.map((n, i) => ({
         codigo: String(i + 1),
@@ -753,7 +759,7 @@ function isPdfFile(f) {
             input.readOnly = true;
             locked = true;
             list.hidden = true;
-            setSeleccionForLine(idx, it.nombre); // <-- guardamos el nombre (compat)
+            setSeleccionForLine(idx, { nombre: it.nombre, codigo: it.codigo }); // <-- guardamos el nombre (compat)y
             refreshConfirmEnable();
             updateSearchToggleVisibility();
           });
@@ -781,8 +787,8 @@ function isPdfFile(f) {
         const qn = norm(q);
         const filtered = PRODUCTS.filter(
           (it) =>
-           
-            String(it.codigo).toLowerCase().includes(qn) // <-- búsqueda por código
+            String(it.codigo).toLowerCase().includes(qn) ||
+            norm(it.nombre).includes(qn) // <-- búsqueda por código
         );
         openListWith(filtered);
       });
@@ -840,18 +846,32 @@ function isPdfFile(f) {
     const probe = looksLikeMappingPayload(lastServerJson);
     if (!probe.ok) return;
 
+    // Soporta string legacy u objeto { nombre, codigo }
+    let selNombre = "";
+    let selCodigo = "";
+    if (value && typeof value === "object") {
+      selNombre = String(value.nombre || value.label || "").trim();
+      selCodigo = String(value.codigo || "").trim();
+    } else {
+      selNombre = String(value || "").trim();
+      selCodigo = "";
+    }
+
+    function assignLine(arr) {
+      if (!Array.isArray(arr) || !arr[lineIdx]) return;
+      arr[lineIdx].seleccionado = selNombre || "";
+      if (selCodigo) arr[lineIdx].codigo_seleccionado = selCodigo; // <-- añade el código al payload
+    }
+
     if (probe.shape === "wrapped") {
       const doc = lastServerJson[reviewDocIndex];
       if (!doc || !Array.isArray(doc.lines) || !doc.lines[lineIdx]) return;
-      doc.lines[lineIdx].seleccionado = value || "";
+      doc.lines[lineIdx].seleccionado = selNombre || "";
+      if (selCodigo) doc.lines[lineIdx].codigo_seleccionado = selCodigo;
     } else if (probe.shape === "array0") {
-      const arr = lastServerJson[0];
-      if (!Array.isArray(arr) || !arr[lineIdx]) return;
-      arr[lineIdx].seleccionado = value || "";
+      assignLine(lastServerJson[0]);
     } else if (probe.shape === "flat") {
-      const arr = lastServerJson;
-      if (!Array.isArray(arr) || !arr[lineIdx]) return;
-      arr[lineIdx].seleccionado = value || "";
+      assignLine(lastServerJson);
     }
   }
 
