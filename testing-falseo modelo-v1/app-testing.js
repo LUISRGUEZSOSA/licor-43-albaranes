@@ -4,11 +4,13 @@ const N8N_CONFIRM_DATA =
 
 // servidor local: python3 -m http.server 5173
 // --- TESTING: catálogo simulado para evitar coste ---
-const TESTING_PRODUCTS = false; // pon a false en producción
+const TESTING_PRODUCTS = true; // pon a false en producción
 let TEST_PRODUCTS = ["Licor 43 baristo 0.7", "Berezko 1", "QUESO PARMESANO"]; // <— se llenará dinámicamente con el .json
 
+let DEFAULT_UXC_BY_NAME = new Map(); // nombre -> unidadesxformato (>0)
+
 // --- TESTING: evitar llamadas a webhooks (upload/confirm) y simular respuesta ---
-const TESTING_WEBHOOKS = false; // pon a false en producción
+const TESTING_WEBHOOKS = true; // pon a false en producción
 
 function makeFakeMappingPayload() {
   // Forma "wrapped" que ya reconoce looksLikeMappingPayload()
@@ -67,7 +69,7 @@ function isPdfFile(f) {
   let lastServerJson = null;
   let reviewDocIndex = 0; // índice del documento si backend devuelve array
 
-  // Catálogo de productos (desde productos.json) → para autocompletar
+  // Catálogo de productos (desde productos_mas_formato.json) → para autocompletar
   let PRODUCTS = [];
   loadProducts();
 
@@ -79,15 +81,39 @@ function isPdfFile(f) {
 
   async function loadProducts() {
     // función auxiliar para crear objetos desde el JSON
+    // dentro de loadProducts()
     const toObjs = (arr) =>
       (Array.isArray(arr) ? arr : [])
-        .map((p) => ({
-          codigo: String(p?.codigo ?? "").trim(),
-          nombre: String(p?.nombre ?? "").trim(),
-        }))
-        .filter((p) => p.nombre) // al menos nombre
-        .map((p) => ({
+        .map((p) => {
+          // Acepta variantes de clave para 'codigo' y 'nombre'
+          const rawCodigo =
+            p?.codigo ??
+            p?.cod ??
+            p?.code ??
+            p?.id ??
+            p?.Codigo ??
+            p?.ID ??
+            p?.CODIGO ??
+            p?.["código"] ??
+            "";
+          const rawNombre =
+            p?.nombre ??
+            p?.Nombre ??
+            p?.name ??
+            p?.descripcion ??
+            p?.Descripción ??
+            "";
+
+          const codigo = String(rawCodigo ?? "").trim();
+          const nombre = String(rawNombre ?? "").trim();
+          const unidadesxformato = Number(p?.unidadesxformato) || 0;
+
+          return { codigo, nombre, unidadesxformato };
+        })
+        .filter((p) => p.nombre) // como mínimo, nombre
+        .map((p, i) => ({
           ...p,
+          // etiqueta del dropdown: "codigo · nombre" (o solo nombre si no hay código)
           label: p.codigo ? `${p.codigo} · ${p.nombre}` : p.nombre,
         }));
 
@@ -101,6 +127,11 @@ function isPdfFile(f) {
         const data = await res.json();
 
         const objs = toObjs(data);
+        // mapa de unidades por nombre (si vienen en productos_mas_formato.json)
+        DEFAULT_UXC_BY_NAME = new Map(
+          objs.map((o) => [o.nombre, Number(o.unidadesxformato) || 0])
+        );
+
         // si no hay JSON válido, caemos al fallback de nombres
         PRODUCTS = objs.length
           ? objs
@@ -128,12 +159,18 @@ function isPdfFile(f) {
 
     // Producción
     try {
-      const res = await fetch("productos.json", { cache: "no-store" });
-      if (!res.ok) throw new Error("No se pudo cargar productos.json");
+      const res = await fetch("productos_mas_formato.json", {
+        cache: "no-store",
+      });
+      if (!res.ok)
+        throw new Error("No se pudo cargar productos_mas_formato.json");
       const data = await res.json();
       PRODUCTS = toObjs(data);
     } catch (e) {
-      console.warn("productos.json no disponible o mal formado:", e);
+      console.warn(
+        "productos_mas_formato.json no disponible o mal formado:",
+        e
+      );
       // fallback seguro con objetos
       PRODUCTS = TEST_PRODUCTS.map((n, i) => ({
         codigo: String(i + 1),
@@ -141,6 +178,30 @@ function isPdfFile(f) {
         label: `${i + 1} · ${n}`,
       }));
     }
+    try {
+      const res2 = await fetch("productos_mas_formato.json", {
+        cache: "no-store",
+      });
+      if (res2.ok) {
+        const data2 = await res2.json();
+        const objs2 = toObjs(data2);
+        DEFAULT_UXC_BY_NAME = new Map(
+          objs2.map((o) => [o.nombre, Number(o.unidadesxformato) || 0])
+        );
+      }
+    } catch (_) {
+      // si no existe, dejamos el mapa vacío; la UI sigue editable
+    }
+  }
+  function getDefaultUxc(nombre) {
+    // 1) preferimos el mapa construido desde productos_mas_formato.json
+    const m = DEFAULT_UXC_BY_NAME.get(nombre);
+    if (Number.isFinite(m) && m > 0) return m;
+
+    // 2) fallback: si el objeto del combo trae unidadesxformato
+    const it = (PRODUCTS || []).find((p) => p && p.nombre === nombre);
+    const n = Number(it?.unidadesxformato);
+    return Number.isFinite(n) && n > 0 ? n : 0;
   }
 
   // Botones → cada uno abre su input correspondiente
@@ -446,6 +507,8 @@ function isPdfFile(f) {
         showResponseInReviewAndReload(resumen, 1200);
         return; // <— no llamamos a n8n
       }
+      normalizeUxcTouchBeforePost();
+
       const res = await fetch(N8N_CONFIRM_DATA, {
         method: "POST",
         headers: {
@@ -624,6 +687,13 @@ function isPdfFile(f) {
     }
     return [];
   }
+  function normalizeUxcTouchBeforePost() {
+    const lines = getLinesFromPayload(lastServerJson);
+    lines.forEach((ln) => {
+      const n = parseInt(String(ln?.uxc_touch ?? ""), 10);
+      ln.uxc_touch = Number.isFinite(n) && n >= 0 ? n : 0;
+    });
+  }
 
   function renderOcrUI(doc) {
     OCR_REVIEW.hidden = false;
@@ -644,8 +714,13 @@ function isPdfFile(f) {
     h3.style.justifyContent = "flex-start";
     h3.textContent = "Buscador de productos";
 
+    const h4 = document.createElement("div");
+    h4.className = "cell extra";
+    h4.textContent = "Cantidad Envase (Kg/L/UDS)";
+
     head.appendChild(h1);
     head.appendChild(h3);
+    head.appendChild(h4);
     OCR_LIST.appendChild(head);
 
     // --- 2) Filas de datos ---
@@ -653,6 +728,7 @@ function isPdfFile(f) {
     lines.forEach((ln, idx) => {
       const row = document.createElement("div");
       row.className = "row";
+      let uxcInput; // referencia a la celda UXC de esta fila
 
       // Columna 1: descripción
       const cDesc = document.createElement("div");
@@ -723,15 +799,27 @@ function isPdfFile(f) {
           const btn = document.createElement("button");
           btn.type = "button";
           btn.className = "combo-item";
-          btn.textContent = it.label; // <-- etiqueta "codigo · nombre"
+          btn.textContent = it.codigo
+            ? `${it.codigo} · ${it.nombre}`
+            : it.nombre; // <-- etiqueta "codigo · nombre"
           btn.addEventListener("click", () => {
-            input.value = it.nombre; // <-- mantenemos el nombre en input
+            input.value = it.label; // <-- mantenemos el nombre en input
             input.readOnly = true;
             locked = true;
             list.hidden = true;
-            setSeleccionForLine(idx, it.nombre); // <-- guardamos el nombre (compat)
+            setSeleccionForLine(idx, { nombre: it.nombre, codigo: it.codigo }); // <-- guardamos el nombre (compat)y
             refreshConfirmEnable();
             updateSearchToggleVisibility();
+            // Prefill UXC por defecto solo si no hay valor manual
+            const def = getDefaultUxc(it.nombre);
+            if (
+              def > 0 &&
+              uxcInput &&
+              (!uxcInput.value || uxcInput.value === "0")
+            ) {
+              uxcInput.value = String(def);
+              setUxcForLine(idx, def);
+            }
           });
           list.appendChild(btn);
         });
@@ -757,8 +845,8 @@ function isPdfFile(f) {
         const qn = norm(q);
         const filtered = PRODUCTS.filter(
           (it) =>
-            norm(it.nombre).includes(qn) ||
-            String(it.codigo).toLowerCase().includes(qn) // <-- búsqueda por código
+            String(it.codigo).toLowerCase().includes(qn) ||
+            norm(it.nombre).includes(qn) // <-- búsqueda por código
         );
         openListWith(filtered);
       });
@@ -767,13 +855,13 @@ function isPdfFile(f) {
         renderList(items);
         list.hidden = false;
       }
-
+      /*
       const currentSel = cleanVal(ln.seleccionado, "");
       if (currentSel) {
         input.value = currentSel;
         input.readOnly = true;
         locked = true;
-      }
+      } */
       input.addEventListener("focus", () => {
         if (!locked) openListWith(PRODUCTS);
       });
@@ -792,15 +880,6 @@ function isPdfFile(f) {
         if (list.hidden) openListWith(PRODUCTS);
       });
 
-      input.addEventListener("input", () => {
-        if (locked) return;
-        const q = input.value.trim().toLowerCase();
-        const filtered = !q
-          ? PRODUCTS
-          : PRODUCTS.filter((n) => n.toLowerCase().includes(q));
-        openListWith(filtered);
-      });
-
       // cerrar al clicar fuera (scoped al combo de esta fila)
       document.addEventListener("click", (e) => {
         if (!combo.contains(e.target)) list.hidden = true;
@@ -815,6 +894,44 @@ function isPdfFile(f) {
 
       // insertar en la fila antes de montar en el DOM
       row.appendChild(cExtra);
+      // --- Columna UXC (nueva) ---
+      const cUxc = document.createElement("div");
+      cUxc.className = "cell extra";
+      cUxc.setAttribute("data-label", "UXC");
+
+      uxcInput = document.createElement("input");
+      uxcInput.type = "number";
+      uxcInput.className = "combo-input"; // reusa estilo del input del combo
+      uxcInput.placeholder = "";
+      uxcInput.min = "0";
+      uxcInput.step = "1";
+      uxcInput.inputMode = "numeric";
+
+      // Solo permitir enteros >= 0 en UI (pero dejar vacío posible)
+      uxcInput.addEventListener("input", () => {
+        uxcInput.value = uxcInput.value.replace(/[^\d]/g, "");
+      });
+
+      // Al salir, persistimos en el payload (vacío/NaN -> 0)
+      uxcInput.addEventListener("blur", () => {
+        const n = parseInt(uxcInput.value, 10);
+        setUxcForLine(idx, Number.isFinite(n) && n >= 0 ? n : 0);
+      });
+
+      cUxc.appendChild(uxcInput);
+      row.appendChild(cUxc);
+
+      // Si la fila ya venía con selección, prefiere el defecto de catálogo
+      const currentSel = cleanVal(ln.seleccionado, "");
+
+      if (currentSel) {
+        const def = getDefaultUxc(currentSel);
+        if (def > 0) {
+          uxcInput.value = String(def);
+          setUxcForLine(idx, def);
+        }
+      }
+
       OCR_LIST.appendChild(row);
     });
 
@@ -825,18 +942,53 @@ function isPdfFile(f) {
     const probe = looksLikeMappingPayload(lastServerJson);
     if (!probe.ok) return;
 
+    // Soporta string legacy u objeto { nombre, codigo }
+    let selNombre = "";
+    let selCodigo = "";
+    if (value && typeof value === "object") {
+      selNombre = String(value.nombre || value.label || "").trim();
+      selCodigo = String(value.codigo || "").trim();
+    } else {
+      selNombre = String(value || "").trim();
+      selCodigo = "";
+    }
+
+    function assignLine(arr) {
+      if (!Array.isArray(arr) || !arr[lineIdx]) return;
+      arr[lineIdx].seleccionado = selNombre || "";
+      if (selCodigo) arr[lineIdx].codigo_seleccionado = selCodigo; // <-- añade el código al payload
+    }
+
     if (probe.shape === "wrapped") {
       const doc = lastServerJson[reviewDocIndex];
       if (!doc || !Array.isArray(doc.lines) || !doc.lines[lineIdx]) return;
-      doc.lines[lineIdx].seleccionado = value || "";
+      doc.lines[lineIdx].seleccionado = selNombre || "";
+      if (selCodigo) doc.lines[lineIdx].codigo_seleccionado = selCodigo;
+    } else if (probe.shape === "array0") {
+      assignLine(lastServerJson[0]);
+    } else if (probe.shape === "flat") {
+      assignLine(lastServerJson);
+    }
+  }
+  function setUxcForLine(lineIdx, value) {
+    const n = parseInt(value, 10);
+    const val = Number.isFinite(n) && n >= 0 ? n : 0;
+
+    const probe = looksLikeMappingPayload(lastServerJson);
+    if (!probe.ok) return;
+
+    if (probe.shape === "wrapped") {
+      const doc = lastServerJson[reviewDocIndex];
+      if (!doc || !Array.isArray(doc.lines) || !doc.lines[lineIdx]) return;
+      doc.lines[lineIdx].uxc_touch = val;
     } else if (probe.shape === "array0") {
       const arr = lastServerJson[0];
       if (!Array.isArray(arr) || !arr[lineIdx]) return;
-      arr[lineIdx].seleccionado = value || "";
+      arr[lineIdx].uxc_touch = val;
     } else if (probe.shape === "flat") {
       const arr = lastServerJson;
       if (!Array.isArray(arr) || !arr[lineIdx]) return;
-      arr[lineIdx].seleccionado = value || "";
+      arr[lineIdx].uxc_touch = val;
     }
   }
 

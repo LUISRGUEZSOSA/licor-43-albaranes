@@ -438,7 +438,7 @@ footer {
   }
 }
 
-/* Ajuste visual para el nuevo select de la 3ª columna */
+/* Ajuste visual para el nuevo select de la 2ª columna */
 .cell.extra .map-select {
   max-width: 280px;
 }
@@ -599,9 +599,13 @@ footer {
   transform: translateY(-50%) scale(0.96);
 }
 
-/* Más separación entre columnas SOLO en desktop */
-@media (min-width: 860px) {
+/* Repartir equitativamente las columnas */
+@media (min-width: 680px) {
+  /* o 860px si quieres solo en desktop */
   .table-like .row {
-    column-gap: clamp(24px, 6vw, 72px); /* separa más la col. del Buscador */
+    grid-template-columns: 1fr 1fr; /* mitad para cada columna */
+    grid-template-columns: 1fr 1fr minmax(90px, 120px); /* tercera columna UXC */
+
+    column-gap: clamp(20px, 5vw, 60px); /* separación adaptable */
   }
 }
