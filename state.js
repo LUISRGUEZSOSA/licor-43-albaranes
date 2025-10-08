@@ -3,8 +3,8 @@
   const N8N_UPLOAD_URL = "https://growtur.app.n8n.cloud/webhook/upload-image";
   const N8N_CONFIRM_DATA =
     "https://growtur.app.n8n.cloud/webhook/confirm-mapping";
-  const TESTING_PRODUCTS = true; // (mantén tus valores)
-  const TESTING_WEBHOOKS = true; // (mantén tus valores)
+  const TESTING_PRODUCTS = false; // Testing = true
+  const TESTING_WEBHOOKS = false; // Testing = true
 
   // Estado global
   let fileOptimizada = null;
