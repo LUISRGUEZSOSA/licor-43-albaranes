@@ -1,8 +1,8 @@
 const N8N_UPLOAD_URL = "https://growtur.app.n8n.cloud/webhook/upload-image";
 const N8N_CONFIRM_DATA =
   "https://growtur.app.n8n.cloud/webhook/confirm-mapping";
+//endpoint del backup de mapping para testing
 
-// servidor local: python3 -m http.server 5173
 // --- TESTING: catálogo simulado para evitar coste ---
 const TESTING_PRODUCTS = true; // pon a false en producción
 let TEST_PRODUCTS = ["Licor 43 baristo 0.7", "Berezko 1", "QUESO PARMESANO"]; // <— se llenará dinámicamente con el .json
@@ -17,9 +17,9 @@ function makeFakeMappingPayload() {
   return [
     {
       lines: [
-        { descripcion: "Licor 43 baristo 0.7", seleccionado: "" },
-        { descripcion: "Berezko 1", seleccionado: "" },
-        { descripcion: "QUESO PARMESANO", seleccionado: "" },
+        { descripcion: "Licor 43 baristo 0.7", seleccionado: "", codigo: "1" },
+        { descripcion: "Berezko 1", seleccionado: "", codigo: "2" },
+        { descripcion: "QUESO PARMESANO", seleccionado: "", codigo: "3" },
       ],
     },
   ];
@@ -108,7 +108,17 @@ function isPdfFile(f) {
           const nombre = String(rawNombre ?? "").trim();
           const unidadesxformato = Number(p?.unidadesxformato) || 0;
 
-          return { codigo, nombre, unidadesxformato };
+          return {
+            codigo,
+            nombre,
+            // ⬇️ conservamos campos del JSON de catálogo
+            unidadesxformato: Number(p?.unidadesxformato) || 0,
+            reconocido: Boolean(p?.reconocido) || false,
+            codigo_touch:
+              p?.codigo_touch != null && p?.codigo_touch !== ""
+                ? String(p.codigo_touch).trim()
+                : null,
+          };
         })
         .filter((p) => p.nombre) // como mínimo, nombre
         .map((p, i) => ({
@@ -202,6 +212,16 @@ function isPdfFile(f) {
     const it = (PRODUCTS || []).find((p) => p && p.nombre === nombre);
     const n = Number(it?.unidadesxformato);
     return Number.isFinite(n) && n > 0 ? n : 0;
+  }
+  function getLineCodigoByIdx(lineIdx) {
+    const lines = getLinesFromPayload(lastServerJson);
+    if (!Array.isArray(lines) || !lines[lineIdx]) return "";
+    const raw =
+      lines[lineIdx]?.codigo ??
+      lines[lineIdx]?.code ??
+      lines[lineIdx]?.codigo_proveedor ??
+      null;
+    return raw != null ? String(raw).trim() : "";
   }
 
   // Botones → cada uno abre su input correspondiente
@@ -497,15 +517,19 @@ function isPdfFile(f) {
     try {
       // 🧪 TESTING: simular confirmación sin llamar a n8n
       if (TESTING_WEBHOOKS) {
-        await delay(400);
-        STATUS.textContent = "✅ Confirmación simulada";
+        // Normaliza UXC también en testing
+        normalizeUxcTouchBeforePost();
+
+        // Muestra el JSON que realmente se enviaría
+        const salida = JSON.stringify(lastServerJson, null, 2);
+
+        STATUS.textContent = "✅ Confirmación (testing)";
         STATUS.className = "status ok";
-        const resumen =
-          "OK (testing)\n" +
-          "Items confirmados: " +
-          (getLinesFromPayload(lastServerJson)?.length || 0);
-        showResponseInReviewAndReload(resumen, 1200);
-        return; // <— no llamamos a n8n
+
+        // Enséñalo en la zona de revisión y (si quieres) recarga después
+        // sube el delay para que te dé tiempo a copiarlo
+        showResponseInReviewAndReload(salida, 4000);
+        return; // <— no llamamos a n8n en testing
       }
       normalizeUxcTouchBeforePost();
 
@@ -808,6 +832,7 @@ function isPdfFile(f) {
             locked = true;
             list.hidden = true;
             setSeleccionForLine(idx, { nombre: it.nombre, codigo: it.codigo }); // <-- guardamos el nombre (compat)y
+
             refreshConfirmEnable();
             updateSearchToggleVisibility();
             // Prefill UXC por defecto solo si no hay valor manual
@@ -819,6 +844,26 @@ function isPdfFile(f) {
             ) {
               uxcInput.value = String(def);
               setUxcForLine(idx, def);
+            }
+            // Marcar como reconocido y asociar codigo_touch si está vacío
+            const lineCode = getLineCodigoByIdx(idx);
+            if (it) {
+              it.reconocido = true;
+              if (
+                (it.codigo_touch == null || it.codigo_touch === "") &&
+                lineCode
+              ) {
+                it.codigo_touch = String(lineCode);
+              }
+            }
+            // ⬅️ Reflejar también en el JSON que se envía (lastServerJson)
+            if (lineCode) {
+              patchLine(idx, {
+                reconocido: true,
+                codigo_touch: String(lineCode),
+              });
+            } else {
+              patchLine(idx, { reconocido: true });
             }
           });
           list.appendChild(btn);
@@ -915,7 +960,26 @@ function isPdfFile(f) {
       // Al salir, persistimos en el payload (vacío/NaN -> 0)
       uxcInput.addEventListener("blur", () => {
         const n = parseInt(uxcInput.value, 10);
-        setUxcForLine(idx, Number.isFinite(n) && n >= 0 ? n : 0);
+        const val = Number.isFinite(n) && n >= 0 ? n : 0;
+
+        // 1) Persistir en el payload (uxc_touch)
+        setUxcForLine(idx, val);
+
+        // 2) Actualizar catálogo: unidadesxformato del producto seleccionado
+        const selName = cleanVal(
+          getLinesFromPayload(lastServerJson)[idx]?.seleccionado,
+          ""
+        );
+        if (selName) {
+          const prod = (PRODUCTS || []).find((p) => p && p.nombre === selName);
+          if (prod) {
+            prod.unidadesxformato = val;
+            // refrescar el mapa de defecto para futuras filas
+            DEFAULT_UXC_BY_NAME.set(prod.nombre, val);
+          }
+        }
+        // ⬅️ Reflejar también en la línea del JSON
+        patchLine(idx, { unidadesxformato: val });
       });
 
       cUxc.appendChild(uxcInput);
@@ -929,6 +993,48 @@ function isPdfFile(f) {
         if (def > 0) {
           uxcInput.value = String(def);
           setUxcForLine(idx, def);
+        }
+      }
+      // Autoselect por codigo del payload si coincide con codigo_touch de algún producto
+      if (!cleanVal(ln.seleccionado, "")) {
+        const lineCode = getLineCodigoByIdx(idx);
+        if (lineCode) {
+          const prodMatch = (PRODUCTS || []).find(
+            (p) =>
+              p &&
+              p.codigo_touch != null &&
+              String(p.codigo_touch) === String(lineCode)
+          );
+          if (prodMatch) {
+            // Fija selección en UI y en payload
+            input.value = prodMatch.label;
+            input.readOnly = true;
+            locked = true;
+            setSeleccionForLine(idx, {
+              nombre: prodMatch.nombre,
+              codigo: prodMatch.codigo,
+            });
+            refreshConfirmEnable();
+            updateSearchToggleVisibility();
+
+            // UXC por defecto si procede
+            const def = getDefaultUxc(prodMatch.nombre);
+            if (
+              def > 0 &&
+              uxcInput &&
+              (!uxcInput.value || uxcInput.value === "0")
+            ) {
+              uxcInput.value = String(def);
+              setUxcForLine(idx, def);
+            }
+
+            // ✅ Marcar reconocido en catálogo y en la línea del JSON
+            prodMatch.reconocido = true;
+            patchLine(idx, {
+              reconocido: true,
+              codigo_touch: String(lineCode),
+            });
+          }
         }
       }
 
@@ -989,6 +1095,31 @@ function isPdfFile(f) {
       const arr = lastServerJson;
       if (!Array.isArray(arr) || !arr[lineIdx]) return;
       arr[lineIdx].uxc_touch = val;
+    }
+  }
+
+  function patchLine(lineIdx, patch) {
+    const probe = looksLikeMappingPayload(lastServerJson);
+    if (!probe.ok || !patch) return;
+
+    const apply = (ln) => {
+      if (!ln || typeof ln !== "object") return;
+      Object.keys(patch).forEach((k) => {
+        ln[k] = patch[k];
+      });
+    };
+
+    if (probe.shape === "wrapped") {
+      const doc = lastServerJson[reviewDocIndex];
+      if (doc && Array.isArray(doc.lines) && doc.lines[lineIdx]) {
+        apply(doc.lines[lineIdx]);
+      }
+    } else if (probe.shape === "array0") {
+      const arr = lastServerJson[0];
+      if (Array.isArray(arr) && arr[lineIdx]) apply(arr[lineIdx]);
+    } else if (probe.shape === "flat") {
+      const arr = lastServerJson;
+      if (Array.isArray(arr) && arr[lineIdx]) apply(arr[lineIdx]);
     }
   }
 
