@@ -6,8 +6,8 @@
     <title>Escáner de Albaranes · Licor 43</title>
     <meta name="color-scheme" content="light dark" />
     <!-- Favicon -->
-    <link rel="icon" href="NEGATIVO.jpg" type="image/jpeg" sizes="32x32" />
-    <link rel="apple-touch-icon" href="NEGATIVO.jpg" />
+    <link rel="icon" href="resources/NEGATIVO.jpg" type="image/jpeg" sizes="32x32" />
+    <link rel="apple-touch-icon" href="resources/NEGATIVO.jpg" />
     <meta name="theme-color" content="#0f172a" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -25,9 +25,6 @@
 
       <!-- Panel de carga -->
       <section class="card grid">
-        <div class="pill" title="Almacén usado en el envío">
-          🏬 <span>Almacén:</span> <b>Almacén Experiencia 43</b>
-        </div>
         <div class="pill" id="pillFecha">💳 Fecha de entrega: <b></b></div>
 
         <!-- Zona de arrastre/soltar + inputs separados -->
@@ -83,32 +80,38 @@
         </div>
       </section>
       <!-- Revisión de conceptos extraídos por OCR -->
-<section id="ocrReview" class="card" hidden>
-  <h3 style="margin: 0 0 8px 0">Revisa y elige el concepto</h3>
-  <p class="hint" style="margin-top: 0">
-    Verifica cada línea y elige el <b>nombre</b> correcto.
-  </p>
+      <section id="ocrReview" class="card" hidden>
+        <h3 style="margin: 0 0 8px 0">Revisa y elige el concepto</h3>
+        <p class="hint" style="margin-top: 0">
+          Verifica cada línea y elige el <b>nombre</b> correcto.
+        </p>
 
-  <div class="table-like" id="ocrList"></div>
+        <div class="table-like" id="ocrList"></div>
 
-    <div class="cta" style="margin-top: 12px; gap: 8px; display: flex; flex-wrap: wrap">
-    <button class="btn" id="btnConfirmarJson" disabled>
-      ✅ Confirmar envío
-    </button>
-  </div>
+        <div
+          class="cta"
+          style="margin-top: 12px; gap: 8px; display: flex; flex-wrap: wrap"
+        >
+          <button class="btn" id="btnConfirmarJson" disabled>
+            ✅ Confirmar envío
+          </button>
+        </div>
 
-
-  <div id="ocrStatus" class="status" style="margin-top: 8px"></div>
-</section>
-
+        <div id="ocrStatus" class="status" style="margin-top: 8px"></div>
+      </section>
 
       <div class="brand-footer">
-        <img src="bygrowtur.png" alt="Licor 43" loading="lazy" />
+        <img src="resources/bygrowtur.png" alt="Licor 43" loading="lazy" />
       </div>
       <div class="version-box">
         Agente IA · Escáner de Albaranes versión&nbsp;1.0
       </div>
     </div>
+    <script src="utils.js"></script>
+    <script src="state.js"></script>
+    <script src="catalog.js"></script>
+    <script src="ocr-ui.js"></script>
+    <script src="network.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
