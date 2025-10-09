@@ -109,12 +109,26 @@
     try {
       if (S.TESTING_WEBHOOKS) {
         S.normalizeUxcTouchBeforePost();
+
+        // ⬇️ Persistir parches en backend (si existe)
+        try {
+          if (w.Backend && w.Backend.isEnabled && w.Backend.isEnabled()) {
+            await w.Backend.persistPatches(w.Catalog.getAndClearPatches());
+          }
+        } catch (e) {
+          console.warn(
+            "No se pudieron guardar cambios en backend (testing):",
+            e
+          );
+        }
+
         const salida = JSON.stringify(S.lastServerJson, null, 2);
         DOM.STATUS.textContent = "✅ Confirmación (testing)";
         DOM.STATUS.className = "status ok";
         showResponseInReviewAndReload(salida, 4000);
         return;
       }
+
       S.normalizeUxcTouchBeforePost();
 
       const res = await fetch(S.N8N_CONFIRM_DATA, {
@@ -124,6 +138,15 @@
       });
       const txt = await res.text();
       if (res.ok) {
+        // ⬇️ Persistir parches en backend (si existe)
+        try {
+          if (w.Backend && w.Backend.isEnabled && w.Backend.isEnabled()) {
+            await w.Backend.persistPatches(w.Catalog.getAndClearPatches());
+          }
+        } catch (e) {
+          console.warn("No se pudieron guardar cambios en backend (prod):", e);
+        }
+
         DOM.STATUS.textContent = "✅ Confirmación enviada";
         DOM.STATUS.className = "status ok";
         showResponseInReviewAndReload(

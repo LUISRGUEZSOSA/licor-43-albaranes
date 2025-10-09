@@ -173,12 +173,6 @@
             } else {
               w.State.patchLine(idx, { reconocido: true });
             }
-            // Marcar cambios para persistir en backend
-            const dirtyFields = ["reconocido"];
-            if (it && it.codigo_touch != null && it.codigo_touch !== "") {
-              dirtyFields.push("codigo_touch");
-            }
-            w.Catalog.markDirty(it, dirtyFields);
           });
           list.appendChild(btn);
         });
@@ -257,15 +251,6 @@
           }
         }
         w.State.patchLine(idx, { unidadesxformato: val });
-        // Marcar cambio de UXC para persistencia
-        if (selName) {
-          const prod = (w.Catalog.PRODUCTS || []).find(
-            (p) => p && p.nombre === selName
-          );
-          if (prod) {
-            w.Catalog.markDirty(prod, ["unidadesxformato"]);
-          }
-        }
       });
 
       // Montaje
@@ -320,8 +305,6 @@
               reconocido: true,
               codigo_touch: String(lineCode),
             });
-            // Marcar reconocido por autoselect para persistir
-            w.Catalog.markDirty(prodMatch, ["reconocido"]);
           }
         }
       }
