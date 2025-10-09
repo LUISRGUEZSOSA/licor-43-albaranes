@@ -12,8 +12,18 @@
 
   let app, auth;
   try {
-    app = w.firebase.apps?.length ? w.firebase.app() : w.firebase.initializeApp(firebaseConfig);
+    app = w.firebase.apps?.length
+      ? w.firebase.app()
+      : w.firebase.initializeApp(firebaseConfig);
     auth = w.firebase.auth();
+    
+    // ✅ Mantener sesión persistente (localStorage)
+    try {
+      auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL);
+      console.log("[Auth] Persistencia establecida en LOCAL");
+    } catch (e) {
+      console.warn("No se pudo establecer persistencia local:", e);
+    }
   } catch (e) {
     console.error("Firebase init error:", e);
     // Fallback: deja visible tu app si falla Firebase (modo sin login)
