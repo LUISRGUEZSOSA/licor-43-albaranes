@@ -70,13 +70,8 @@
         );
 
         // si no hay JSON válido, caemos al fallback de nombres
-        PRODUCTS = objs.length
-          ? objs
-          : TEST_PRODUCTS.map((n, i) => ({
-              codigo: String(i + 1),
-              nombre: n,
-              label: `${i + 1} · ${n}`,
-            }));
+        PRODUCTS = objs.length ? objs : [];
+
 
         console.log("Productos (testing):", PRODUCTS.slice(0, 5));
       } catch (e) {
